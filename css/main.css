@@ -7,6 +7,9 @@
 /* ==========================================================================
    CHAT CSS
    ========================================================================== */
+  .overhidden {
+    overflow:hidden;
+  }
   .chat-container {
   display:flex;
   }
@@ -20,8 +23,8 @@
   .chat{
     display:none;
     z-index:2;
-    bottom:70px;
-    right:55px;
+    bottom:90px;
+    right:0px;
     position:absolute;
     margin-top: auto;
     margin-bottom: auto;

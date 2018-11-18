@@ -1,6 +1,4 @@
-$(".chat_icon").on('click', function() {
-    $(".chat").slideToggle();
-})
+
 // TRANSPORT
   var transport = { 
     Motorbike: {
@@ -78,6 +76,11 @@ var accommodation = {
 }
 
 //SLIDER
+
+$(".chat_icon").on('click', function() {
+    $(".chat").slideToggle();
+    $("body").toggleClass("overhidden");
+})
 
 $(".first_card").hide();
 $(".user_card").hide();
