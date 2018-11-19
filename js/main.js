@@ -9,6 +9,10 @@ $('.btn-accomodation').on('click', function (){
 
 
 
+
+
+
+
 /*
 Reference: http://jsfiddle.net/BB3JK/47/
 */
@@ -59,8 +63,17 @@ $('select').each(function(){
 
 });
 
-
-
+$(".btn-book").on('click', function() {
+    $(".rating-container").empty();
+    console.log($(this).closest(".card-wrapper").attr('data-nr'));
+    var dataNr = $(this).closest(".card-wrapper").attr('data-nr');
+    $("#theModal").attr('data-nr', dataNr);
+    $(".modal-title").text(transport.types[dataNr].name);
+    $(".modal-img").attr('src', "img/" + transport.types[dataNr].image);
+    $(".modal-description").text(transport.types[dataNr].description);
+    $(".price").text(' $' + transport.types[dataNr].price);
+    $(".card-wrapper").find($(".rating")[dataNr]).clone().appendTo(".rating-container");
+})
 
 
 

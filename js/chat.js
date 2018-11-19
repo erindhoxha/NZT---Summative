@@ -79,3 +79,8 @@ $("#type_msg").on("keyup", function(event) {
     $(".button-send").click();
   }
 });
+
+
+$(".btn-book").on('click', function() {
+  console.log(this);
+})

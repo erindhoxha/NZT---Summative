@@ -256,14 +256,14 @@ html {
   background: rgba(0,0,0,1);
   background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 3%, rgba(32,124,229,0.9) 100%);
   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,1)), color-stop(3%, rgba(0,0,0,1)), color-stop(100%, rgba(32,124,229,0.9)));
-  background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 3%, rgba(32,124,229,0.9) 100%);
-  background: -o-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 3%, rgba(32,124,229,0.9) 100%);
+  background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 3%, rgba(32,124,229,1) 100%);
+  background: -o-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 3%, rgba(32,124,229,1) 100%);
   background: -ms-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 3%, rgba(32,124,229,0.9) 100%);
   background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 3%, rgba(32,124,229,0.9) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#207ce5', GradientType=0 );
   }
 .wrapper-cards {
-  background-image:url('../img/texture.jpeg');
+  background-image:url('../img/texture-bg.jpg');
 }
 
 #container-transport {
@@ -292,7 +292,11 @@ html {
     font-size:17px;
   }
 .btn-book {
-  background-color:transparent;
+  background-color:white;
+  color:#007bff;
+  font-weight:600;
+  border-radius:50px;
+  border:none;
 }
 .btn-transport {
   border: 1px solid white !important;
@@ -462,12 +466,16 @@ hr {
 }
 .card-wrapper {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#feffff+0,ddf1f9+35,a0d8ef+100&0.08+0,0.07+100;Blue+3D+%2318 */
-  background: -moz-linear-gradient(-45deg, rgba(254,255,255,0.15) 0%, rgba(221,241,249,0.08) 35%, rgba(160,216,239,0.07) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, rgba(254,255,255,0.15) 0%,rgba(221,241,249,0.08) 35%,rgba(160,216,239,0.07) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, rgba(254,255,255,0.08) 0%,rgba(221,241,249,0.08) 35%,rgba(160,216,239,0.07) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#14feffff', endColorstr='#12a0d8ef',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  // background: -moz-linear-gradient(-45deg, rgba(254,255,255,0.15) 0%, rgba(221,241,249,0.08) 35%, rgba(160,216,239,0.07) 100%); /* FF3.6-15 */
+  // background: -webkit-linear-gradient(-45deg, rgba(254,255,255,0.15) 0%,rgba(221,241,249,0.08) 35%,rgba(160,216,239,0.07) 100%); /* Chrome10-25,Safari5.1-6 */
+  // background: linear-gradient(135deg, rgba(254,255,255,0.08) 0%,rgba(221,241,249,0.08) 35%,rgba(160,216,239,0.07) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#14feffff', endColorstr='#12a0d8ef',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  border:1px solid rgba(255,255,255,0.05);
+  background-color:rgba(255, 255, 255, 0.05);
   padding:0px 20px 20px 20px;
-  border-radius:10px;
+  -webkit-box-shadow: 6px 2px 30px -9px rgba(0,0,0,0.53);
+-moz-box-shadow: 6px 2px 30px -9px rgba(0,0,0,0.53);
+box-shadow: 6px 2px 30px -9px rgba(0,0,0,0.53);
 }
 .checked {
   color:rgb(236, 178, 70);
@@ -590,4 +598,35 @@ h1 span {
 }
 .select-options li[rel="hide"] {
   display: none;
+}
+@media only screen and (max-width: 991px) {
+  .book-container {
+    border-left:0px !important;
+  }
+}
+// MODAL
+
+.modal-content {
+  background-color:rgba(0,0,0,0.85);
+}
+.modal-img {
+  width:100%;
+}
+.font-light {
+  font-weight: 200;
+}
+.modal-header {
+  border-bottom:1px solid #333;
+}
+.modal-footer {
+  border-top:1px solid #333;
+}
+#card-container {
+  background-color:black;
+    border:1px solid rgba(255,255,255,0.05);
+  background-color:rgba(255, 255, 255, 0.05);
+  padding:0px 20px 20px 20px;
+  -webkit-box-shadow: 6px 2px 30px -9px rgba(0,0,0,0.53);
+-moz-box-shadow: 6px 2px 30px -9px rgba(0,0,0,0.53);
+box-shadow: 6px 2px 30px -9px rgba(0,0,0,0.53);
 }
