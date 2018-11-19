@@ -6,10 +6,7 @@ $(".chat_icon").on('click', function() {
     $(".chat").addClass("toggled");
 })
 
-$("#container-transport").on('click', function() {
-  $(".chat.toggled").slideToggle();
-  $(".chat.toggled").removeClass("toggled");
-})
+
 
   var hours = new Date().getHours();
   var minutes = new Date().getMinutes();

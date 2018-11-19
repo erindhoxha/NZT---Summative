@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
     crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+  <script src="js/handlebars-v4.0.12.js"></script>
 </head>
 
 <body>
@@ -127,6 +128,13 @@
 
 
   <img class="chat_icon" src="img/chat_icon.png">
+  <nav class="nav-bar">
+    <ul>
+      <a href="#"><li>Home</li></a>
+      <a href="#"><li>Home</li></a>
+      <a href="#"><li>Home</li></a>
+    </ul>
+  </nav>
 
   <div class="wrapper">
     <div id="container-transport">
@@ -165,237 +173,24 @@
   <div class="wrapper-cards-wrapper">
 
   <div class="container container-result" id="container">
-  <div class="col-lg-12 card-wrapper">
     <div class="row">
  
-        <div class="col-lg-10 mt-4 text-light">
-          <div class="row">
-            <div class="col-lg-3">
-              <img class="img-article" src="img/hotel_1.jpg" alt="">
-            </div>
-            <div class="col-lg-9">
-              <h4>Queen Street Hotel</h4>
-              <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, veniam!</h6>
-              <div class="rating">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-              </div>
-              <hr>
-              <h6>Address 37/Ave</h6>
-              <h6>Book now</h6>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-2 mt-4 text-light text-center book-container">
-          <h6>from</h6>
-          <h4>$288 NZD</h4>
-          <button class="btn btn-block btn-success">Book</button>
-        </div>
-      </div>
       </div>
 
-      <div class="col-lg-12 card-wrapper mt-4">
-          <div class="row">
-       
-              <div class="col-lg-10 mt-4 text-light">
-                <div class="row">
-                  <div class="col-lg-3">
-                    <img class="img-article" src="img/hotel_1.jpg" alt="">
-                  </div>
-                  <div class="col-lg-9">
-                    <h4>Queen Street Hotel</h4>
-                    <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, veniam!</h6>
-                    <div class="rating">
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star"></span>
-                      <span class="fa fa-star"></span>
-                    </div>
-                    <hr>
-                    <h6>Address 37/Ave</h6>
-                    <h6>Book now</h6>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-2 mt-4 text-light text-center book-container">
-                <h6>from</h6>
-                <h4>$288 NZD</h4>
-                <button class="btn btn-block btn-success">Book</button>
-              </div>
-            </div>
-            </div>
+
+      <div id="card-container">
 
 
-
-      <div class="col-lg-12 card-wrapper mt-4">
-          <div class="row">
-       
-              <div class="col-lg-10 mt-4 text-light">
-                <div class="row">
-                  <div class="col-lg-3">
-                    <img class="img-article" src="img/hotel_1.jpg" alt="">
-                  </div>
-                  <div class="col-lg-9">
-                    <h4>Queen Street Hotel</h4>
-                    <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, veniam!</h6>
-                    <div class="rating">
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star"></span>
-                      <span class="fa fa-star"></span>
-                    </div>
-                    <hr>
-                    <h6>Address 37/Ave</h6>
-                    <h6>Book now</h6>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-2 mt-4 text-light text-center book-container">
-                <h6>from</h6>
-                <h4>$288 NZD</h4>
-                <button class="btn btn-block btn-success">Book</button>
-              </div>
-            </div>
-            </div>
-
-
-      <div class="col-lg-12 card-wrapper mt-4">
-          <div class="row">
-       
-              <div class="col-lg-10 mt-4 text-light">
-                <div class="row">
-                  <div class="col-lg-3">
-                    <img class="img-article" src="img/hotel_1.jpg" alt="">
-                  </div>
-                  <div class="col-lg-9">
-                    <h4>Queen Street Hotel</h4>
-                    <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, veniam!</h6>
-                    <div class="rating">
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star"></span>
-                      <span class="fa fa-star"></span>
-                    </div>
-                    <hr>
-                    <h6>Address 37/Ave</h6>
-                    <h6>Book now</h6>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-2 mt-4 text-light text-center book-container">
-                <h6>from</h6>
-                <h4>$288 NZD</h4>
-                <button class="btn btn-block btn-success">Book</button>
-              </div>
-            </div>
-            </div>
-
-
-      <div class="col-lg-12 card-wrapper mt-4">
-          <div class="row">
-       
-              <div class="col-lg-10 mt-4 text-light">
-                <div class="row">
-                  <div class="col-lg-3">
-                    <img class="img-article" src="img/hotel_1.jpg" alt="">
-                  </div>
-                  <div class="col-lg-9">
-                    <h4>Queen Street Hotel</h4>
-                    <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, veniam!</h6>
-                    <div class="rating">
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star"></span>
-                      <span class="fa fa-star"></span>
-                    </div>
-                    <hr>
-                    <h6>Address 37/Ave</h6>
-                    <h6>Book now</h6>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-2 mt-4 text-light text-center book-container">
-                <h6>from</h6>
-                <h4>$288 NZD</h4>
-                <button class="btn btn-block btn-success">Book</button>
-              </div>
-            </div>
-            </div>
-
-            <div class="col-lg-12 card-wrapper mt-4">
-                <div class="row">
-             
-                    <div class="col-lg-10 mt-4 text-light">
-                      <div class="row">
-                        <div class="col-lg-3">
-                          <img class="img-article" src="img/hotel_1.jpg" alt="">
-                        </div>
-                        <div class="col-lg-9">
-                          <h4>Queen Street Hotel</h4>
-                          <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, veniam!</h6>
-                          <div class="rating">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                          </div>
-                          <hr>
-                          <h6>Address 37/Ave</h6>
-                          <h6>Book now</h6>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-2 mt-4 text-light text-center book-container">
-                      <h6>from</h6>
-                      <h4>$288 NZD</h4>
-                      <button class="btn btn-block btn-success">Book</button>
-                    </div>
-                  </div>
-                  </div>
-
-                  <div class="col-lg-12 card-wrapper mt-4">
-                      <div class="row">
-                   
-                          <div class="col-lg-10 mt-4 text-light">
-                            <div class="row">
-                              <div class="col-lg-3">
-                                <img class="img-article" src="img/hotel_1.jpg" alt="">
-                              </div>
-                              <div class="col-lg-9">
-                                <h4>Queen Street Hotel</h4>
-                                <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, veniam!</h6>
-                                <div class="rating">
-                                  <span class="fa fa-star checked"></span>
-                                  <span class="fa fa-star checked"></span>
-                                  <span class="fa fa-star checked"></span>
-                                  <span class="fa fa-star"></span>
-                                  <span class="fa fa-star"></span>
-                                </div>
-                                <hr>
-                                <h6>Address 37/Ave</h6>
-                                <h6>Book now</h6>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-lg-2 mt-4 text-light text-center book-container">
-                            <h6>from</h6>
-                            <h4>$288 NZD</h4>
-                            <button class="btn btn-block btn-success">Book</button>
-                          </div>
-                        </div>
-                        </div>
-
-                        
+      </div>
 
             
+
+
+
+
+
+
+
   </div>
 </div>
 </div>
@@ -429,6 +224,65 @@
     ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+
+
+  <script id="summative-template" type="text/x-handlebars-template">
+        {{#each types}}
+          <div class="col-lg-12 card-wrapper mt-4 {{class}}">
+              <div class="row">
+                  <div class="col-lg-10 mt-4 text-light">
+                    <div class="row">
+                      <div class="col-lg-3">
+                        <img class="img-article" src="img/{{image}}" alt="">
+                      </div>
+                      <div class="col-lg-9">
+                        <h4>{{name}}</h4>
+                        <h6>{{description}}</h6>
+                        <div class="rating">
+                          {{#each checked}}
+                          <span class="fa fa-star checked"></span>
+                          {{/each}}
+                          {{#each unchecked}}
+                          <span class="fa fa-star"></span>
+                          {{/each}}
+                        </div>
+                        <hr>
+                        <h6>{{address}}</h6>
+                        <h6>{{available}}</h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 mt-4 text-light text-center book-container">
+                    <h6>from</h6>
+                    <h4>{{price}} NZD</h4>
+                    <button class="btn btn-block btn-primary">Book</button>
+                  </div>
+                </div>
+                </div>
+        {{/each}}
+</script>
+
+
+<script type="text/javascript">
+  var info = document.getElementById('summative-template').innerHTML;
+
+  var template = Handlebars.compile(info);
+
+  var dataTemplate = template(transport);
+  var templateWrite = document.getElementById('card-container').innerHTML += dataTemplate;
+
+  var info = document.getElementById('summative-template').innerHTML;
+
+  var template = Handlebars.compile(info);
+
+  var dataTemplate = template(accommodation);
+  var templateWrite = document.getElementById('card-container').innerHTML += dataTemplate;
+
+</script>
+
+
+
       
 </div>
 </body>
