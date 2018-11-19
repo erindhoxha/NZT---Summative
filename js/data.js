@@ -2,20 +2,33 @@ var transport = {
     types: [
       {
         name: "Hammer",
+        class: "motorbike",
         image: "hammer.jpg",
-        description: "lorem ipsum",
+        description: "Hammer motorbike, 2007.",
         checked: ["checked", "checked"],
-        unchecked: ["unchecked", "unchecked", "unchecked"]
+        unchecked: ["unchecked", "unchecked", "unchecked"],
+        available: "Available",
+        price: "288"
       },
       {
         name: "Hammer",
+        class: "motorbike",
         image: "hammer.jpg",
-        description: "lorem ipsum"
+        description: "Hammer motorbike, 2007.",
+        checked: ["checked", "checked"],
+        unchecked: ["unchecked", "unchecked", "unchecked"],
+        available: "Available",
+        price: "288"
       },
       {
         name: "Hammer",
+        class: "motorbike",
         image: "hammer.jpg",
-        description: "lorem ipsum"
+        description: "Hammer motorbike, 2007.",
+        checked: ["checked", "checked"],
+        unchecked: ["unchecked", "unchecked", "unchecked"],
+        available: "Available",
+        price: "288"
       }
     ]
   };
@@ -24,20 +37,33 @@ var transport = {
     types: [
       {
         name: "Hammer",
+        class: "motorbike",
         image: "hammer.jpg",
-        description: "lorem ipsum",
+        description: "Hammer motorbike, 2007.",
         checked: ["checked", "checked"],
-        unchecked: ["unchecked", "unchecked", "unchecked"]
+        unchecked: ["unchecked", "unchecked", "unchecked"],
+        available: "Available",
+        price: "288"
       },
       {
         name: "Hammer",
+        class: "motorbike",
         image: "hammer.jpg",
-        description: "lorem ipsum"
+        description: "Hammer motorbike, 2007.",
+        checked: ["checked", "checked"],
+        unchecked: ["unchecked", "unchecked", "unchecked"],
+        available: "Available",
+        price: "288"
       },
       {
         name: "Hammer",
+        class: "motorbike",
         image: "hammer.jpg",
-        description: "lorem ipsum"
+        description: "Hammer motorbike, 2007.",
+        checked: ["checked", "checked"],
+        unchecked: ["unchecked", "unchecked", "unchecked"],
+        available: "Available",
+        price: "288"
       }
     ]
   };

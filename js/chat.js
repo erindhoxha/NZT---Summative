@@ -7,7 +7,6 @@ $(".chat_icon").on('click', function() {
 })
 
 
-
   var hours = new Date().getHours();
   var minutes = new Date().getMinutes();
   var mid='am';
