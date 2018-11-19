@@ -574,13 +574,4 @@ h1 span {
 .modal-footer {
   border-top: 1px solid #333; }
 
-#card-container {
-  background-color: black;
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  background-color: rgba(255, 255, 255, 0.05);
-  padding: 0px 20px 20px 20px;
-  -webkit-box-shadow: 6px 2px 30px -9px rgba(0, 0, 0, 0.53);
-  -moz-box-shadow: 6px 2px 30px -9px rgba(0, 0, 0, 0.53);
-  box-shadow: 6px 2px 30px -9px rgba(0, 0, 0, 0.53); }
-
 /*# sourceMappingURL=main.css.map */
