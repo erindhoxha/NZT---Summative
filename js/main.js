@@ -121,8 +121,8 @@ window.onscroll = function() {
   prevScrollpos = currentScrollPos;
 }
 $(window).load(function() {
-    $('.post-module').hover(function() {
-      $(this).find('.description').stop().animate({
+    $('.post-module2').hover(function() {
+      $(this).find('.description2').stop().animate({
         height: "toggle",
         opacity: "toggle"
       }, 300);
