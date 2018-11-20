@@ -10,7 +10,12 @@ $('.btn-accomodation').on('click', function (){
 
 
 
-
+/* Demo purposes only */
+$(".hover").mouseleave(
+    function () {
+        $(this).removeClass("hover");
+    }
+);
 
 
 /*
@@ -75,6 +80,28 @@ $(".btn-book").on('click', function() {
     $(".card-wrapper").find($(".rating")[dataNr]).clone().appendTo(".rating-container");
 })
 
+
+(function ($) {
+    $(document).ready(function () {
+
+        // hide .navbar first
+        $(".follow-up-input").hide();
+
+        // fade in .navbar
+        $(function () {
+            $(window).scroll(function () {
+
+                // set distance user needs to scroll before we start fadeIn
+                if ($(this).scrollTop() > 500) {
+                    $('.follow-up-input').fadeIn();
+                } else {
+                    $('.follow-up-input').fadeOut();
+                }
+            });
+        });
+
+    });
+}(jQuery));
 
 
 

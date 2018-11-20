@@ -23,6 +23,9 @@
 </head>
 
 <body>
+
+
+
   <div class="overlay">
 
 
@@ -34,7 +37,7 @@
           <div class="card-header msg_head">
             <div class="d-flex bd-highlight">
               <div class="img_cont">
-                <img src="img/bot.png" class="rounded-circle user_img">
+                <img src="img/nzlogo.png" style="filter:invert(1); width:100%;" class="rounded-circle user_img">
                 <span class="online_icon"></span>
               </div>
               <div class="user_info">
@@ -49,7 +52,7 @@
 
             <div class="d-flex justify-content-start mb-4">
               <div class="img_cont_msg">
-                <img src="img/bot.png" class="rounded-circle user_img_msg">
+                <img src="img/nzlogo.png" style="filter:invert(1); width:100%;" class="rounded-circle user_img_msg">
               </div>
               <div class="msg_cotainer">
                 <!-- FIRST QUESTION -->
@@ -127,6 +130,33 @@
   </div>
 
 
+<nav class="follow-up-input">
+        <div class="input-container">
+          <select type="text" id="acc-or-transport-search">
+            <option>Choose any...</option>
+            <option>Accommodation</option>
+            <option>Transport</option>
+          </select>
+        
+        
+          <select type="text" id="people-search">
+            <option>Choose any...</option>
+            <option>Accommodation</option>
+            <option>Transport</option>
+          </select>
+        
+          <select type="text" id="people-search">
+            <option>Choose any...</option>
+            <option>Accommodation</option>
+            <option>Transport</option>
+          </select>
+          <button type="button" data-toggle="modal" data-target="#accomodationModal" class='btn btn-lg btn-primary btn-accomodation'>Find
+            accomodation
+          </button>
+        </div>
+</nav>
+
+
   <img class="chat_icon" src="img/chat_icon.png">
   <nav class="nav-bar">
     <ul>
@@ -141,8 +171,8 @@
       <div id="content">
         <div class="text-container animated fadeInDown">
         <img id="logo" src="img/nzlogo.png">
-        <h1 class="header-title">New Zealand Tourism.</h1>
-        <h3 class="mt-3 ont-light mb-4">Hotels and accommodation all around New Zealand.</h3>
+        <h1 class="header-title">New Zealand Tourism. </h1>
+        <h3 class="mt-3 ont-light mb-4">Kia ora, welcome to Tourism New Zealand</h3>
         <div class="input-container">
 
 
@@ -183,7 +213,7 @@
       </div>
 
 
-      <div id="card-container">
+      <div id="card-container" class="mt-5 pt-5">
 
 
       </div>
@@ -193,13 +223,90 @@
 </div>
 </div>
 
-<div class="container text-dark text-center mt-5">
+<div class="container container-travel text-dark text-center mt-5">
   <h2>Unleash the traveller inside you</h2>
-  <p>Discover our top destinations</p> 
-  <p> Worldwide  South Pacific  New Zealand</p>
+  <p class="undertitle">Discover our top destinations</p> 
 
-  
+<div class="row mt-5">
+  <div class="col-lg-4">
+    <figure class="snip1543" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample100.jpg" alt="sample100"
+      />
+      <figcaption>
+        <h3>Alan Fresco</h3>
+        <p>The real fun of living wisely is that you get to be smug about it.</p>
+      </figcaption>
+      <a href="#"></a>
+    </figure>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, quod!</p>
+    <button class="btn-learn">Learn more</button>
+  </div>
+    <div class="col-lg-4">
+      <figure class="snip1543 hover" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample100.jpg" alt="sample100"
+        />
+        <figcaption>
+          <h3>Alan Fresco</h3>
+          <p>The real fun of living wisely is that you get to be smug about it.</p>
+        </figcaption>
+        <a href="#"></a>
+      </figure>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, quod!
+    </p>
+    <button class="btn-learn">Learn more</button>
+
+
+    </div>
+      <div class="col-lg-4">
+        <figure class="snip1543" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample100.jpg" alt="sample100"
+          />
+          <figcaption>
+            <h3>Alan Fresco</h3>
+            <p>The real fun of living wisely is that you get to be smug about it.</p>
+          </figcaption>
+          <a href="#"></a>
+        </figure>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, quod!
+    </p>
+    <button class="btn-learn">Learn more</button>
+
+      </div>
+      
 </div>
+
+
+</div>
+
+<div id="subscribe">
+  <label for="email" id="email-label">Sign up for our Newsletter</label>
+  <input id="email-input" type="email" name="email" placeholder="type your email..">
+  <button class="btn-subscribe">Subscribe</button>
+</div>
+<div class="container container-travel-second text-dark text-center mt-5">
+
+
+<div class="row mt-5 pt-5" style="display:flex">
+  <div class="col-lg-6">
+    <img class="img-nz" src="img/imageNZ.jpeg" alt="">
+  </div>
+
+  <div class="col-lg-6" style="align-self:center">
+      <h2>Unleash the traveller inside you</h2>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta reiciendis itaque illum iste ullam nesciunt ratione
+      velit? Voluptatum iste inventore, iure necessitatibus corrupti aperiam quis i psa sapiente delectus enim voluptatibus
+      nobis adipisci iusto quia, mollitia veritatis qui placeat quaerat. Sint?</p>
+    <button class="btn-lg btn-default btn">Read more</button>
+  </div>
+
+
+</div>
+
+
+</div>
+
+<div class="footer">
+  New Zealand Tourism
+</div>
+
 
 
 
@@ -239,8 +346,9 @@
     </script>
 
   <script id="summative-template" type="text/x-handlebars-template">
+    
         {{#each types}}
-          <div class="col-lg-12 card-wrapper mt-3 {{class}}" data-aos="fade-up" data-nr="{{@index}}">
+          <div class="col-lg-12 card-wrapper mt-1 {{class}}" data-aos="fade-up" data-nr="{{@index}}">
               <div class="row">
                   <div class="col-lg-10 mt-4 text-light">
                     <div class="row">
@@ -248,17 +356,17 @@
                         <img class="img-article" src="img/{{image}}" alt="">
                       </div>
                       <div class="col-lg-8">
-                        <h4>{{name}}</h4>
+                        <h4 class="name">{{name}}</h4>
                         <h6 class="font-light">{{description}}</h6>
+                        <h6>Price: ${{price}}NZD</h6>
+                        <hr>
                         <div class="rating">
                           {{#each checked}}
                           <span class="fa fa-star checked"></span>
-                          {{/each}}
-                          {{#each unchecked}}
+                          {{/each}} {{#each unchecked}}
                           <span class="fa fa-star"></span>
                           {{/each}}
                         </div>
-                        <hr>
                         <h6>{{address}}</h6>
                         <h6><i class="fas fa-award"></i> Award winning </h6>
                         <h6 class="font-light"><i class="far fa-smile"></i> {{available}}</h6>
@@ -266,9 +374,8 @@
                     </div>
                   </div>
                   <div class="col-lg-2 mt-4 text-light text-center book-container">
-                    <h6 class="font-light">from</h6>
-                    <h4 class="font-light">{{price}} NZD</h4>
                     <button class="btn btn-block btn-book" data-toggle="modal" data-target="#theModal">Book</button>
+                    <small class="mt-1">T&C's apply</small>
                   </div>
                 </div>
                 </div>
