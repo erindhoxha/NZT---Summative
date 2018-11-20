@@ -683,6 +683,8 @@ hr {
   // background: linear-gradient(135deg, rgba(254,255,255,0.08) 0%,rgba(221,241,249,0.08) 35%,rgba(160,216,239,0.07) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#14feffff', endColorstr='#12a0d8ef',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
   border: 1px solid rgba(255, 255, 255, 0.05);
+  width:80%;
+  margin:0 auto;
   border-radius: 5px;
   background: linear-gradient($dark, $light);
   padding: 0px 20px 20px 20px;
