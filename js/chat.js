@@ -9,6 +9,9 @@ $(".chat_icon").on('click', function() {
 
   var hours = new Date().getHours();
   var minutes = new Date().getMinutes();
+  if (minutes.toFixed().length == 1) {
+    minutes = "0" + minutes;
+  }
   var mid='am';
   if(hours==0){ //At 00 hours we need to show 12 am
   hours=12;
@@ -24,26 +27,66 @@ $(".msg_time").text(hours + ':' + minutes + mid);
 $(".first_card").hide();
 $(".user_card").hide();
 
-$(".button-send").on('click', function() {
-  $(".msg_time-sent").text(hours + ':' + minutes + mid);
 
-    // SECOND ANSWER
-    var inputValue = $(".type_msg").val().toLowerCase();
-    if ($(".button-send").hasClass("sentFirstMessage")) {
-    $(".user_card_2").css('display', 'flex');
+
+$(".button-send").on('click', function() {
+
+    thirdAnswer();
+    secondAnswer();
+    firstAnswer();
+
+})
+
+function firstAnswer() {
+
+  $(".msg_time-sent").text(hours + ':' + minutes + mid);
+  // SECOND ANSWER
+  var inputValue = $(".type_msg").val().toLowerCase();
+    // FIRST ANSWER
+    $(".user_card").css('visibility', 'visible');
+    $(".first_card").css('display', 'flex');
+    $(".user_card").fadeIn(300);
+    $(".user-answer").text(inputValue.charAt(0).toUpperCase() + inputValue.slice(1));
+    $(".first_card").css('visibility', 'visible');
+    $(".first_card").css('display', 'flex');
+    $(".first_card").fadeIn(300);
+    $(".answer").text("Hi " + inputValue.charAt(0).toUpperCase() + inputValue.slice(1) + ", are you interested for Accommodation or Transport?");
+    $(".type_msg").val("");
+    if ($(".button-send").hasClass('classSentFirstMessage')) {
+      // do nothing
+    } else {
+      $(".button-send").addClass('sentFirstMessage');
+    }
+    $(".answer").removeClass('answer');
+    $(".button-send").addClass('classSentFirstMessage');
+    $(".user-answer").addClass('firstAnswer');
+    $(".user-answer").removeClass('user-answer');
+    // FIRST ANSWER
+}
+
+function secondAnswer() {
+
+            
+  $(".msg_time-sent").text(hours + ':' + minutes + mid);
+  // SECOND ANSWER
+  var inputValue = $(".type_msg").val().toLowerCase();
+
+  if ($(".button-send").hasClass("sentFirstMessage")) {
+    $(".button-send").removeClass('sentFirstMessage');    
+    $(".user_card_2").css('visibility', 'visible');
+    $(".user_card_2").fadeIn(300);
     $(".secondAnswer").text(inputValue.charAt(0).toUpperCase() + inputValue.slice(1));
-    $(".secondAnswer").addClass("secondAnswerAnswered");
-    $(".secondAnswer").removeClass("secondAnswer");
     if (("transport").indexOf(inputValue) > -1) {
+      $(".button-send").addClass('sentSecondMessageTransport');
       // ADD TRANSPORT STUFF HERE
       $(".first_card_2").css('display', 'flex');
       $(".thirdAnswer").text("Sweet, so you need Transportation... Could you let me know, for how many people?")
       $(".card-body").scrollTop(300);
-
     } else if (("accommodation").indexOf(inputValue) > -1 || ("accomodation").indexOf(inputValue) > -1 || ("acomodation").indexOf(inputValue) > -1 ) {
+      $(".button-send").addClass('sentSecondMessageAccommodation');
       $(".first_card_2").css('display', 'flex');
+      $(".card-body").scrollTop(1000);
       $(".thirdAnswer").text("Sweet, so you need Accommodation... Could you let me know, for how many people?")
-      $(".card-body").scrollTop(300);
       // Add accommodation stuff here
     } else {
       $(".first_card_2").css('display', 'flex');
@@ -52,20 +95,102 @@ $(".button-send").on('click', function() {
     }
     }
     // SECOND ANSWER
+}
 
-    // FIRST ANSWER
-    $(".user_card").css('display', 'flex');
-    $(".user-answer").text(inputValue.charAt(0).toUpperCase() + inputValue.slice(1));
-    $(".first_card").css('display', 'flex');
-    $(".answer").text("Hi " + inputValue.charAt(0).toUpperCase() + inputValue.slice(1) + ", are you interested for Accommodation or Transport?");
-    $(".type_msg").val("");
-    $(".button-send").addClass('sentFirstMessage');
-    $(".answer").removeClass('answer');
-    $(".user-answer").addClass('firstAnswer');
-    $(".user-answer").removeClass('user-answer');
-    // FIRST ANSWER
-})
 
+function thirdAnswer() {
+              
+        $(".msg_time-sent").text(hours + ':' + minutes + mid);
+        // SECOND ANSWER
+        var inputValue = $(".type_msg").val().toLowerCase();
+        // Third answer
+
+        if ($(".button-send").hasClass("sentSecondMessageTransport")) { 
+          $(".button-send").removeClass("sentSecondMessageTransport");
+          $(".user_card_3").css('display', 'flex');
+          $(".thirdUserAnswer").text(inputValue.charAt(0).toUpperCase() + inputValue.slice(1));
+          // $(".thirdUserAnswer").removeClass('thirdUserAnswer');
+          $(".button-send").addClass('sentThirdMessageTransport');
+          // DO STUFF FOR TRANSPORT HERE
+          if (("1 one").includes(inputValue)) {
+            var answer = 1;
+            console.log(answer);
+            howManyPeople();
+          } else if (("2 two").includes(inputValue)) {
+            var answer = 2;
+            console.log(answer);
+            howManyPeople();
+          } else if (("3 three").includes(inputValue)) {
+            var answer = 3;
+            console.log(answer);
+            howManyPeople();
+          } else if (("4 four").includes(inputValue)) {
+            var answer = 4;
+            console.log(answer);
+            howManyPeople();
+          } else if (("5 five").includes(inputValue)) {
+            var answer = 5;
+            console.log(answer);
+            howManyPeople();
+          } else if (("6 six").includes(inputValue)) {
+            var answer = 6;
+            console.log(answer);
+            howManyPeople();
+          } 
+          else {
+            $(".first_card_3").css('display', 'flex');
+            $(".card-body").scrollTop(600);
+            $(".fourthAnswer").text("Sorry, we can't understand that number, please type it again");
+          }
+
+        } else if ($(".button-send").hasClass("sentSecondMessageAccommodation")) {
+          $(".button-send").removeClass("sentSecondMessageAccommodation");
+          $(".button-send").removeClass('sentFirstMessage');
+          $(".user_card_3").css('display', 'flex');
+          $(".thirdUserAnswer").text(inputValue.charAt(0).toUpperCase() + inputValue.slice(1));
+          $(".thirdUserAnswer").removeClass('thirdUserAnswer');
+          $(".button-send").addClass('sentThirdMessageAccommodation');
+          // DO STUFF FOR ACCOMMODATION HERE
+                if (("1 one").includes(inputValue)) {
+                  var answer = 1;
+                  console.log(answer);
+                  howManyPeople();
+                } else if (("2 two").includes(inputValue)) {
+                  var answer = 2;
+                  console.log(answer);
+                  howManyPeople();
+                } else if (("3 three").includes(inputValue)) {
+                  var answer = 3;
+                  console.log(answer);
+                  howManyPeople();
+                } else if (("4 four").includes(inputValue)) {
+                  var answer = 4;
+                  console.log(answer);
+                  howManyPeople();
+                } else if (("5 five").includes(inputValue)) {
+                  var answer = 5;
+                  console.log(answer);
+                  howManyPeople();
+                } else if (("6 six").includes(inputValue)) {
+                  var answer = 6;
+                  console.log(answer);
+                  howManyPeople();
+                } 
+                else {
+                  $(".first_card_3").css('display', 'flex');
+                  $(".card-body").scrollTop(600);
+                  $(".fourthAnswer").text("Sorry, we can't understand that number, please type it again");
+                }
+          
+        }
+
+  function howManyPeople() {
+    $(".first_card_3").css('display', 'flex');
+    $(".fourthAnswer").text("Sweet, you've chosen: " + answer + " people.");
+    $(".card-body").scrollTop(600);
+
+  }
+}
 
 // Get the input field
 var input = $("#type_msg");
@@ -81,6 +206,11 @@ $("#type_msg").on("keyup", function(event) {
 });
 
 
-$(".btn-book").on('click', function() {
-  console.log(this);
-})
+function filter(typer, typeOfTransport) {
+    for (var i = 0; i < transport.types.length; i++) {
+      if (transport.types[i].class == typeOfTransport) {
+      console.log(transport.types[i].class)
+      $(typer).text("Hey, here is the results: ")
+      }
+    }
+}

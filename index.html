@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
     crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="js/handlebars-v4.0.12.js"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" rel="stylesheet">
@@ -62,6 +62,7 @@
                 </div>
               </div>
 
+
               <div class="justify-content-end mb-4 user_card">
                 <div class="msg_cotainer_send">
                   <!-- FIRST ANSWER -->
@@ -86,13 +87,14 @@
                   <!-- FIRST QUESTION -->
                 </div>
               </div>
+              
 
               <div class="justify-content-end mb-4 user_card_2">
                 <div class="msg_cotainer_send">
-                  <!-- FIRST ANSWER -->
+                  <!-- Second ANSWER -->
                   <p class="secondAnswer" style="margin:0px"></p>
                   <span class="msg_time_send"></span>
-                  <!-- FIRST ANSWER -->
+                  <!-- Second ANSWER -->
                 </div>
                 <div class="img_cont_msg">
                   <img src="img/bot.png" class="rounded-circle user_img_msg">
@@ -109,9 +111,36 @@
                   <p class="thirdAnswer"></p>
                   <p class="answer-three" style="margin:0"></p>
                   <span class="msg_time"></span>
-                  <!-- FIRST QUESTION -->
+                  <!-- Third QUESTION -->
                 </div>
               </div>
+              
+
+              <div class="justify-content-end mb-4 user_card_3">
+                <div class="msg_cotainer_send">
+                  <!-- Second ANSWER -->
+                  <p class="thirdUserAnswer" style="margin:0px"></p>
+                  <span class="msg_time_send"></span>
+                  <!-- Second ANSWER -->
+                </div>
+                <div class="img_cont_msg">
+                  <img src="img/bot.png" class="rounded-circle user_img_msg">
+                </div>
+              </div>
+
+              <div class="chat-container justify-content-start mb-4 first_card_3">
+                <div class="img_cont_msg">
+                  <img src="img/bot.png" class="rounded-circle user_img_msg">
+                </div>
+                <div class="msg_cotainer">
+                  <p class="fourthAnswer"></p>
+                  <p class="answer-four" style="margin:0"></p>
+                  <span class="msg_time"></span>
+                  <!-- Third QUESTION -->
+                </div>
+              </div>
+
+
 
             </div>
 
@@ -133,26 +162,23 @@
   <nav class="follow-up-input">
     <div class="input-container">
       <select type="text" id="acc-or-transport-search">
-        <option>Choose any...</option>
+        <option>Sort</option>
         <option>Accommodation</option>
         <option>Transport</option>
       </select>
 
 
       <select type="text" id="people-search">
-        <option>Choose any...</option>
+        <option>Sort</option>
         <option>Accommodation</option>
         <option>Transport</option>
       </select>
 
       <select type="text" id="people-search">
-        <option>Choose any...</option>
+        <option>Sort</option>
         <option>Accommodation</option>
         <option>Transport</option>
       </select>
-      <button type="button" data-toggle="modal" data-target="#accomodationModal" class='btn btn-lg btn-primary btn-accomodation'>Find
-        accomodation
-      </button>
     </div>
   </nav>
 
@@ -281,11 +307,7 @@
 
   </div>
 
-  <div id="subscribe">
-    <label for="email" id="email-label">Sign up for our Newsletter</label>
-    <input id="email-input" type="email" name="email" placeholder="type your email..">
-    <button class="btn-subscribe">Subscribe</button>
-  </div>
+
   <div class="container container-travel-second text-dark text-center mt-5">
 
 
@@ -358,7 +380,7 @@
     {{#each types}}
           <div class="col-lg-12 card-wrapper p-0 pr-4 mt-1 {{class}}" data-aos="fade-up" data-nr="{{@index}}">
               <div class="row">
-                  <div class="col-lg-12 text-light">
+                  <div class="col-lg-12 text-dark">
                     <div class="row">
                       <div class="col-lg-5">
                         <img class="img-article" src="img/{{image}}" alt="">
@@ -366,7 +388,7 @@
                       <div class="col-lg-7 pt-4 pb-2">
                         <h4 class="name">{{name}}</h4>
                         <h6 class="font-light">{{description}}</h6>
-                        <h6>Price: ${{price}}NZD</h6>
+                        <h6 class="price">Price: <span class="price-text">${{price}}NZD</span></h6>
                         <hr>
                         <div class="rating">
                           {{#each checked}}
@@ -418,6 +440,16 @@
 
     var dataTemplate = template(transport);
     var templateWrite = document.getElementById('card-container').innerHTML += dataTemplate;
+
+
+
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("demo");
+    output.innerHTML = slider.value;
+
+    slider.oninput = function() {
+      output.innerHTML = this.value;
+    }
   </script>
 
   <script src="js/main.js"></script>

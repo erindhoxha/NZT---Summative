@@ -170,9 +170,16 @@ $blue: #0a84e1;
 }
 
 .user_card,
-.user_card_2,
-first_card_2 {
-  display: none;
+.first_card,
+.user_card_2,{
+  visibility:hidden;
+  display:flex;
+}
+
+.first_card_2,
+.user_card_3,
+.first_card_3 {
+  display:none;
 }
 
 .contacts li {
@@ -330,7 +337,7 @@ body {
 
 /*  END OF BOT CODE  */
 html {
-  font-family: 'Rubik', 'Arial';
+  font-family: 'Montserrat', 'Arial';
   color: #222;
   font-size: 1em;
   line-height: 1.4;
@@ -396,6 +403,7 @@ html {
 .btn-book {
   background-color: $dark;
   color: #fff;
+  width:100px;
   font-weight: 600;
   border-radius: 50px;
   border: none;
@@ -660,11 +668,12 @@ label {
   height: 100%;
 }
 
+
 hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 5px solid #fff;
+  border-top: 2px solid #000;
   margin: 1em 0;
   padding: 0;
 }
@@ -683,10 +692,9 @@ hr {
   // background: linear-gradient(135deg, rgba(254,255,255,0.08) 0%,rgba(221,241,249,0.08) 35%,rgba(160,216,239,0.07) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#14feffff', endColorstr='#12a0d8ef',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
   border: 1px solid rgba(255, 255, 255, 0.05);
-  width:80%;
+  width:90%;
   margin:0 auto;
-  border-radius: 5px;
-  background: linear-gradient($dark, $light);
+  background: linear-gradient(#fff, #fff);
   padding: 0px 20px 20px 20px;
   -webkit-box-shadow: 6px 2px 30px -9px rgba(0, 0, 0, 0.53);
   -moz-box-shadow: 6px 2px 30px -9px rgba(0, 0, 0, 0.53);
@@ -758,7 +766,7 @@ h1 {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: $dark;
+  background-color: $light;
   border: none;
   padding: 8px 15px;
   -moz-transition: all 0.2s ease-in;
@@ -808,14 +816,14 @@ h1 {
   margin: 0;
   padding: 0;
   list-style: none;
-  background-color: #007bff;
+  background-color: $light;
 }
 
 .select-options li {
   margin: 0;
   padding: 12px 0;
   text-indent: 15px;
-  border-top: 1px solid #007bff;
+  border-top: 1px solid $light;
   -moz-transition: all 0.15s ease-in;
   -o-transition: all 0.15s ease-in;
   -webkit-transition: all 0.15s ease-in;
@@ -823,8 +831,8 @@ h1 {
 }
 
 .select-options li:hover {
-  color: #007bff;
-  background: #fff;
+  color: #fff;
+  background: $dark;
 }
 
 .select-options li[rel="hide"] {
@@ -840,7 +848,8 @@ h1 {
 // MODAL
 
 .modal-content {
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(255, 255, 255, 0.99);
+  color:black;
 }
 
 .modal-img {
@@ -1021,4 +1030,39 @@ h1 {
   transform: skew(-30deg) translateX(-30%);
   -webkit-transition-delay: 0.1s;
   transition-delay: 0.1s;
+}
+
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
 }

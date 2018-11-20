@@ -1,6 +1,6 @@
 // $('body').css('overflow', 'hidden');
 $('.btn-accomodation').on('click', function () {
-    $('body').css('overflow', 'auto');
+    // $('body').css('overflow', 'auto');
     $('html,body').animate({
             scrollTop: $(".container-result").offset().top
         },
@@ -103,3 +103,11 @@ $(".btn-book").on('click', function () {
 
     });
 }(jQuery));
+
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
