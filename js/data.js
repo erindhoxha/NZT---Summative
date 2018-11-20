@@ -1,10 +1,10 @@
 var transport = {
     types: [
       {
-        name: "Hammer",
+        name: "Meet the city that never sleeps.",
         class: "motorbike",
         image: "hammer.jpg",
-        description: "Hammer motorbike, 2007.",
+        description: "Travel one of the world's most diverse and intriguing cities. City Info Exports will help you experience it all!",
         checked: ["checked", "checked"],
         unchecked: ["unchecked", "unchecked", "unchecked"],
         available: "Available",
@@ -13,8 +13,8 @@ var transport = {
       {
         name: "Hammer",
         class: "motorbike",
-        image: "hammer.jpg",
-        description: "Hammer motorbike, 2007.",
+        image: "lammer.jpeg",
+        description: "Travel one of the world's most diverse and intriguing cities. City Info Exports will help you experience it all!",
         checked: ["checked", "checked"],
         unchecked: ["unchecked", "unchecked", "unchecked"],
         available: "Available",
@@ -23,8 +23,8 @@ var transport = {
       {
         name: "Hammer",
         class: "motorbike",
-        image: "hammer.jpg",
-        description: "Hammer motorbike, 2007.",
+        image: "tammer.jpeg",
+        description: "Travel one of the world's most diverse and intriguing cities. City Info Exports will help you experience it all!",
         checked: ["checked", "checked"],
         unchecked: ["unchecked", "unchecked", "unchecked"],
         available: "Available",
@@ -33,7 +33,7 @@ var transport = {
       {
         name: "Hammer",
         class: "motorbike",
-        image: "hammer.jpg",
+        image: "lammer.jpeg",
         description: "Hammer motorbike, 2007.",
         checked: ["checked", "checked"],
         unchecked: ["unchecked", "unchecked", "unchecked"],
