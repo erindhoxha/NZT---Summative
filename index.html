@@ -29,97 +29,98 @@
   <div class="overlay">
 
 
-  <!-- CHAT -->
-  <div class="container-fluid flex">
-    <div class="row justify-content-center">
-      <div class="col-lg-4 col-md-4 col-xl-4 chat">
-        <div class="card">
-          <div class="card-header msg_head">
-            <div class="d-flex bd-highlight">
-              <div class="img_cont">
-                <img src="img/nzlogo.png" style="filter:invert(1); width:100%;" class="rounded-circle user_img">
-                <span class="online_icon"></span>
+    <!-- CHAT -->
+    <div class="container-fluid flex">
+      <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-4 col-xl-4 chat">
+          <div class="card">
+            <div class="card-header msg_head">
+              <div class="d-flex bd-highlight">
+                <div class="img_cont">
+                  <img src="img/nzlogo.png" style="filter:invert(1); width:100%;" class="rounded-circle user_img">
+                  <span class="online_icon"></span>
+                </div>
+                <div class="user_info">
+                  <span>Chat with NZT</span>
+                  <p>Online</p>
+                </div>
               </div>
-              <div class="user_info">
-                <span>Chat with NZT</span>
-                <p>Online</p>
-              </div>
+
             </div>
 
-          </div>
+            <div class="card-body msg_card_body">
 
-          <div class="card-body msg_card_body">
+              <div class="d-flex justify-content-start mb-4">
+                <div class="img_cont_msg">
+                  <img src="img/nzlogo.png" style="filter:invert(1); width:100%;" class="rounded-circle user_img_msg">
+                </div>
+                <div class="msg_cotainer">
+                  <!-- FIRST QUESTION -->
+                  Hi, what's your name?
+                  <span class="msg_time"></span>
+                  <!-- FIRST QUESTION -->
+                </div>
+              </div>
 
-            <div class="d-flex justify-content-start mb-4">
-              <div class="img_cont_msg">
-                <img src="img/nzlogo.png" style="filter:invert(1); width:100%;" class="rounded-circle user_img_msg">
+              <div class="justify-content-end mb-4 user_card">
+                <div class="msg_cotainer_send">
+                  <!-- FIRST ANSWER -->
+                  <p class="user-answer" style="margin:0px"></p>
+                  <span class="msg_time_send"></span>
+                  <!-- FIRST ANSWER -->
+                </div>
+                <div class="img_cont_msg">
+                  <img src="img/bot.png" class="rounded-circle user_img_msg">
+                </div>
               </div>
-              <div class="msg_cotainer">
-                <!-- FIRST QUESTION -->
-                Hi, what's your name?
-                <span class="msg_time"></span>
-                <!-- FIRST QUESTION -->
+
+
+              <div class="chat-container justify-content-start mb-4 first_card">
+                <div class="img_cont_msg">
+                  <img src="img/bot.png" class="rounded-circle user_img_msg">
+                </div>
+                <div class="msg_cotainer">
+                  <!-- FIRST QUESTION -->
+                  <p class="answer" style="margin:0"></p>
+                  <span class="msg_time"></span>
+                  <!-- FIRST QUESTION -->
+                </div>
               </div>
+
+              <div class="justify-content-end mb-4 user_card_2">
+                <div class="msg_cotainer_send">
+                  <!-- FIRST ANSWER -->
+                  <p class="secondAnswer" style="margin:0px"></p>
+                  <span class="msg_time_send"></span>
+                  <!-- FIRST ANSWER -->
+                </div>
+                <div class="img_cont_msg">
+                  <img src="img/bot.png" class="rounded-circle user_img_msg">
+                </div>
+              </div>
+
+
+
+              <div class="chat-container justify-content-start mb-4 first_card_2">
+                <div class="img_cont_msg">
+                  <img src="img/bot.png" class="rounded-circle user_img_msg">
+                </div>
+                <div class="msg_cotainer">
+                  <p class="thirdAnswer"></p>
+                  <p class="answer-three" style="margin:0"></p>
+                  <span class="msg_time"></span>
+                  <!-- FIRST QUESTION -->
+                </div>
+              </div>
+
             </div>
 
-            <div class="justify-content-end mb-4 user_card">
-              <div class="msg_cotainer_send">
-                <!-- FIRST ANSWER -->
-                <p class="user-answer" style="margin:0px"></p>
-                <span class="msg_time_send"></span>
-                <!-- FIRST ANSWER -->
-              </div>
-              <div class="img_cont_msg">
-                <img src="img/bot.png" class="rounded-circle user_img_msg">
-              </div>
-            </div>
-
-
-            <div class="chat-container justify-content-start mb-4 first_card">
-              <div class="img_cont_msg">
-                <img src="img/bot.png" class="rounded-circle user_img_msg">
-              </div>
-              <div class="msg_cotainer">
-                <!-- FIRST QUESTION -->
-                <p class="answer" style="margin:0"></p>
-                <span class="msg_time"></span>
-                <!-- FIRST QUESTION -->
-              </div>
-            </div>
-
-            <div class="justify-content-end mb-4 user_card_2">
-              <div class="msg_cotainer_send">
-                <!-- FIRST ANSWER -->
-                <p class="secondAnswer" style="margin:0px"></p>
-                <span class="msg_time_send"></span>
-                <!-- FIRST ANSWER -->
-              </div>
-              <div class="img_cont_msg">
-                <img src="img/bot.png" class="rounded-circle user_img_msg">
-              </div>
-            </div>
-
-
-
-            <div class="chat-container justify-content-start mb-4 first_card_2">
-              <div class="img_cont_msg">
-                <img src="img/bot.png" class="rounded-circle user_img_msg">
-              </div>
-              <div class="msg_cotainer">
-                <p class="thirdAnswer"></p>
-                <p class="answer-three" style="margin:0"></p>
-                <span class="msg_time"></span>
-                <!-- FIRST QUESTION -->
-              </div>
-            </div>
-
-          </div>
-
-          <div class="card-footer">
-            <div class="input-group">
-              <input name="" class="form-control type_msg" id="type_msg" placeholder="Type your message..."></textarea>
-              <div class="input-group-append">
-                <span class="input-group-text send_btn" id="btn-send"><i class="fas fa-location-arrow button-send" id="btn-send"></i></span>
+            <div class="card-footer">
+              <div class="input-group">
+                <input name="" class="form-control type_msg" id="type_msg" placeholder="Type your message..."></textarea>
+                <div class="input-group-append">
+                  <span class="input-group-text send_btn" id="btn-send"><i class="fas fa-location-arrow button-send" id="btn-send"></i></span>
+                </div>
               </div>
             </div>
           </div>
@@ -127,42 +128,47 @@
       </div>
     </div>
   </div>
-  </div>
 
 
-<nav class="follow-up-input">
-        <div class="input-container">
-          <select type="text" id="acc-or-transport-search">
-            <option>Choose any...</option>
-            <option>Accommodation</option>
-            <option>Transport</option>
-          </select>
-        
-        
-          <select type="text" id="people-search">
-            <option>Choose any...</option>
-            <option>Accommodation</option>
-            <option>Transport</option>
-          </select>
-        
-          <select type="text" id="people-search">
-            <option>Choose any...</option>
-            <option>Accommodation</option>
-            <option>Transport</option>
-          </select>
-          <button type="button" data-toggle="modal" data-target="#accomodationModal" class='btn btn-lg btn-primary btn-accomodation'>Find
-            accomodation
-          </button>
-        </div>
-</nav>
+  <nav class="follow-up-input">
+    <div class="input-container">
+      <select type="text" id="acc-or-transport-search">
+        <option>Choose any...</option>
+        <option>Accommodation</option>
+        <option>Transport</option>
+      </select>
+
+
+      <select type="text" id="people-search">
+        <option>Choose any...</option>
+        <option>Accommodation</option>
+        <option>Transport</option>
+      </select>
+
+      <select type="text" id="people-search">
+        <option>Choose any...</option>
+        <option>Accommodation</option>
+        <option>Transport</option>
+      </select>
+      <button type="button" data-toggle="modal" data-target="#accomodationModal" class='btn btn-lg btn-primary btn-accomodation'>Find
+        accomodation
+      </button>
+    </div>
+  </nav>
 
 
   <img class="chat_icon" src="img/chat_icon.png">
   <nav class="nav-bar">
     <ul>
-      <a href="#"><li>Home</li></a>
-      <a href="#"><li>About</li></a>
-      <a href="#"><li>Contact</li></a>
+      <a href="#">
+        <li>Home</li>
+      </a>
+      <a href="#">
+        <li>About</li>
+      </a>
+      <a href="#">
+        <li>Contact</li>
+      </a>
     </ul>
   </nav>
 
@@ -170,142 +176,144 @@
     <div id="container-transport">
       <div id="content">
         <div class="text-container animated fadeInDown">
-        <img id="logo" src="img/nzlogo.png">
-        <h1 class="header-title">New Zealand Tourism. </h1>
-        <h3 class="mt-3 ont-light mb-4">Kia ora, welcome to Tourism New Zealand</h3>
-        <div class="input-container">
+          <img id="logo" src="img/nzlogo.png">
+          <h1 class="header-title">New Zealand Tourism. </h1>
+          <h3 class="mt-3 ont-light mb-4">Kia ora, welcome to Tourism New Zealand</h3>
+          <div class="input-container">
 
 
 
-          <select type="text" id="acc-or-transport-search">
-            <option>Choose any...</option>
-            <option>Accommodation</option>
-            <option>Transport</option>
-          </select>
+            <select type="text" id="acc-or-transport-search">
+              <option>Choose any...</option>
+              <option>Accommodation</option>
+              <option>Transport</option>
+            </select>
 
 
-          <select type="text" id="people-search">
-            <option>Choose any...</option>
-            <option>Accommodation</option>
-            <option>Transport</option>
-          </select>
+            <select type="text" id="people-search">
+              <option>Choose any...</option>
+              <option>Accommodation</option>
+              <option>Transport</option>
+            </select>
 
-          <select type="text" id="people-search">
-            <option>Choose any...</option>
-            <option>Accommodation</option>
-            <option>Transport</option>
-          </select>
-          <button type="button" data-toggle="modal" data-target="#accomodationModal" class='btn btn-lg btn-primary btn-accomodation'>Find
-            accomodation</button>
+            <select type="text" id="people-search">
+              <option>Choose any...</option>
+              <option>Accommodation</option>
+              <option>Transport</option>
+            </select>
+            <button type="button" data-toggle="modal" data-target="#accomodationModal" class='btn btn-lg btn-primary btn-accomodation'>Find
+              accomodation</button>
+          </div>
         </div>
       </div>
-      </div>
     </div>
   </div>
 
 
-<div class="wrapper-cards">
-  <div class="wrapper-cards-wrapper">
+  <div class="wrapper-cards">
+    <div class="wrapper-cards-wrapper">
 
-  <div class="container container-result" id="container">
-    <div class="row">
- 
+      <div class="container container-result" id="container">
+        <div class="row">
+
+        </div>
+
+
+        <div id="card-container" class="mt-5 pt-5">
+
+
+        </div>
+
+
       </div>
-
-
-      <div id="card-container" class="mt-5 pt-5">
-
-
-      </div>
-
-            
-  </div>
-</div>
-</div>
-
-<div class="container container-travel text-dark text-center mt-5">
-  <h2>Unleash the traveller inside you</h2>
-  <p class="undertitle">Discover our top destinations</p> 
-
-<div class="row mt-5">
-  <div class="col-lg-4">
-    <figure class="snip1543" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample100.jpg" alt="sample100"
-      />
-      <figcaption>
-        <h3>Alan Fresco</h3>
-        <p>The real fun of living wisely is that you get to be smug about it.</p>
-      </figcaption>
-      <a href="#"></a>
-    </figure>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, quod!</p>
-    <button class="btn-learn">Learn more</button>
-  </div>
-    <div class="col-lg-4">
-      <figure class="snip1543 hover" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample100.jpg" alt="sample100"
-        />
-        <figcaption>
-          <h3>Alan Fresco</h3>
-          <p>The real fun of living wisely is that you get to be smug about it.</p>
-        </figcaption>
-        <a href="#"></a>
-      </figure>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, quod!
-    </p>
-    <button class="btn-learn">Learn more</button>
-
-
     </div>
+  </div>
+
+  <div class="container container-travel text-dark text-center mt-5">
+    <h2>Unleash the traveller inside you</h2>
+    <p class="undertitle">Discover our top destinations</p>
+
+    <div class="row mt-5">
       <div class="col-lg-4">
-        <figure class="snip1543" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample100.jpg" alt="sample100"
-          />
+        <figure class="snip1543" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample100.jpg"
+            alt="sample100" />
           <figcaption>
             <h3>Alan Fresco</h3>
             <p>The real fun of living wisely is that you get to be smug about it.</p>
           </figcaption>
           <a href="#"></a>
         </figure>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, quod!
-    </p>
-    <button class="btn-learn">Learn more</button>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, quod!</p>
+        <button class="btn-learn">Learn more</button>
+      </div>
+      <div class="col-lg-4">
+        <figure class="snip1543 hover" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample100.jpg"
+            alt="sample100" />
+          <figcaption>
+            <h3>Alan Fresco</h3>
+            <p>The real fun of living wisely is that you get to be smug about it.</p>
+          </figcaption>
+          <a href="#"></a>
+        </figure>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, quod!
+        </p>
+        <button class="btn-learn">Learn more</button>
+
 
       </div>
-      
-</div>
+      <div class="col-lg-4">
+        <figure class="snip1543" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample100.jpg"
+            alt="sample100" />
+          <figcaption>
+            <h3>Alan Fresco</h3>
+            <p>The real fun of living wisely is that you get to be smug about it.</p>
+          </figcaption>
+          <a href="#"></a>
+        </figure>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, quod!
+        </p>
+        <button class="btn-learn">Learn more</button>
+
+      </div>
+
+    </div>
 
 
-</div>
-
-<div id="subscribe">
-  <label for="email" id="email-label">Sign up for our Newsletter</label>
-  <input id="email-input" type="email" name="email" placeholder="type your email..">
-  <button class="btn-subscribe">Subscribe</button>
-</div>
-<div class="container container-travel-second text-dark text-center mt-5">
-
-
-<div class="row mt-5 pt-5" style="display:flex">
-  <div class="col-lg-6">
-    <img class="img-nz" src="img/imageNZ.jpeg" alt="">
   </div>
 
-  <div class="col-lg-6" style="align-self:center">
-      <h2>Unleash the traveller inside you</h2>
+  <div id="subscribe">
+    <label for="email" id="email-label">Sign up for our Newsletter</label>
+    <input id="email-input" type="email" name="email" placeholder="type your email..">
+    <button class="btn-subscribe">Subscribe</button>
+  </div>
+  <div class="container container-travel-second text-dark text-center mt-5">
 
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta reiciendis itaque illum iste ullam nesciunt ratione
-      velit? Voluptatum iste inventore, iure necessitatibus corrupti aperiam quis i psa sapiente delectus enim voluptatibus
-      nobis adipisci iusto quia, mollitia veritatis qui placeat quaerat. Sint?</p>
-    <button class="btn-lg btn-default btn">Read more</button>
+
+    <div class="row mt-5 pt-5" style="display:flex">
+      <div class="col-lg-6">
+        <img class="img-nz" src="img/imageNZ.jpeg" alt="">
+      </div>
+
+      <div class="col-lg-6" style="align-self:center">
+        <h2>Unleash the traveller inside you</h2>
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta reiciendis itaque illum iste ullam nesciunt
+          ratione
+          velit? Voluptatum iste inventore, iure necessitatibus corrupti aperiam quis i psa sapiente delectus enim
+          voluptatibus
+          nobis adipisci iusto quia, mollitia veritatis qui placeat quaerat. Sint?</p>
+        <button class="btn-lg btn-default btn">Read more</button>
+      </div>
+
+
+    </div>
+
+
   </div>
 
-
-</div>
-
-
-</div>
-
-<div class="footer">
-  New Zealand Tourism
-</div>
+  <div class="footer">
+    New Zealand Tourism
+  </div>
 
 
 
@@ -342,12 +350,12 @@
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 
   <script>
-      AOS.init();
+    AOS.init();
     </script>
 
   <script id="summative-template" type="text/x-handlebars-template">
-    
-        {{#each types}}
+
+    {{#each types}}
           <div class="col-lg-12 card-wrapper mt-1 {{class}}" data-aos="fade-up" data-nr="{{@index}}">
               <div class="row">
                   <div class="col-lg-10 mt-4 text-light">
@@ -406,22 +414,21 @@
 </script>
 
 
-<script type="text/javascript">
-  var info = document.getElementById('summative-template').innerHTML;
+  <script type="text/javascript">
+    var info = document.getElementById('summative-template').innerHTML;
 
-  var template = Handlebars.compile(info);
+    var template = Handlebars.compile(info);
 
-  var dataTemplate = template(transport);
-  var templateWrite = document.getElementById('card-container').innerHTML += dataTemplate;
-
-</script>
+    var dataTemplate = template(transport);
+    var templateWrite = document.getElementById('card-container').innerHTML += dataTemplate;
+  </script>
 
   <script src="js/main.js"></script>
 
 
 
-      
-</div>
+
+  </div>
 </body>
 
 </html>

@@ -62,7 +62,8 @@
 .ont-light {
   margin-bottom: 50px !important; }
 
-#acc-or-transport-search, #people-search {
+#acc-or-transport-search,
+#people-search {
   background-color: rgba(0, 0, 0, 0.4);
   border: 1px solid #007bff;
   color: white;
@@ -136,7 +137,9 @@
   color: white !important;
   cursor: pointer; }
 
-.user_card, .user_card_2, first_card_2 {
+.user_card,
+.user_card_2,
+first_card_2 {
   display: none; }
 
 .contacts li {
@@ -303,7 +306,7 @@ html {
   background: -webkit-linear-gradient(top, rgba(32, 124, 229, 0.4) 0%, rgba(0, 0, 0, 0.9) 73%, black 100%);
   background: -o-linear-gradient(top, rgba(32, 124, 229, 0.4) 0%, rgba(0, 0, 0, 0.9) 73%, black 100%);
   background: linear-gradient(to bottom, rgba(32, 124, 229, 0.4) 0%, rgba(0, 0, 0, 0.9) 73%, black 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#207ce5', endColorstr='#000000', GradientType=0 ); }
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#207ce5', endColorstr='#000000', GradientType=0); }
 
 .container-travel-second {
   padding: 00px; }
@@ -312,7 +315,8 @@ html {
   background-size: cover;
   background-image: url("../img/bg.jpeg"); }
 
-.btn-accomodation, .btn-transport {
+.btn-accomodation,
+.btn-transport {
   background-color: transparent !important;
   border-radius: 0px !important; }
 
@@ -658,10 +662,12 @@ h1 {
 .select-styled:hover {
   background-color: #2873AC; }
 
-.select-styled:active, .select-styled.active {
+.select-styled:active,
+.select-styled.active {
   background-color: #2873AC; }
 
-.select-styled:active:after, .select-styled.active:after {
+.select-styled:active:after,
+.select-styled.active:after {
   top: 9px;
   border-color: transparent transparent #fff transparent; }
 
