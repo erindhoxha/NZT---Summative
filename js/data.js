@@ -7,7 +7,8 @@ var transport = {
       checked: ["checked", "checked"],
       unchecked: ["unchecked", "unchecked", "unchecked"],
       available: "Available",
-      price: "288"
+      price: "288",
+      value: "100$"
     },
     {
       name: "Hammer",

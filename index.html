@@ -261,7 +261,7 @@
 
     <div class="row mt-5">
       <div class="col-lg-4">
-        <figure class="snip1543" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample100.jpg"
+        <figure class="snip1543" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample100.jpg"
             alt="sample100" />
           <figcaption>
             <h3>Alan Fresco</h3>
@@ -288,7 +288,7 @@
 
       </div>
       <div class="col-lg-4">
-        <figure class="snip1543" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample100.jpg"
+        <figure class="snip1543" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample100.jpg"
             alt="sample100" />
           <figcaption>
             <h3>Alan Fresco</h3>
@@ -308,65 +308,7 @@
   </div>
 
 
-  <div class="container container-travel-second text-dark text-center mt-5">
 
-
-    <div class="row mt-5 pt-5" style="display:flex">
-      <div class="col-lg-6">
-        <img class="img-nz" src="img/imageNZ.jpeg" alt="">
-      </div>
-
-      <div class="col-lg-6" style="align-self:center">
-        <h2>Unleash the traveller inside you</h2>
-
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta reiciendis itaque illum iste ullam nesciunt
-          ratione
-          velit? Voluptatum iste inventore, iure necessitatibus corrupti aperiam quis i psa sapiente delectus enim
-          voluptatibus
-          nobis adipisci iusto quia, mollitia veritatis qui placeat quaerat. Sint?</p>
-        <button class="btn-lg btn-default btn">Read more</button>
-      </div>
-
-
-    </div>
-
-
-  </div>
-
-  
-
-  <div class="footer">
-    New Zealand Tourism
-  </div>
-
-  <div class="container">
-    <div class="row">
-
-    <!-- Normal Demo-->
-    <div class="column">
-      <!-- Post-->
-      <div class="post-module">
-        <!-- Thumbnail-->
-        <div class="thumbnail">
-          <div class="date">
-            <div class="day">27</div>
-            <div class="month">Mar</div>
-          </div><img src="img/hotel_1.jpg"/>
-        </div>
-        <!-- Post Content-->
-        <div class="post-content">
-          <div class="category">Photos</div>
-          <h1 class="title">Motorbike, Suzuki.</h1>
-          <h2 class="sub_title">The city that never sleeps.</h2>
-          <p class="description">New York, the largest city in the U.S., is an architectural marvel with plenty of historic monuments, magnificent buildings and countless dazzling skyscrapers.</p>
-          <div class="post-meta"><span class="timestamp"><i class="fa fa-clock-">o</i> 6 mins ago</span><span class="comments"><i class="fa fa-comments"></i><a href="#"> 39 comments</a></span></div>
-        </div>
-      </div>
-    </div>
-    <!-- Hover Demo-->
-
-  </div>
-</div>
 
 
 
@@ -410,14 +352,17 @@
   <script id="summative-template" type="text/x-handlebars-template">
 
     {{#each types}}
-          <div class="col-lg-12 card-wrapper p-0 pr-4 mt-1 {{class}}" data-aos="fade-right" data-nr="{{@index}}">
+          <div class="col-lg-12 card-wrapper p-0 pr-4 mt-1 {{class}}" data-aos="fade-down" data-nr="{{@index}}">
               <div class="row">
                   <div class="col-lg-12 text-dark">
                     <div class="row">
                       <div class="col-lg-5">
+                        <div class="special">
+                          Special
+                        </div>
                         <img class="img-article" src="img/{{image}}" alt="">
                       </div>
-                      <div class="col-lg-7 pt-4 pb-2">
+                      <div class="col-lg-7 pt-4 pb-2 text-container">
                         <h4 class="name">{{name}}</h4>
                         <h6 class="font-light">{{description}}</h6>
                         <h6 class="price">Price: <span class="price-text">${{price}}NZD</span></h6>
@@ -430,8 +375,6 @@
                           {{/each}}
                         </div>
                         <h6>{{address}}</h6>
-                        <h6><i class="fas fa-award"></i> Award winning </h6>
-                        <h6 class="font-light"><i class="far fa-smile"></i> {{available}}</h6>
                           <button class="btn float-right btn-book" data-toggle="modal" data-target="#theModal">Book</button>
                       </div>
                     </div>
