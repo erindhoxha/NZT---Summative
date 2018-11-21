@@ -20,6 +20,7 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="js/handlebars-v4.0.12.js"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
 </head>
 
 <body>
@@ -203,7 +204,9 @@
       <div id="content">
         <div class="text-container animated fadeInDown">
           <img id="logo" src="img/nzlogo.png">
-          <h1 class="header-title">New Zealand Tourism. </h1>
+
+          
+          <h1 class="header-title"><span id="typed">New Zealand Tourism.</span></h1>
           <h3 class="mt-3 ont-light mb-4">Kia ora, welcome to Tourism New Zealand</h3>
           <div class="input-container">
 
@@ -392,6 +395,11 @@
 
 
   <script type="text/javascript">
+  
+    var typed = new Typed('#typed', {
+      strings: ["", "Second sentence."]
+    });
+    
     var info = document.getElementById('summative-template').innerHTML;
 
     var template = Handlebars.compile(info);

@@ -128,3 +128,7 @@ $(window).load(function() {
       }, 300);
     });
   });
+
+    var typed = new Typed('#typed', {
+        stringsElement: '#typed-strings'
+    });
