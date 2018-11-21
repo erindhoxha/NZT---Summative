@@ -901,7 +901,15 @@ h1 {
   hr {
     border-top: 1px solid #ebebeb; }
   .ont-light:after {
-    left: 38%; } }
+    left: 38%; }
+  .undertitle:after {
+    left: 40%; }
+  .snip1543 {
+    margin: 0 auto; }
+    .snip1543 p {
+      margin-top: 20px; }
+  .btn-learn {
+    margin-bottom: 30px; } }
 
 @media (min-width: 481px) {
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
