@@ -58,13 +58,13 @@ $('select').each(function () {
         e.stopPropagation();
         $styledSelect.text($(this).text()).removeClass('active');
         $this.val($(this).attr('rel'));
-        $list.hide();
+        $list.hide(500);
         //console.log($this.val());
     });
 
     $(document).click(function () {
         $styledSelect.removeClass('active');
-        $list.hide();
+        $list.hide(500);
     });
 
 });

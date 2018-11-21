@@ -1054,6 +1054,12 @@ h1 {
     background-color:$light;
     margin-top:15px;
   }
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   hr {
     border-top:1px solid #ebebeb;
   }
