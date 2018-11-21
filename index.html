@@ -87,7 +87,7 @@
                   <!-- FIRST QUESTION -->
                 </div>
               </div>
-              
+
 
               <div class="justify-content-end mb-4 user_card_2">
                 <div class="msg_cotainer_send">
@@ -114,7 +114,7 @@
                   <!-- Third QUESTION -->
                 </div>
               </div>
-              
+
 
               <div class="justify-content-end mb-4 user_card_3">
                 <div class="msg_cotainer_send">
@@ -261,60 +261,47 @@
 
     <div class="row mt-5">
       <div class="col-lg-4">
-        <figure class="snip1543" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample100.jpg"
+        <figure class="snip1543 hover" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample100.jpg"
             alt="sample100" />
           <figcaption>
-            <h3>Alan Fresco</h3>
-            <p>The real fun of living wisely is that you get to be smug about it.</p>
+            <h3>AUCKLAND.</h3>
+            <p>Traveling from only $299!<br><br> Click here to learn more.</p>
           </figcaption>
           <a href="#"></a>
         </figure>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, quod!</p>
+        <p class="paragraph-specials">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, quod!</p>
         <button class="btn-learn">Learn more</button>
       </div>
       <div class="col-lg-4">
         <figure class="snip1543 hover" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample100.jpg"
             alt="sample100" />
           <figcaption>
-            <h3>Alan Fresco</h3>
+            <h3>WELLINGTON.</h3>
             <p>The real fun of living wisely is that you get to be smug about it.</p>
           </figcaption>
           <a href="#"></a>
         </figure>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, quod!
+        <p class="paragraph-specials">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, quod!
         </p>
         <button class="btn-learn">Learn more</button>
 
 
       </div>
       <div class="col-lg-4">
-        <figure class="snip1543" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample100.jpg"
+        <figure class="snip1543 hover" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample100.jpg"
             alt="sample100" />
           <figcaption>
-            <h3>Alan Fresco</h3>
+            <h3>HAMILTON.</h3>
             <p>The real fun of living wisely is that you get to be smug about it.</p>
           </figcaption>
           <a href="#"></a>
         </figure>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, quod!
+        <p class="paragraph-specials">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, quod!
         </p>
         <button class="btn-learn">Learn more</button>
-
       </div>
-
     </div>
-
-
   </div>
-
-
-
-
-
-
-
-
-
 
 
   <!-- Add your site or application content here -->
@@ -370,6 +357,7 @@
                           {{/each}} {{#each unchecked}}
                           <span class="fa fa-star"></span>
                           {{/each}}
+                          ({{reviews}} reviews)
                         </div>
                         <h6>{{address}}</h6>
                           <button class="btn float-right btn-book" data-toggle="modal" data-target="#theModal">Book</button>
@@ -417,7 +405,7 @@
     var output = document.getElementById("demo");
     output.innerHTML = slider.value;
 
-    slider.oninput = function() {
+    slider.oninput = function () {
       output.innerHTML = this.value;
     }
   </script>

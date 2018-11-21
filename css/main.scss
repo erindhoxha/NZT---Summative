@@ -1050,6 +1050,9 @@ h1 {
   }
   .btn-book {
     width:100%;
+    height:50px;
+    background-color:$light;
+    margin-top:15px;
   }
   hr {
     border-top:1px solid #ebebeb;
@@ -1061,10 +1064,10 @@ h1 {
     left:40%;
   }
   .snip1543 {
-    p {
-      margin-top:20px;
-    }
     margin:0 auto;
+  }
+  .paragraph-specials {
+    margin-top:20px;
   }
   .btn-learn {
     margin-bottom:30px;

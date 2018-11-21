@@ -8,7 +8,8 @@ var transport = {
       unchecked: ["unchecked", "unchecked", "unchecked"],
       available: "Available",
       price: "288",
-      value: "100$"
+      value: "100$",
+      reviews: 8
     },
     {
       name: "Hammer",
@@ -18,7 +19,8 @@ var transport = {
       checked: ["checked", "checked"],
       unchecked: ["unchecked", "unchecked", "unchecked"],
       available: "Available",
-      price: "288"
+      price: "288",
+      reviews: 9
     },
     {
       name: "Hammer",
