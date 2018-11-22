@@ -125,3 +125,5 @@ $(".btn-book").on('click', function () {
   $(".close-btn").on('click', function() {
       $(".chat-popup").hide(500);
   })
+
+  
