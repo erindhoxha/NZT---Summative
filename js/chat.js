@@ -29,7 +29,6 @@ $(".first_card").hide();
 $(".user_card").hide();
 
 
-
 $(".button-send").on('click', function() {
     var answer;
     var answer2;
@@ -40,7 +39,6 @@ $(".button-send").on('click', function() {
     console.log(answer);
     console.log(answer2);
 })
-
 function firstAnswer() {
 
   $(".msg_time-sent").text(hours + ':' + minutes + mid);
@@ -177,15 +175,17 @@ function thirdAnswer() {
                 } 
                 else {
                   $(".first_card_3").css('display', 'flex');
-                  $(".card-body").scrollTop(600);
+                  $(".card-body").scrollTop(1000);
                   $(".fourthAnswer").text("Sorry, we can't understand that number, please type it again");
                 }
         }
-
+  
   function howManyPeople() {
     $(".first_card_3").css('display', 'flex');
-    $(".fourthAnswer").text("Sweet, you've chosen: " + answer + " people. How many days do you wish to stay?");
-    $(".card-body").scrollTop(600);
+    var name = $(".firstAnswer").text();
+    $(".fourthAnswer").text("Ok cool " + name + ", you've chosen: " + answer + " people. How many days do you wish to stay?");
+    var people = answer;
+    $(".card-body").scrollTop(1000);
     $(".button-send").addClass('sentMessagePeople');
     $(".button-send").removeClass('sentThirdMessageAccommodation');
     $(".button-send").removeClass('sentThirdMessageTransport');

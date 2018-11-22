@@ -1,6 +1,6 @@
 var transport = {
   types: [{
-      name: "Meet the city that never sleeps.",
+      name: "KTM 500 EXC ONLY 8 HOURS 2019",
       class: "motorbike",
       image: "hammer.jpg",
       description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
@@ -49,6 +49,72 @@ var transport = {
       name: "Hammer",
       class: "motorbike",
       image: "lammer.jpeg",
+      description: "Hammer motorbike, 2007.",
+      checked: ["checked", "checked"],
+      unchecked: ["unchecked", "unchecked", "unchecked"],
+      available: "Available",
+      price: "288",
+      reviews: 8
+    },
+    {
+      name: "Hammer",
+      class: "motorbike",
+      image: "hammer.jpg",
+      description: "Hammer motorbike, 2007.",
+      checked: ["checked", "checked"],
+      unchecked: ["unchecked", "unchecked", "unchecked"],
+      available: "Available",
+      price: "288",
+      reviews: 8
+    },
+    {
+      name: "Hammer",
+      class: "motorbike",
+      image: "hammer.jpg",
+      description: "Hammer motorbike, 2007.",
+      checked: ["checked", "checked"],
+      unchecked: ["unchecked", "unchecked", "unchecked"],
+      available: "Available",
+      price: "288",
+      reviews: 8
+    },
+    {
+      name: "Hammer",
+      class: "motorbike",
+      image: "hammer.jpg",
+      description: "Hammer motorbike, 2007.",
+      checked: ["checked", "checked"],
+      unchecked: ["unchecked", "unchecked", "unchecked"],
+      available: "Available",
+      price: "288",
+      reviews: 8
+    },
+    {
+      name: "Hammer",
+      class: "motorbike",
+      image: "hammer.jpg",
+      description: "Hammer motorbike, 2007.",
+      checked: ["checked", "checked"],
+      unchecked: ["unchecked", "unchecked", "unchecked"],
+      available: "Available",
+      price: "288",
+      reviews: 8
+    },
+    {
+      name: "Hammer",
+      class: "motorbike",
+      image: "hammer.jpg",
+      description: "Hammer motorbike, 2007.",
+      checked: ["checked", "checked"],
+      unchecked: ["unchecked", "unchecked", "unchecked"],
+      available: "Available",
+      price: "288",
+      reviews: 8
+    },
+    {
+      name: "Hammer",
+      class: "motorbike",
+      image: "hammer.jpg",
       description: "Hammer motorbike, 2007.",
       checked: ["checked", "checked"],
       unchecked: ["unchecked", "unchecked", "unchecked"],
