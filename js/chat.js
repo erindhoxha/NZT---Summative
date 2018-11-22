@@ -8,7 +8,6 @@ $(".chat_icon").on('click', function() {
 })
 
 
-
   var hours = new Date().getHours();
   var minutes = new Date().getMinutes();
   if (minutes.toFixed().length == 1) {
@@ -32,11 +31,14 @@ $(".user_card").hide();
 
 
 $(".button-send").on('click', function() {
+    var answer;
+    var answer2;
     fourthAnswer();
     thirdAnswer();
     secondAnswer();
     firstAnswer();
-
+    console.log(answer);
+    console.log(answer2);
 })
 
 function firstAnswer() {
@@ -115,28 +117,23 @@ function thirdAnswer() {
           $(".button-send").addClass('sentThirdMessageTransport');
           // DO STUFF FOR TRANSPORT HERE
           if (("1 one").includes(inputValue)) {
-            var answer = 1;
+            answer = 1;
             console.log(answer);
             howManyPeople();
           } else if (("2 two").includes(inputValue)) {
-            var answer = 2;
-            console.log(answer);
+            answer = 2;
             howManyPeople();
           } else if (("3 three").includes(inputValue)) {
-            var answer = 3;
-            console.log(answer);
+            answer = 3;
             howManyPeople();
           } else if (("4 four").includes(inputValue)) {
-            var answer = 4;
-            console.log(answer);
+            answer = 4;
             howManyPeople();
           } else if (("5 five").includes(inputValue)) {
-            var answer = 5;
-            console.log(answer);
+            answer = 5;
             howManyPeople();
           } else if (("6 six").includes(inputValue)) {
-            var answer = 6;
-            console.log(answer);
+            answer = 6;
             howManyPeople();
           } 
           else {
@@ -270,7 +267,7 @@ function fourthAnswer() {
   function howManyDays() {
     $(".first_card_4").css('display', 'flex');
     $(".fifthAnswer").text("Sweet, you've chosen: " + answer2 + " days.");
-    $(".card-body").scrollTop(600);
+    $(".card-body").scrollTop(1000);
     $(".button-send").removeClass('sentMessagePeople');
     } 
   }
