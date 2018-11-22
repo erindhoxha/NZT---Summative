@@ -9,7 +9,8 @@ var transport = {
       available: "Available",
       price: "288",
       value: "$99 until Dec 2018",
-      reviews: 8
+      reviews: 8,
+      reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"]
     },
     {
       name: "Hammer",
@@ -30,7 +31,8 @@ var transport = {
       checked: ["checked", "checked"],
       unchecked: ["unchecked", "unchecked", "unchecked"],
       available: "Available",
-      price: "288"
+      price: "288",
+      reviews: 8
     },
     {
       name: "Hammer",
@@ -40,7 +42,8 @@ var transport = {
       checked: ["checked", "checked"],
       unchecked: ["unchecked", "unchecked", "unchecked"],
       available: "Available",
-      price: "288"
+      price: "288",
+      reviews: 8
     },
     {
       name: "Hammer",
@@ -50,7 +53,8 @@ var transport = {
       checked: ["checked", "checked"],
       unchecked: ["unchecked", "unchecked", "unchecked"],
       available: "Available",
-      price: "288"
+      price: "288",
+      reviews: 8
     },
     {
       name: "Hammer",
@@ -60,7 +64,10 @@ var transport = {
       checked: ["checked", "checked"],
       unchecked: ["unchecked", "unchecked", "unchecked"],
       available: "Available",
-      price: "288"
+      price: "288",
+      reviews: 8
     },
   ]
 };
+
+

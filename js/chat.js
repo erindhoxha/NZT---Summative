@@ -1,10 +1,12 @@
 //SLIDER
 $(".card-body").scrollTop();
 $(".chat_icon").on('click', function() {
+    $(".chat-popup").hide();
     $(".chat").slideToggle();
     $("body").toggleClass("overhidden");
     $(".chat").addClass("toggled");
 })
+
 
 
   var hours = new Date().getHours();
@@ -91,6 +93,7 @@ function secondAnswer() {
     } else {
       $(".first_card_2").css('display', 'flex');
       $(".thirdAnswer").text("Sorry, we don't have any answer for that. Please, fill the input on the website, or alternatively contact us.")
+    // $(".button-send").addClass('sentFirstMessage');    
       $(".card-body").scrollTop(300);
     }
     }
@@ -215,6 +218,14 @@ function filter(typer, typeOfTransport) {
     }
 }
 
+
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function () {
+  output.innerHTML = this.value;
+}
 // CHAT!!!
 
 {/* <div id="typewriter"></div>

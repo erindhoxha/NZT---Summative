@@ -82,50 +82,46 @@ $(".btn-book").on('click', function () {
 })
 
 
-(function ($) {
-    $(document).ready(function () {
+// (function ($) {
+//     $(document).ready(function () {
 
-        // hide .navbar first
-        $(".follow-up-input").hide();
+//         // hide .navbar first
+//         $(".follow-up-input").hide();
 
-        // fade in .navbar
-        $(function () {
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > 3000) {
-                    $('.follow-up-input').fadeOut();
-                }
-                // set distance user needs to scroll before we start fadeIn
-               else if ($(this).scrollTop() > 500) {
-                    $('.follow-up-input').fadeIn();   
-                } else {
-                    $('.follow-up-input').fadeOut();
-                }
+//         // fade in .navbar
+//         $(function () {
+//             $(window).scroll(function () {
+//                 if ($(this).scrollTop() > 3000) {
+//                     $('.follow-up-input').fadeOut();
+//                 }
+//                 // set distance user needs to scroll before we start fadeIn
+//                else if ($(this).scrollTop() > 500) {
+//                     $('.follow-up-input').fadeIn();   
+//                 } else {
+//                     $('.follow-up-input').fadeOut();
+//                 }
 
                 
-            });
-        });
+//             });
+//         });
 
-    });
-}(jQuery));
+//     });
+// }(jQuery));
 
 
 /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("follow-up-input").style.top = "0";
-  } else {
-    document.getElementById("follow-up-input").style.top = "-50px";
-  }
-  prevScrollpos = currentScrollPos;
-}
-$(window).load(function() {
-    $('.post-module2').hover(function() {
-      $(this).find('.description2').stop().animate({
-        height: "toggle",
-        opacity: "toggle"
-      }, 300);
-    });
-  });
+// var prevScrollpos = window.pageYOffset;
+// window.onscroll = function() {
+//   var currentScrollPos = window.pageYOffset;
+//   if (prevScrollpos > currentScrollPos) {
+//     document.getElementById("follow-up-input").style.top = "0";
+//   } else {
+//     document.getElementById("follow-up-input").style.top = "-50px";
+//   }
+//   prevScrollpos = currentScrollPos;
+// }
 
+
+  $(".close-btn").on('click', function() {
+      $(".chat-popup").hide(500);
+  })

@@ -54,11 +54,17 @@ $blue: #0a84e1;
 
 
 .undertitle {
-  margin-bottom: 50px;
+  margin-bottom: 20px !important; 
 }
 
 .line {
   border-bottom:2px solid white;
+  width:50px;
+  height:2px;
+  margin:0 auto;
+}
+.line2 {
+  border-bottom:2px solid black;
   width:50px;
   height:2px;
   margin:0 auto;
@@ -238,7 +244,7 @@ $blue: #0a84e1;
   margin-bottom: auto;
   margin-left: 10px;
   border-radius: 25px;
-  background-color: #2d5dfc;
+  background-color: $light;
   padding: 10px;
   position: relative;
 }
@@ -381,7 +387,7 @@ html {
 }
 
 #content h3 {
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .rating {
@@ -627,6 +633,29 @@ hr {
   color: rgb(236, 178, 70);
 }
 
+.chat-popup {
+  background-color:white;
+  position:fixed;
+  height:100px;
+  bottom:80px;
+  right:50px;
+  padding:0px 0px 0px 20px;
+  z-index:2;
+  background-color:rgba(0,0,0,0.9);
+  display:flex;
+  align-items:center;
+  border-top-left-radius:10px;
+  cursor:default;
+}
+.close-btn {
+  align-self:flex-start;
+  padding: 10px 10px 10px 10px;
+  font-size:20px;
+  cursor:pointer;
+}
+p {
+  margin:0 !important;
+}
 // NAV BAR
 
 .nav-bar {
@@ -654,7 +683,16 @@ hr {
   position:absolute;
   width:100%;
 }
-
+.navbar  {
+  background-color:black;
+}
+.img-logo-nav {
+  width:150px;
+  filter:invert(1);
+}
+.navbar-brand {
+  padding-bottom:0px !important;
+}
 
 
 h1 {
@@ -982,7 +1020,13 @@ h1 {
   .card.mx-auto.card-wrapper {
     width: 100% !important;
   }
+  .nav-bar {
+    ul {
+      background-color:black;
+    }
+  }
 }
+
 @media (min-width:320px) {
   .card-text {
     font-size:13px;
