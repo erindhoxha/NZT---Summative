@@ -63,6 +63,9 @@ $blue: #0a84e1;
   height:2px;
   margin:0 auto;
 }
+.wrapper {
+  background-image:url('../img/bg.jpeg');
+}
 .line2 {
   border-bottom:2px solid black;
   width:50px;
@@ -330,7 +333,9 @@ html {
   // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#207ce5', GradientType=0 );
 }
 
-
+.kia-ora-text {
+  font-size:20px !important;
+}
 .red-text {
   color: $verylight;
   font-size: 60px;
@@ -357,27 +362,30 @@ html {
 
 .btn-accomodation,
 .btn-transport {
-  background-color: transparent !important;
-  border-radius: 0px !important;
+  background-color: $dark;
+  width:220px;
+  border-radius:5px !important;
+  border:none;
+  margin-top:0px !important;
 }
 
 .btn-accomodation {
-  margin-top: -30px;
   font-size: 17px;
 }
-
+.btn-accomodation:active, .btn-accomodation:focus {
+  background-color: $light !important;
+  border:none;
+}
 .btn-book {
   background-color: $verylight;
   color: #fff;
   font-weight: 400;
   border-radius: 50px;
 }
-
 .btn-transport {
   border: 1px solid white !important;
   border-radius: 0px !important;
 }
-
 #content {
   text-align: center;
   padding: 20px;
@@ -1087,20 +1095,66 @@ h1 {
   .header-title {
     font-size:46px;
   }
+  .btn-book {
+    width:40%;
+    float:right;
+  }
+  .rating {
+    width:50%;
+    float:left;
+  }
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 }
 
-@media (min-width:641px) {
+@media (min-width:768px) {
+  .btn-book {
+    width:100%;
+    float:none;
+  }
+  .rating {
+    width:100%;
+    float:none;
+  }
   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 }
 
 @media (min-width:961px) {
+  .header-title {
+    font-size:53px;
+  }
+  .kia-ora-text {
+    font-size:23px !important;
+  }
   /* tablet, landscape iPad, lo-res laptops ands desktops */
 }
 
 
 
 @media (min-width:1000px) {
+  .btn-book {
+    width:20%;
+    float:right;
+    margin-right:15px !important;
+    margin-top:10px !important;
+
+  }
+  #content {
+    top:45%;
+  }
+  .header-title {
+    font-size:65px;
+  }
+  .navbar {
+    padding-bottom:0px;
+    padding-top:0px;
+    padding:10px;
+  }
+  .input-container {
+    .select {
+      margin:5px;
+    }
+    flex-direction: row;
+  }
   #card-container {
     .card {
       width:100% !important;
@@ -1111,12 +1165,34 @@ h1 {
       height:20% !important;
     }
     .card-body {
+      .card-title {
+        font-size:19px !important;
+      }
+      .card-title, .card-text, .price, .rating {
+        margin:10px !important;
+      }
       padding:0px !important;
     }
   }
+  .btn-book {
+    width:30%;
+    float:right;
+  }
+  .rating {
+    width:50%;
+    float:left;
+  }
   /* hi-res laptops and desktops */
 }
-@media (min-width:1281) {
+@media (min-width:1200px) {
+  .btn-book {
+    width:20%;
+    float:right;
+  }
+  .rating {
+    width:100%;
+    float:none;
+  }
   /* big landscape tablets, laptops, and desktops */
 }
 
