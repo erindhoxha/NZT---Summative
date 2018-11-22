@@ -184,14 +184,12 @@ function thirdAnswer() {
                   $(".card-body").scrollTop(600);
                   $(".fourthAnswer").text("Sorry, we can't understand that number, please type it again");
                 }
-          
         }
 
   function howManyPeople() {
     $(".first_card_3").css('display', 'flex');
-    $(".fourthAnswer").text("Sweet, you've chosen: " + answer + " people.");
+    $(".fourthAnswer").text("Sweet, you've chosen: " + answer + " people. How many days do you wish to stay?");
     $(".card-body").scrollTop(600);
-
   }
 }
 
