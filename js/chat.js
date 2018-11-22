@@ -214,3 +214,26 @@ function filter(typer, typeOfTransport) {
       }
     }
 }
+
+// CHAT!!!
+
+{/* <div id="typewriter"></div>
+
+<script src='../../dist/core.js'></script>
+<script type='text/javascript'>
+  const typewriter = new Typewriter('#typewriter', {
+    loop: true
+  });
+
+  typewriter.typeString('<strong>Human: </strong>')
+    .typeString('Hello how are you?')
+    .pauseFor(2500)
+    .typeString('<br/>')
+    .typeString('<strong>Bot: </strong>')
+    .typeString('I am fine thanks, how are you?')
+    .pauseFor(2500)
+    .typeString('<br/>')
+    .typeString('<strong>Human: </strong> ')
+    .typeString('I am great!')
+    .pauseFor(2500)
+    .start(); */}

@@ -21,10 +21,10 @@
   <script src="js/handlebars-v4.0.12.js"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+  <script src="js/core.js"></script>
 </head>
 
 <body>
-
 
 
   <div class="overlay">
@@ -32,10 +32,11 @@
 
     <!-- CHAT -->
     <div class="container-fluid flex">
+      
       <div class="row justify-content-center">
         <div class="col-lg-6 col-md-6 col-xl-6 chat">
-          <div class="card">
-            <div class="card-header msg_head">
+          <div class="card-chat card">
+            <div class="card-header-chat msg_head">
               <div class="d-flex bd-highlight">
                 <div class="img_cont">
                   <img src="img/nzlogo.png" style="filter:invert(1); width:100%;" class="rounded-circle user_img">
@@ -205,12 +206,10 @@
         <div class="text-container animated fadeInDown">
           <img id="logo" src="img/nzlogo.png">
 
-          
-          <h1 class="header-title"><span id="typed">New Zealand Tourism.</span></h1>
-          <h3 class="mt-3 ont-light mb-4">Kia ora, welcome to Tourism New Zealand</h3>
+          <h1 class="header-title">New Zealand Tourism.</h1>
+          <h3 class="mt-3 ont-light mb-4"><div id="typewriter">Kia ora, welcome to Tourism New Zealand</div></h3>
+          <div class="line"></div>
           <div class="input-container">
-
-
 
             <select type="text" id="acc-or-transport-search">
               <option>Choose any...</option>
@@ -239,24 +238,11 @@
   </div>
 
 
-  <div class="wrapper-cards">
-    <div class="wrapper-cards-wrapper">
+        <div class="container-fluid">
+          <div class="row container mx-auto container-result" id="card-container">
 
-      <div class="container container-result" id="container">
-        <div class="row">
-
+          </div>
         </div>
-
-
-        <div id="card-container" class="mt-5 pt-5">
-
-
-        </div>
-
-
-      </div>
-    </div>
-  </div>
 
   <div class="container container-travel text-dark text-center mt-5">
     <h2>Unleash the traveller inside you</h2>
@@ -264,7 +250,7 @@
 
     <div class="row mt-5">
       <div class="col-lg-4">
-        <figure class="snip1543 hover" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample100.jpg"
+        <figure class="snip1543 hover mt-2" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine"><img src="https://images.pexels.com/photos/374710/pexels-photo-374710.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
             alt="sample100" />
           <figcaption>
             <h3>AUCKLAND.</h3>
@@ -272,11 +258,9 @@
           </figcaption>
           <a href="#"></a>
         </figure>
-        <p class="paragraph-specials">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, quod!</p>
-        <button class="btn-learn">Learn more</button>
       </div>
       <div class="col-lg-4">
-        <figure class="snip1543 hover" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample100.jpg"
+        <figure class="snip1543 hover mt-2" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><img src="https://images.pexels.com/photos/1022479/pexels-photo-1022479.jpeg?auto=compress&cs=tinysrgb&h=350"
             alt="sample100" />
           <figcaption>
             <h3>WELLINGTON.</h3>
@@ -284,14 +268,10 @@
           </figcaption>
           <a href="#"></a>
         </figure>
-        <p class="paragraph-specials">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, quod!
-        </p>
-        <button class="btn-learn">Learn more</button>
-
 
       </div>
       <div class="col-lg-4">
-        <figure class="snip1543 hover" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample100.jpg"
+        <figure class="snip1543 hover mt-2" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine"><img src="https://images.pexels.com/photos/724955/pexels-photo-724955.png?auto=compress&cs=tinysrgb&h=350"
             alt="sample100" />
           <figcaption>
             <h3>HAMILTON.</h3>
@@ -299,11 +279,12 @@
           </figcaption>
           <a href="#"></a>
         </figure>
-        <p class="paragraph-specials">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, quod!
-        </p>
-        <button class="btn-learn">Learn more</button>
       </div>
     </div>
+  </div>
+
+  <div class="footer">
+      <p>New Zealand Tourism</p>
   </div>
 
 
@@ -341,33 +322,33 @@
 
   <script id="summative-template" type="text/x-handlebars-template">
     {{#each types}}
-          <div class="col-lg-12 card-wrapper p-0 pr-4 mt-1 {{class}}" data-aos="fade-down" data-nr="{{@index}}">
-              <div class="row">
-                      <div class="col-lg-5 col-md-6">
-                        <div class="special">
-                          Special
-                        </div>
-                        <img class="img-article" src="img/{{image}}" alt="">
-                      </div>
-                      <div class="col-lg-7 col-md-6 pt-4 pb-2 text-container  text-dark">
-                        <h4 class="name">{{name}}</h4>
-                        <h6 class="font-light">{{description}}</h6>
-                        <h6 class="price">Price: <span class="price-text">${{price}}NZD</span></h6>
-                        <hr>
-                        <div class="rating">
-                          {{#each checked}}
-                          <span class="fa fa-star checked"></span>
-                          {{/each}} {{#each unchecked}}
-                          <span class="fa fa-star"></span>
-                          {{/each}}
-                          ({{reviews}} reviews)
-                        </div>
-                        <h6>{{address}}</h6>
-                          <button class="btn float-right btn-book" data-toggle="modal" data-target="#theModal">Book</button>
-                      </div>
-                </div>
-                </div>
-        {{/each}}
+    <div class="col-lg-12 col-md-6 col-sm-12 text-dark mt-2">
+    <div class="card mx-auto card-wrapper " style="width: 18rem;">
+      {{#if value}}
+        <div class="special">
+            {{value}}
+          </div>
+        {{/if}}
+        <img class="card-img-top" src="img/{{image}}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{name}}</h5>
+          <p class="card-text">{{description}}</p>
+          <h6 class="price">Price: <span class="price-text">${{price}}NZD</span></h6>
+          <hr>
+          <div class="rating">
+            {{#each checked}}
+            <span class="fa fa-star checked"></span>
+            {{/each}} {{#each unchecked}}
+            <span class="fa fa-star"></span>
+            {{/each}}
+            ({{reviews}} reviews)
+          </div>
+          <h6>{{address}}</h6>
+          <button class="btn btn-book m-0 mt-4 btn-block" data-toggle="modal" data-target="#theModal">Book now</button>
+        </div>
+      </div>
+    </div>
+      {{/each}}
 
 
         <!-- Modal -->
@@ -395,15 +376,18 @@
 
 
   <script type="text/javascript">
-  
-    var typed = new Typed('#typed', {
-      strings: ["", "Second sentence."]
+
+      const typewriter = new Typewriter('#typewriter', {
+      strings: ['Kia ora.', 'Welcome to Tourism New Zealand.'],
+      autoStart: true,
+      loop: true,
     });
-    
+
+
+
+
     var info = document.getElementById('summative-template').innerHTML;
-
     var template = Handlebars.compile(info);
-
     var dataTemplate = template(transport);
     var templateWrite = document.getElementById('card-container').innerHTML += dataTemplate;
 
