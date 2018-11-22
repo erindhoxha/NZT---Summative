@@ -70,10 +70,14 @@ $('select').each(function () {
 });
 
 $(".btn-book").on('click', function () {
+
     $(".rating-container").empty();
     console.log($(this).closest(".card-wrapper").attr('data-nr'));
     var dataNr = $(this).closest(".card-wrapper").attr('data-nr');
     $("#theModal").attr('data-nr', dataNr);
+    for (var i = 0; i < transport.types[dataNr].images.length; i++) {
+        $(".image-" + dataNr).css('src', "'" + transport.types[dataNr].images[dataNr] + '"');
+    }
     $(".modal-title").text(transport.types[dataNr].name);
     $(".modal-img").attr('src', "img/" + transport.types[dataNr].image);
     $(".modal-description").text(transport.types[dataNr].description);
