@@ -82,31 +82,31 @@ $(".btn-book").on('click', function () {
 })
 
 
-// (function ($) {
-//     $(document).ready(function () {
+(function ($) {
+    $(document).ready(function () {
 
-//         // hide .navbar first
-//         $(".follow-up-input").hide();
+        // hide .navbar first
+        $(".follow-up-input").hide();
 
-//         // fade in .navbar
-//         $(function () {
-//             $(window).scroll(function () {
-//                 if ($(this).scrollTop() > 3000) {
-//                     $('.follow-up-input').fadeOut();
-//                 }
-//                 // set distance user needs to scroll before we start fadeIn
-//                else if ($(this).scrollTop() > 500) {
-//                     $('.follow-up-input').fadeIn();   
-//                 } else {
-//                     $('.follow-up-input').fadeOut();
-//                 }
+        // fade in .navbar
+        $(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 3000) {
+                    $('.follow-up-input').fadeOut();
+                }
+                // set distance user needs to scroll before we start fadeIn
+               else if ($(this).scrollTop() > 500) {
+                    $('.follow-up-input').fadeIn();   
+                } else {
+                    $('.follow-up-input').fadeOut();
+                }
 
                 
-//             });
-//         });
+            });
+        });
 
-//     });
-// }(jQuery));
+    });
+}(jQuery));
 
 
 /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */

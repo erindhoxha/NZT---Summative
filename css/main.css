@@ -836,6 +836,10 @@ h1 {
   cursor: pointer; }
 
 @media (min-width: 220px) {
+  .follow-up-input {
+    display: none;
+    visibility: hidden; }
+
   .card.mx-auto.card-wrapper {
     width: 100% !important; }
 
@@ -859,7 +863,8 @@ h1 {
     margin-top: 5px; }
 
   .follow-up-input {
-    display: none !important; }
+    display: none;
+    visibility: hidden; }
 
   .card-wrapper {
     padding-right: 0 !important;
@@ -929,6 +934,14 @@ h1 {
     float: right;
     margin-right: 15px !important;
     margin-top: 10px !important; }
+
+  .input-container {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+
+  .follow-up-input {
+    display: block;
+    visibility: visible; }
 
   #content {
     top: 45%; }
