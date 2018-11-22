@@ -32,7 +32,7 @@ $(".user_card").hide();
 
 
 $(".button-send").on('click', function() {
-
+    fourthAnswer();
     thirdAnswer();
     secondAnswer();
     firstAnswer();
@@ -102,7 +102,6 @@ function secondAnswer() {
 
 
 function thirdAnswer() {
-              
         $(".msg_time-sent").text(hours + ':' + minutes + mid);
         // SECOND ANSWER
         var inputValue = $(".type_msg").val().toLowerCase();
@@ -142,7 +141,7 @@ function thirdAnswer() {
           } 
           else {
             $(".first_card_3").css('display', 'flex');
-            $(".card-body").scrollTop(600);
+            $(".card-body").scrollTop(1000);
             $(".fourthAnswer").text("Sorry, we can't understand that number, please type it again");
           }
 
@@ -190,6 +189,90 @@ function thirdAnswer() {
     $(".first_card_3").css('display', 'flex');
     $(".fourthAnswer").text("Sweet, you've chosen: " + answer + " people. How many days do you wish to stay?");
     $(".card-body").scrollTop(600);
+    $(".button-send").addClass('sentMessagePeople');
+    $(".button-send").removeClass('sentThirdMessageAccommodation');
+    $(".button-send").removeClass('sentThirdMessageTransport');
+  }
+}
+
+
+function fourthAnswer() {
+  $(".msg_time-sent").text(hours + ':' + minutes + mid);
+  // SECOND ANSWER
+  var inputValue = $(".type_msg").val().toLowerCase();
+  // Third answer
+
+  if ($(".button-send").hasClass("sentMessagePeople")) { 
+    $(".user_card_4").css('display','flex');
+    $(".fourthUserAnswer").text(inputValue.charAt(0).toUpperCase() + inputValue.slice(1));
+    // $(".user_card_4").css('display', 'flex');
+    // $(".thirdUserAnswer").removeClass('thirdUserAnswer');
+  if (("1 one").includes(inputValue)) {
+    var answer2 = 1;
+    console.log(answer2);
+  } else if (("2 two").includes(inputValue)) {
+    var answer2 = 2;
+    console.log(answer2);
+    howManyDays();
+  } else if (("3 three").includes(inputValue)) {
+    var answer2 = 3;
+    console.log(answer2);
+    howManyDays();
+  } else if (("4 four").includes(inputValue)) {
+    var answer2 = 4;
+    console.log(answer2);
+    howManyDays();
+  } else if (("5 five").includes(inputValue)) {
+    var answer2 = 5;
+    console.log(answer2);
+    howManyDays();
+  } else if (("6 six").includes(inputValue)) {
+    var answer2 = 6;
+    console.log(answer2);
+    howManyDays();
+  } else if (("7 seven").includes(inputValue)) {
+    var answer2 = 7;
+    console.log(answer2);
+    howManyDays();
+  } else if (("8 eight").includes(inputValue)) {
+    var answer2 = 8;
+    console.log(answer2);
+    howManyDays();
+  } else if (("9 nine").includes(inputValue)) {
+    var answer2 = 9;
+    console.log(answer2);
+    howManyDays();
+  } else if (("10 ten").includes(inputValue)) {
+    var answer2 = 10;
+    console.log(answer2);
+    howManyDays();
+  } else if (("11 eleven").includes(inputValue)) {
+    var answer2 = 11;
+    console.log(answer2);
+    howManyDays();
+  } else if (("12 twelve").includes(inputValue)) {
+    var answer2 = 12;
+    console.log(answer2);
+    howManyDays();
+  } else if (("13 thirteen").includes(inputValue)) {
+    var answer2 = 13;
+    console.log(answer2);
+    howManyDays();
+  } else if (("14 fourteen").includes(inputValue)) {
+    var answer2 = 14;
+    console.log(answer2);
+    howManyDays();
+  } else if (("15 fifteen").includes(inputValue)) {
+    var answer2 = 15;
+    console.log(answer2);
+    howManyDays();
+  } 
+  function howManyDays() {
+    $(".first_card_4").css('display', 'flex');
+    $(".fifthAnswer").text("Sweet, you've chosen: " + answer2 + " days.");
+    $(".card-body").scrollTop(600);
+    $(".button-send").removeClass('sentMessagePeople');
+    } 
   }
 }
 
