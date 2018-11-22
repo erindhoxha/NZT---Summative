@@ -238,7 +238,9 @@ $blue: #0a84e1;
   font-size: 10px;
   color: rgba(255, 255, 255, 0.6);
 }
-
+.price {
+  margin-top:12px;
+}
 .msg_cotainer {
   margin-top: auto;
   margin-bottom: auto;
@@ -1027,7 +1029,7 @@ h1 {
   }
 }
 
-@media (min-width:320px) {
+@media (min-width:250px) {
   .card-text {
     font-size:13px;
   }
@@ -1036,7 +1038,7 @@ h1 {
   }
   /* smartphones, iPhone, portrait 480x320 phones */
   .header-title {
-    font-size:30px;
+    font-size:35px;
   }
   .chat_icon {
     right:15px !important;
@@ -1082,6 +1084,9 @@ h1 {
 }
 
 @media (min-width:481px) {
+  .header-title {
+    font-size:46px;
+  }
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 }
 

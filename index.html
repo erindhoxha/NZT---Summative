@@ -185,7 +185,7 @@
   </nav>
 
   <div class="chat-popup">
-    <p>Hi there, do you want to chat?</p>
+    <p>Hi there, do you need help?</p>
     <i class="far fa-times-circle close-btn"></i>
   </div>
 
@@ -388,23 +388,15 @@
       loop: true,
     });
 
-
-
-
     var info = document.getElementById('summative-template').innerHTML;
     var template = Handlebars.compile(info);
     var dataTemplate = template(transport);
     var templateWrite = document.getElementById('card-container').innerHTML += dataTemplate;
 
-
   </script>
 
   <script src="js/main.js"></script>
 
-
-
-
-  </div>
 </body>
 
 </html>
