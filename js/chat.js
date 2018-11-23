@@ -176,7 +176,7 @@ function thirdAnswer() {
                 else {
                   $(".first_card_3").css('display', 'flex');
                   $(".card-body").scrollTop(1000);
-                  $(".fourthAnswer").text("Sorry, we can't understand that number, please type it again");
+                  $(".fourthAnswer").text("Sorry, we can't understand that number, please input in the website your options.");
                 }
         }
   
@@ -266,7 +266,7 @@ function fourthAnswer() {
   } 
   function howManyDays() {
     $(".first_card_4").css('display', 'flex');
-    $(".fifthAnswer").text("Sweet, you've chosen: " + answer2 + " days.");
+    $(".fifthAnswer").text("Sweet, you've chosen: " + answer2 + " days. By the answer you've given us, we'll send you through the results.");
     $(".card-body").scrollTop(1000);
     $(".button-send").removeClass('sentMessagePeople');
     } 

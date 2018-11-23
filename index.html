@@ -19,6 +19,7 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="js/handlebars-v4.0.12.js"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
   <script src="js/core.js"></script>
   <link rel="stylesheet" href="css/normalize.css">
@@ -28,7 +29,6 @@
 
 
   <div class="overlay">
-
 
     <!-- CHAT -->
     <div class="container-fluid flex">
@@ -46,6 +46,7 @@
                   <span>Chat with NZT</span>
                   <p>Online</p>
                 </div>
+              <i class="fas fa-sync-alt reload"></i>
               </div>
 
             </div>
@@ -244,27 +245,30 @@
           <div class="line"></div>
           <div class="input-container">
 
+
             <select type="text" id="acc-or-transport-search">
-              <option>Choose any...</option>
+              <option>What do you need?</option>
               <option>Accommodation</option>
               <option>Transport</option>
             </select>
 
 
-            <select type="text" id="people-search">
-              <option>Choose any...</option>
-              <option>Accommodation</option>
-              <option>Transport</option>
-            </select>
+            <input type="text" id="datepicker" placeholder="MM/DD/YYYY" class="datepicker-input">
+            <input type="text" id="datepicker2" placeholder="MM/DD/YYYY" class="datepicker-input2">
+          
 
             <select type="text" id="people-search">
-              <option>Choose any...</option>
-              <option>Accommodation</option>
-              <option>Transport</option>
+              <option>1 People</option>
+              <option>2 People</option>
+              <option>3 People</option>
+              <option>4 People</option>
+              <option>5 People</option>
+              <option>6 People</option>
             </select>
-            <button type="button" data-toggle="modal" data-target="#accomodationModal" class='btn btn-lg btn-primary btn-accomodation'>Find
-              accomodation</button>
+
           </div>
+          <button type="button" data-toggle="modal" data-target="#accomodationModal" class='btn btn-lg btn-primary btn-accomodation'>Find
+              accomodation</button>
         </div>
       </div>
     </div>
@@ -329,6 +333,8 @@
   <script src="js/data.js"></script>
   <script src="js/bootstrap.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
@@ -351,7 +357,7 @@
 
   <script id="summative-template" type="text/x-handlebars-template">
     {{#each types}}
-    <div class="col-lg-12 col-md-6 col-sm-12 text-dark mt-2">
+    <div class="col-lg-12 col-md-6 col-sm-12 text-dark mt-2 z-index--1" >
     <div class="card mx-auto card-wrapper" data-nr="{{@index}}" style="width: 18rem;">
       {{#if value}}
         <div class="special">

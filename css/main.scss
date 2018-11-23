@@ -169,7 +169,12 @@ $blue: #0a84e1;
   visibility:hidden;
   display:flex;
 }
-
+.reload {
+  position:absolute !important;
+  right:10px;
+  top:10px;
+  font-size:20px;
+}
 .first_card_2,
 .user_card_3,
 .first_card_3,
@@ -639,6 +644,7 @@ hr {
   -webkit-box-shadow: 6px 2px 30px -9px rgba(0, 0, 0, 0.53);
   -moz-box-shadow: 6px 2px 30px -9px rgba(0, 0, 0, 0.53);
   box-shadow: 6px 2px 30px -9px rgba(0, 0, 0, 0.53);
+  z-index:-1;
 }
 
 .checked {
@@ -758,6 +764,52 @@ h1 {
   top: 16px;
   right: 10px;
 }
+.ui-datepicker-header {
+  background-color:$verylight !important;
+  color:white !important;
+  border:0px !important;
+  border-radius: 0px !important;
+}
+.ui-datepicker-calendar {
+  background-color:$light;
+  color:white;
+}
+#ui-datepicker-div {
+  padding:0px !important;
+  border:0px !important;
+}
+.ui-icon {
+  color:white !important;
+}
+.ui-datepicker table {
+  margin:0px !important;
+}
+.ui-state-default {
+  display:flex !important;
+  justify-content: center;
+  align-items: center;
+  background-color:$verylight !important;
+  color:white !important;
+  border:none !important;
+  padding:10px !important;
+}
+.ui-datepicker-title {
+  background-color:$verylight;
+}
+.datepicker-input, .datepicker-input2 {
+  background-color:$verylight;
+  border:none;
+  color:white;
+  height:40px;
+  border-radius:5px;
+  color:white !important;
+  text-indent:10px;
+  margin:5px;
+  width:220px;
+}
+.datepicker-input::placeholder, .datepicker-input2::placeholder {
+  color:#ebebeb;
+}
 
 .img-nz {
   width: 100%;
@@ -870,7 +922,9 @@ h1 {
   -webkit-transition: all 0.45s ease;
   transition: all 0.45s ease;
 }
-
+.z-index--1 {
+  z-index:-1;
+}
 .snip1543 img {
   backface-visibility: hidden;
   max-width: 100%;
@@ -1181,7 +1235,7 @@ h1 {
     }
     .card-body {
       .card-title {
-        font-size:19px !important;
+        font-size:21px !important;
       }
       .card-title, .card-text, .price, .rating {
         margin:10px !important;

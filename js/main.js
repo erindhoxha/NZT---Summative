@@ -86,7 +86,6 @@ $(".btn-book").on('click', function () {
 })
 
 
-(function ($) {
     $(document).ready(function () {
 
         // hide .navbar first
@@ -110,24 +109,32 @@ $(".btn-book").on('click', function () {
         });
 
     });
-}(jQuery));
 
 
 /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-// var prevScrollpos = window.pageYOffset;
-// window.onscroll = function() {
-//   var currentScrollPos = window.pageYOffset;
-//   if (prevScrollpos > currentScrollPos) {
-//     document.getElementById("follow-up-input").style.top = "0";
-//   } else {
-//     document.getElementById("follow-up-input").style.top = "-50px";
-//   }
-//   prevScrollpos = currentScrollPos;
-// }
-
-
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("follow-up-input").style.top = "0";
+    document.getElementById("follow-up-input").style.transition = "0.3s ease";
+  } else {
+    document.getElementById("follow-up-input").style.top = "-60px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+$(".reload").on('click', function() {
+    location.reload();
+})
   $(".close-btn").on('click', function() {
       $(".chat-popup").hide(500);
   })
 
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  
+  $( function() {
+    $( "#datepicker2" ).datepicker();
+  } );
   
