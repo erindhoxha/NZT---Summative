@@ -324,6 +324,29 @@
       <p>New Zealand Tourism</p>
   </div>
 
+  <!-- REVIEWS MODAL -->
+
+  <!-- Modal -->
+<div class="modal fade" id="reviewsModal" tabindex="-1" role="dialog" aria-labelledby="reviewsModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="reviewsModal">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <!-- Add your site or application content here -->
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
@@ -375,7 +398,7 @@
             {{/each}} {{#each unchecked}}
             <span class="fa fa-star"></span>
             {{/each}}
-            <a href="#">({{reviews}} reviews)</a>
+            <a href="#" data-toggle="modal" data-target="#reviewsModal">({{reviews}} reviews)</a>
           </div>
           <button class="btn btn-book m-0 mt-4 btn-block" data-toggle="modal" data-target="#theModal">Book now</button>
         </div>
@@ -390,11 +413,16 @@
       <div class="modal-content">
         <!-- <div class="modal-header"> -->
           <!-- <h5 class="modal-title" id="exampleModalLabel"></h5> -->
+
         <!-- </div> -->
         <div class="modal-body">
           <!-- <img class="modal-img" src=""> -->
+
           <div id="carousel-modal" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
+                <div class="special">
+                    Special Price
+                    </div>
               <div class="carousel-item active">
                 <img class="d-block w-100 image-0" src="" alt="First slide">
               </div>

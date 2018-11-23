@@ -1070,6 +1070,7 @@ h1 {
   background-color: #D45050;
   color: white;
   padding: 10px 20px;
-  border-bottom-right-radius: 20px; }
+  border-bottom-right-radius: 20px;
+  z-index: 2; }
 
 /*# sourceMappingURL=main.css.map */
