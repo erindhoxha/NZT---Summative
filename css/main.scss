@@ -644,13 +644,14 @@ hr {
   -webkit-box-shadow: 6px 2px 30px -9px rgba(0, 0, 0, 0.53);
   -moz-box-shadow: 6px 2px 30px -9px rgba(0, 0, 0, 0.53);
   box-shadow: 6px 2px 30px -9px rgba(0, 0, 0, 0.53);
-  z-index:-1;
 }
 
 .checked {
   color: rgb(236, 178, 70);
 }
-
+.card {
+  z-index:1 !important;
+}
 .chat-popup {
   background-color:white;
   position:fixed;

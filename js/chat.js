@@ -83,18 +83,18 @@ function secondAnswer() {
       // ADD TRANSPORT STUFF HERE
       $(".first_card_2").css('display', 'flex');
       $(".thirdAnswer").text("Sweet, so you need Transportation... Could you let me know, for how many people?")
-      $(".card-body").scrollTop(300);
+      $(".card-body").scrollTop(1000);
     } else if (("accommodation").indexOf(inputValue) > -1 || ("accomodation").indexOf(inputValue) > -1 || ("acomodation").indexOf(inputValue) > -1 ) {
       $(".button-send").addClass('sentSecondMessageAccommodation');
       $(".first_card_2").css('display', 'flex');
-      $(".card-body").scrollTop(1000);
       $(".thirdAnswer").text("Sweet, so you need Accommodation... Could you let me know, for how many people?")
+      $(".card-body").scrollTop(1000);
       // Add accommodation stuff here
     } else {
       $(".first_card_2").css('display', 'flex');
       $(".thirdAnswer").text("Sorry, we don't have any answer for that. Please, fill the input on the website, or alternatively contact us.")
     // $(".button-send").addClass('sentFirstMessage');    
-      $(".card-body").scrollTop(300);
+      $(".card-body").scrollTop(1000);
     }
     }
     // SECOND ANSWER
@@ -269,6 +269,7 @@ function fourthAnswer() {
     $(".fifthAnswer").text("Sweet, you've chosen: " + answer2 + " days. By the answer you've given us, we'll send you through the results.");
     $(".card-body").scrollTop(1000);
     $(".button-send").removeClass('sentMessagePeople');
+    setTimeout(goToPageWithResults, 3000)
     } 
   }
 }
@@ -297,13 +298,15 @@ function filter(typer, typeOfTransport) {
 }
 
 
-var slider = document.getElementById("myRange");
-var output = document.getElementById("demo");
-output.innerHTML = slider.value;
-
-slider.oninput = function () {
-  output.innerHTML = this.value;
+function goToPageWithResults() {
+  $(".chat").hide(500);
+  $('html,body').animate({
+    scrollTop: $(".container-result").offset().top
+},
+'slow');
 }
+
+
 // CHAT!!!
 
 {/* <div id="typewriter"></div>
