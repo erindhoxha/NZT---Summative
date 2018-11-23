@@ -70,16 +70,15 @@ $('select').each(function () {
 });
 
 $(".btn-book").on('click', function () {
-
+    $(".modal-body").css('text-align', 'center');
     $(".rating-container").empty();
     console.log($(this).closest(".card-wrapper").attr('data-nr'));
     var dataNr = $(this).closest(".card-wrapper").attr('data-nr');
     $("#theModal").attr('data-nr', dataNr);
     for (var i = 0; i < transport.types[dataNr].images.length; i++) {
-        $(".image-" + dataNr).css('src', "'" + transport.types[dataNr].images[dataNr] + '"');
+        $(".image-" + i).attr('src', "img/" + transport.types[dataNr].images[i]);
     }
     $(".modal-title").text(transport.types[dataNr].name);
-    $(".modal-img").attr('src', "img/" + transport.types[dataNr].image);
     $(".modal-description").text(transport.types[dataNr].description);
     $(".price").text(' $' + transport.types[dataNr].price);
     $(".card-wrapper").find($(".rating")[dataNr]).clone().appendTo(".rating-container");

@@ -11,7 +11,7 @@ var transport = {
       value: "$99 until Dec 2018",
       reviews: 8,
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
-      images: ["img/hammer.jpg", "img/hammer.jpg", "img/hammer.jpg"]
+      images: ["hammer.jpg", "hammer.jpg", "hammer.jpg"]
     },
   ]
 };
