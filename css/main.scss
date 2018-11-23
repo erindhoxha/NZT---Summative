@@ -383,7 +383,7 @@ html {
   background-color: $light !important;
   border:none;
 }
-.btn-book {
+.btn-book, .btn-continue {
   background-color: $verylight;
   color: #fff;
   font-weight: 400;
@@ -393,6 +393,7 @@ html {
   border: 1px solid white !important;
   border-radius: 0px !important;
 }
+
 #content {
   text-align: center;
   padding: 20px;
@@ -498,7 +499,11 @@ label {
   background-color: $light;
   color: white;
 }
-
+#navbar {
+  position:fixed;
+  width:100%;
+  z-index:2;
+}
 .invisible {
   visibility: hidden;
 }
@@ -870,14 +875,23 @@ h1 {
     border-left: 0px !important;
   }
 }
-
+.z___index {
+  z-index:-1 !important;
+}
+.z__index {
+  z-index:0;
+}
 // MODAL
-
+.modal-wrapper {
+  padding:10px;
+}
 .modal-content {
   background-color: rgba(255, 255, 255, 0.99);
   color:black;
 }
-
+.modal-body {
+  padding:0px;
+}
 .modal-img {
   width: 100%;
 }
@@ -891,9 +905,6 @@ h1 {
   border-bottom: 1px solid #333;
 }
 
-.modal-footer {
-  border-top: 1px solid #333;
-}
 
 
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);

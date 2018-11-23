@@ -308,7 +308,7 @@ html {
   background-color: #2873AC !important;
   border: none; }
 
-.btn-book {
+.btn-book, .btn-continue {
   background-color: #4689BC;
   color: #fff;
   font-weight: 400;
@@ -407,6 +407,11 @@ label {
 .btn-learn:hover {
   background-color: #2873AC;
   color: white; }
+
+#navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 2; }
 
 .invisible {
   visibility: hidden; }
@@ -713,9 +718,21 @@ h1 {
 @media only screen and (max-width: 991px) {
   .book-container {
     border-left: 0px !important; } }
+.z___index {
+  z-index: -1 !important; }
+
+.z__index {
+  z-index: 0; }
+
+.modal-wrapper {
+  padding: 10px; }
+
 .modal-content {
   background-color: rgba(255, 255, 255, 0.99);
   color: black; }
+
+.modal-body {
+  padding: 0px; }
 
 .modal-img {
   width: 100%; }
@@ -726,9 +743,6 @@ h1 {
 
 .modal-header {
   border-bottom: 1px solid #333; }
-
-.modal-footer {
-  border-top: 1px solid #333; }
 
 .snip1543 {
   background-color: #fff;

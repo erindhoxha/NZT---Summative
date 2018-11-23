@@ -50,8 +50,11 @@ $('select').each(function () {
         e.stopPropagation();
         $('div.select-styled.active').not(this).each(function () {
             $(this).removeClass('active').next('ul.select-options').hide();
+            $(".z__index").toggleClass('z___index');
+            $(".z__index").css('z-index', '0');
         });
         $(this).toggleClass('active').next('ul.select-options').toggle();
+        $(".z__index").toggleClass('z___index');
     });
 
     $listItems.click(function (e) {
@@ -64,6 +67,7 @@ $('select').each(function () {
 
     $(document).click(function () {
         $styledSelect.removeClass('active');
+        $(".z__index").removeClass('z___index');
         $list.hide(500);
     });
 
@@ -80,16 +84,14 @@ $(".btn-book").on('click', function () {
     }
     $(".modal-title").text(transport.types[dataNr].name);
     $(".modal-description").text(transport.types[dataNr].description);
-    $(".price").text(' $' + transport.types[dataNr].price);
+    $(".price-modal").text('Price: $' + transport.types[dataNr].price);
     $(".card-wrapper").find($(".rating")[dataNr]).clone().appendTo(".rating-container");
 })
 
 
     $(document).ready(function () {
-
         // hide .navbar first
         $(".follow-up-input").hide();
-
         // fade in .navbar
         $(function () {
             $(window).scroll(function () {
@@ -102,8 +104,6 @@ $(".btn-book").on('click', function () {
                 } else {
                     $('.follow-up-input').fadeOut();
                 }
-
-                
             });
         });
 
@@ -137,3 +137,34 @@ $(".reload").on('click', function() {
     $( "#datepicker2" ).datepicker();
   } );
   
+
+//MAKE THE SELECT DROPDOWN SEE ON TOP
+
+/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+    document.getElementById("navbar").style.transition = "0.3s ease";
+  } else {
+    document.getElementById("navbar").style.top = "-55px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+$(document).on('resize, ready', function() {
+    // Add class if screen size equals
+    var $window = $(window),
+    $navbar = $('#navbar-lg');
+   
+    function resize() {
+   
+       if ($window.width() < 768) {
+         return $navbar.attr('id', 'navbar');
+       } else if ($window.width() > 768) {
+        return $navbar.attr('id', 'navbar-lg');        
+       }
+     }
+     $window.resize(resize).trigger('resize');
+   });
