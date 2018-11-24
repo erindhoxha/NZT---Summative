@@ -99,7 +99,6 @@ $(".btn-book").on('click', function () {
     $(".modal-title").text(transport.types[dataNr].name);
     $(".modal-description").text(transport.types[dataNr].description);
     $(".card-wrapper").find($(".rating")[dataNr]).addClass('rating-modal').removeClass('rating').clone().appendTo(".rating-container");
-
 })
 
 

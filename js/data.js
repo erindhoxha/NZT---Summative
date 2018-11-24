@@ -313,6 +313,209 @@ var transport = {
       class: "motorbike",
       image: "motor-van-3.jpg",
       description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
+      checked: ["checked", "checked", "checked"],
+      unchecked: ["unchecked", "unchecked"],
+      available: "Available",
+      price: "288",
+      value: "$99 until Dec 2018",
+      reviews: 8,
+      reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
+      images: ["hammer.jpg", "hammer.jpg", "hammer.jpg"]
+    },
+  ]
+};
+
+// ======================================== ACCOMMODATION ============================================================
+
+var accommodation = {
+  types: [
+    {
+      name: "Hotel Victoria",
+      class: "hotel",
+      image: "hotel-1.jpeg",
+      description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
+      checked: ["checked", "checked"],
+      unchecked: ["unchecked", "unchecked", "unchecked"],
+      available: "Available",
+      price: "288",
+      value: "$99 until Dec 2018",
+      reviews: 8,
+      reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
+      images: ["hammer.jpg", "hammer.jpg", "hammer.jpg"]
+    },
+    {
+      name: "Hotel Victoria",
+      class: "hotel",
+      image: "hotel-2.jpeg",
+      description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
+      checked: ["checked", "checked"],
+      unchecked: ["unchecked", "unchecked", "unchecked"],
+      available: "Available",
+      price: "288",
+      value: "$99 until Dec 2018",
+      reviews: 8,
+      reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
+      images: ["hammer.jpg", "hammer.jpg", "hammer.jpg"]
+    },
+    {
+      name: "Hotel Victoria",
+      class: "hotel",
+      image: "hotel-3.jpeg",
+      description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
+      checked: ["checked", "checked"],
+      unchecked: ["unchecked", "unchecked", "unchecked"],
+      available: "Available",
+      price: "288",
+      value: "$99 until Dec 2018",
+      reviews: 8,
+      reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
+      images: ["hammer.jpg", "hammer.jpg", "hammer.jpg"]
+    },
+    {
+      name: "Hotel Victoria",
+      class: "hotel",
+      image: "hotel-4.jpeg",
+      description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
+      checked: ["checked", "checked"],
+      unchecked: ["unchecked", "unchecked", "unchecked"],
+      available: "Available",
+      price: "288",
+      value: "$99 until Dec 2018",
+      reviews: 8,
+      reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
+      images: ["hammer.jpg", "hammer.jpg", "hammer.jpg"]
+    },
+    {
+      name: "Hotel Victoria",
+      class: "hotel",
+      image: "hotel-4.jpeg",
+      description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
+      checked: ["checked", "checked"],
+      unchecked: ["unchecked", "unchecked", "unchecked"],
+      available: "Available",
+      price: "288",
+      value: "$99 until Dec 2018",
+      reviews: 8,
+      reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
+      images: ["hammer.jpg", "hammer.jpg", "hammer.jpg"]
+    },
+    {
+      name: "Hostel Victoria",
+      class: "hotel",
+      image: "hostel-1.jpeg",
+      description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
+      checked: ["checked", "checked"],
+      unchecked: ["unchecked", "unchecked", "unchecked"],
+      available: "Available",
+      price: "288",
+      value: "$99 until Dec 2018",
+      reviews: 8,
+      reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
+      images: ["hammer.jpg", "hammer.jpg", "hammer.jpg"]
+    },
+    {
+      name: "Hostel Victoria",
+      class: "hotel",
+      image: "hostel-2.jpg",
+      description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
+      checked: ["checked", "checked"],
+      unchecked: ["unchecked", "unchecked", "unchecked"],
+      available: "Available",
+      price: "288",
+      value: "$99 until Dec 2018",
+      reviews: 8,
+      reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
+      images: ["hammer.jpg", "hammer.jpg", "hammer.jpg"]
+    },
+    {
+      name: "Motel Victoria",
+      class: "hotel",
+      image: "motel-1.jpeg",
+      description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
+      checked: ["checked", "checked"],
+      unchecked: ["unchecked", "unchecked", "unchecked"],
+      available: "Available",
+      price: "288",
+      value: "$99 until Dec 2018",
+      reviews: 8,
+      reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
+      images: ["hammer.jpg", "hammer.jpg", "hammer.jpg"]
+    },
+    {
+      name: "Motel Victoria",
+      class: "hotel",
+      image: "motel-2.jpeg",
+      description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
+      checked: ["checked", "checked"],
+      unchecked: ["unchecked", "unchecked", "unchecked"],
+      available: "Available",
+      price: "288",
+      value: "$99 until Dec 2018",
+      reviews: 8,
+      reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
+      images: ["hammer.jpg", "hammer.jpg", "hammer.jpg"]
+    },
+    {
+      name: "House Victoria",
+      class: "hotel",
+      image: "house-1.jpeg",
+      description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
+      checked: ["checked", "checked"],
+      unchecked: ["unchecked", "unchecked", "unchecked"],
+      available: "Available",
+      price: "288",
+      value: "$99 until Dec 2018",
+      reviews: 8,
+      reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
+      images: ["hammer.jpg", "hammer.jpg", "hammer.jpg"]
+    },
+    {
+      name: "House Victoria",
+      class: "hotel",
+      image: "house-2.jpeg",
+      description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
+      checked: ["checked", "checked"],
+      unchecked: ["unchecked", "unchecked", "unchecked"],
+      available: "Available",
+      price: "288",
+      value: "$99 until Dec 2018",
+      reviews: 8,
+      reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
+      images: ["hammer.jpg", "hammer.jpg", "hammer.jpg"]
+    },
+    {
+      name: "House Victoria",
+      class: "hotel",
+      image: "house-3.jpeg",
+      description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
+      checked: ["checked", "checked"],
+      unchecked: ["unchecked", "unchecked", "unchecked"],
+      available: "Available",
+      price: "288",
+      value: "$99 until Dec 2018",
+      reviews: 8,
+      reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
+      images: ["hammer.jpg", "hammer.jpg", "hammer.jpg"]
+    },
+    {
+      name: "House Victoria",
+      class: "hotel",
+      image: "house-4.jpeg",
+      description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
+      checked: ["checked", "checked"],
+      unchecked: ["unchecked", "unchecked", "unchecked"],
+      available: "Available",
+      price: "288",
+      value: "$99 until Dec 2018",
+      reviews: 8,
+      reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
+      images: ["hammer.jpg", "hammer.jpg", "hammer.jpg"]
+    },
+    {
+      name: "House Victoria",
+      class: "hotel",
+      image: "house-6.jpeg",
+      description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
       checked: ["checked", "checked"],
       unchecked: ["unchecked", "unchecked", "unchecked"],
       available: "Available",
@@ -324,5 +527,7 @@ var transport = {
     },
   ]
 };
+
+
 
 
