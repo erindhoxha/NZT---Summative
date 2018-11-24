@@ -665,7 +665,8 @@ h1 {
   color: white !important;
   text-indent: 10px;
   margin: 5px;
-  width: 220px; }
+  width: 220px;
+  cursor: pointer; }
 
 .datepicker-input::placeholder, .datepicker-input2::placeholder {
   color: #ebebeb; }
@@ -924,7 +925,8 @@ h1 {
     font-size: 13px; }
 
   .select {
-    margin-bottom: 10px; }
+    margin-bottom: 4px;
+    margin-top: 4px; }
 
   /* smartphones, iPhone, portrait 480x320 phones */
   .header-title {
@@ -934,7 +936,7 @@ h1 {
     right: 15px !important; }
 
   .btn-accomodation {
-    margin-top: 5px; }
+    margin-top: 4px !important; }
 
   .follow-up-input {
     display: none;

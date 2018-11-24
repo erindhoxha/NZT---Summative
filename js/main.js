@@ -74,6 +74,18 @@ $('select').each(function () {
 });
 
 $(".btn-book").on('click', function () {
+
+    var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
+    $("#datepicker2").on('change', function() {
+     console.log("Hello");
+     var firstDate = $( "#datepicker").datepicker( "getDate" )
+     var secondDate = $( "#datepicker2").datepicker( "getDate" )
+     var numberOfDays = Math.abs((firstDate.getTime() - secondDate.getTime()) / (oneDay));
+     console.log(numberOfDays);
+     $(".price-modal").text('Price: $' + transport.types[dataNr].price * numberOfDays);
+    });
+
+
     $(".modal-body").css('text-align', 'center');
     $(".rating-container").empty();
     console.log($(this).closest(".card-wrapper").attr('data-nr'));
@@ -84,8 +96,10 @@ $(".btn-book").on('click', function () {
     }
     $(".modal-title").text(transport.types[dataNr].name);
     $(".modal-description").text(transport.types[dataNr].description);
-    $(".price-modal").text('Price: $' + transport.types[dataNr].price);
     $(".card-wrapper").find($(".rating")[dataNr]).clone().appendTo(".rating-container");
+
+
+ 
 })
 
 
@@ -136,9 +150,18 @@ $(".reload").on('click', function() {
   $( function() {
     $( "#datepicker2" ).datepicker();
   } );
-  
 
-//MAKE THE SELECT DROPDOWN SEE ON TOP
+var dateToday = new Date(); 
+
+$("#datepicker").datepicker({
+    dateFormat: 'dd-mm-yy',
+    minDate: dateToday
+});
+$("#datepicker2").datepicker({
+    dateFormat: 'dd-mm-yy',
+    minDate: dateToday
+});
+
 
 /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
 var prevScrollpos = window.pageYOffset;
@@ -167,4 +190,14 @@ $(document).on('resize, ready', function() {
        }
      }
      $window.resize(resize).trigger('resize');
+   });
+   
+   var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
+   var numberOfDays;
+   $("#datepicker2").on('change', function() {
+    console.log("Hello");
+    var firstDate = $( "#datepicker").datepicker( "getDate" )
+    var secondDate = $( "#datepicker2").datepicker( "getDate" )
+    var numberOfDays = Math.abs((firstDate.getTime() - secondDate.getTime()) / (oneDay));
+    console.log(numberOfDays);
    });
