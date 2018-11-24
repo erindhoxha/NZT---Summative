@@ -5,6 +5,12 @@ $('.btn-accomodation').on('click', function () {
             scrollTop: $(".container-result").offset().top
         },
         'slow');
+
+
+    var info = document.getElementById('summative-template').innerHTML;
+    var template = Handlebars.compile(info);
+    var dataTemplate = template(transport);
+    var templateWrite = document.getElementById('card-container').innerHTML += dataTemplate;
 });
 
 
@@ -75,6 +81,8 @@ $('select').each(function () {
 
 $(".btn-book").on('click', function () {
 
+    
+
     var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
     $("#datepicker2").on('change', function() {
      console.log("Hello");
@@ -84,7 +92,6 @@ $(".btn-book").on('click', function () {
      console.log(numberOfDays);
      $(".price-modal").text('Price: $' + transport.types[dataNr].price * numberOfDays);
     });
-
 
     $(".modal-body").css('text-align', 'center');
     $(".rating-container").empty();
@@ -97,9 +104,6 @@ $(".btn-book").on('click', function () {
     $(".modal-title").text(transport.types[dataNr].name);
     $(".modal-description").text(transport.types[dataNr].description);
     $(".card-wrapper").find($(".rating")[dataNr]).clone().appendTo(".rating-container");
-
-
- 
 })
 
 
