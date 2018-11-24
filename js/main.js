@@ -5,12 +5,7 @@ $('.btn-accomodation').on('click', function () {
             scrollTop: $(".container-result").offset().top
         },
         'slow');
-
-
-    var info = document.getElementById('summative-template').innerHTML;
-    var template = Handlebars.compile(info);
-    var dataTemplate = template(transport);
-    var templateWrite = document.getElementById('card-container').innerHTML += dataTemplate;
+        
 });
 
 
@@ -103,7 +98,8 @@ $(".btn-book").on('click', function () {
     }
     $(".modal-title").text(transport.types[dataNr].name);
     $(".modal-description").text(transport.types[dataNr].description);
-    $(".card-wrapper").find($(".rating")[dataNr]).clone().appendTo(".rating-container");
+    $(".card-wrapper").find($(".rating")[dataNr]).addClass('rating-modal').removeClass('rating').clone().appendTo(".rating-container");
+
 })
 
 
