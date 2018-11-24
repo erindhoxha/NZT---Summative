@@ -8,17 +8,12 @@ $('.btn-accomodation').on('click', function () {
         
 });
 
-
-
-
 /* Demo purposes only */
 $(".hover").mouseleave(
     function () {
         $(this).removeClass("hover");
     }
 );
-
-
 /*
 Reference: http://jsfiddle.net/BB3JK/47/
 */
@@ -128,10 +123,10 @@ var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
-    document.getElementById("follow-up-input").style.top = "0";
+    $("#follow-up-input").css('top', '0px');
     document.getElementById("follow-up-input").style.transition = "0.3s ease";
   } else {
-    document.getElementById("follow-up-input").style.top = "-60px";
+    $("#follow-up-input").css('top', '-60px');
   }
   prevScrollpos = currentScrollPos;
 }
@@ -162,19 +157,6 @@ $("#datepicker2").datepicker({
 });
 
 
-/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
-    document.getElementById("navbar").style.transition = "0.3s ease";
-  } else {
-    document.getElementById("navbar").style.top = "-55px";
-  }
-  prevScrollpos = currentScrollPos;
-}
-
 $(document).on('resize, ready', function() {
     // Add class if screen size equals
     var $window = $(window),
@@ -183,14 +165,29 @@ $(document).on('resize, ready', function() {
     function resize() {
    
        if ($window.width() < 768) {
+        scrollWindow();
          return $navbar.attr('id', 'navbar');
+         /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
        } else if ($window.width() > 768) {
         return $navbar.attr('id', 'navbar-lg');        
        }
      }
      $window.resize(resize).trigger('resize');
    });
-   
+   function scrollWindow() {
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0px";
+        document.getElementById("navbar").style.transition = "0.3s ease";
+    } else {
+        document.getElementById("navbar").style.top = "-55px";
+    }
+    prevScrollpos = currentScrollPos;
+    }
+   }
+
    var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
    var numberOfDays;
    $("#datepicker2").on('change', function() {
