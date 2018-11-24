@@ -188,20 +188,20 @@
 
   <nav class="follow-up-input" id="follow-up-input">
     <div class="input-container">
-      <select type="text" id="acc-or-transport-search">
+      <select type="text" id="sortAlphabetically">
         <option>Sort</option>
         <option>Accommodation</option>
         <option>Transport</option>
       </select>
 
 
-      <select type="text" id="people-search">
+      <select type="text" id="sortByHighestPrice">
         <option>Sort</option>
         <option>Accommodation</option>
         <option>Transport</option>
       </select>
 
-      <select type="text" id="people-search">
+      <select type="text" id="sortByLowestPrice">
         <option>Sort</option>
         <option>Accommodation</option>
         <option>Transport</option>
@@ -243,10 +243,14 @@
           <h1 class="header-title">Tourism <br>New Zealand.</h1>
           <h3 class="mt-3 ont-light mb-4 kia-ora-text"><div id="typewriter">Kia Ora!</div></h3>
           <div class="line"></div>
+          <div class="alert alert-danger" role="alert">
+              Sorry, you can't book for more than 15 days, or less than 0. Please, try again.
+            </div>
+
           <div class="input-container">
 
 
-            <select type="text" id="acc-or-transport-search">
+            <select type="text" id="accom-or-transport">
               <option>What do you need?</option>
               <option>Accommodation</option>
               <option>Transport</option>
@@ -354,10 +358,10 @@
   <script src="js/plugins.js"></script>
   <script src="js/chat.js"></script>
   <script src="js/data.js"></script>
-  <script src="js/bootstrap.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="js/bootstrap.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
@@ -466,11 +470,6 @@
       autoStart: true,
       loop: true,
     });
-
-    var info = document.getElementById('summative-template').innerHTML;
-    var template = Handlebars.compile(info);
-    var dataTemplate = template(accommodation);
-    var templateWrite = document.getElementById('card-container').innerHTML += dataTemplate;
 
   </script>
 

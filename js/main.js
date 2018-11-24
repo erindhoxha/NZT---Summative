@@ -1,11 +1,66 @@
+
+
+$(".alert").hide();
 // $('body').css('overflow', 'hidden');
 $('.btn-accomodation').on('click', function () {
-    // $('body').css('overflow', 'auto');
+    var transportOrAccommodation = $("#accom-or-transport").val();
+    var peopleValue = $("#people-search").val().slice(0, 1);
+    peopleValue = parseInt(peopleValue);
+    var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
+
+    var firstDate = $( "#datepicker").datepicker( "getDate" )
+    var secondDate = $( "#datepicker2").datepicker( "getDate" )
+    var numberOfDays = Math.abs((firstDate.getTime() - secondDate.getTime()) / (oneDay));
+
+    console.log(transportOrAccommodation)
+    console.log(numberOfDays);
+    console.log(peopleValue);
+
+     if (numberOfDays > 15 || firstDate > secondDate) {
+        $(".alert").show(500);
+     } else {
+             // $('body').css('overflow', 'auto');
     $('html,body').animate({
-            scrollTop: $(".container-result").offset().top
-        },
-        'slow');
-        
+        scrollTop: $(".container-result").offset().top
+    },
+    'slow');
+     }
+     if (transportOrAccommodation == "Accommodation") {
+
+        var info = document.getElementById('summative-template').innerHTML;
+        var template = Handlebars.compile(info);
+        var dataTemplate = template(accommodation);
+        var templateWrite = document.getElementById('card-container').innerHTML += dataTemplate;
+
+     } else if (transportOrAccommodation == "Transport") {
+
+        var info = document.getElementById('summative-template').innerHTML;
+        var template = Handlebars.compile(info);
+        var dataTemplate = template(transport);
+        var templateWrite = document.getElementById('card-container').innerHTML += dataTemplate;
+
+     }
+
+     $(".btn-book").on('click', function () {
+        var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
+        $("#datepicker2").on('change', function() {
+    
+         $(".price-modal").text('Price: $' + transport.types[dataNr].price * numberOfDays);
+        });
+    
+        $(".modal-body").css('text-align', 'center');
+        $(".rating-container").empty();
+        console.log($(this).closest(".card-wrapper").attr('data-nr'));
+        var dataNr = $(this).closest(".card-wrapper").attr('data-nr');
+        $("#theModal").attr('data-nr', dataNr);
+        for (var i = 0; i < transport.types[dataNr].images.length; i++) {
+            $(".image-" + i).attr('src', "img/" + transport.types[dataNr].images[i]);
+        }
+        $(".modal-title").text(transport.types[dataNr].name);
+        $(".modal-description").text(transport.types[dataNr].description);
+        $(".card-wrapper").find($(".rating")[dataNr]).addClass('rating-modal').removeClass('rating').clone().appendTo(".rating-container");
+    })
+
 });
 
 /* Demo purposes only */
@@ -69,32 +124,7 @@ $('select').each(function () {
 
 });
 
-$(".btn-book").on('click', function () {
 
-    
-
-    var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
-    $("#datepicker2").on('change', function() {
-     console.log("Hello");
-     var firstDate = $( "#datepicker").datepicker( "getDate" )
-     var secondDate = $( "#datepicker2").datepicker( "getDate" )
-     var numberOfDays = Math.abs((firstDate.getTime() - secondDate.getTime()) / (oneDay));
-     console.log(numberOfDays);
-     $(".price-modal").text('Price: $' + transport.types[dataNr].price * numberOfDays);
-    });
-
-    $(".modal-body").css('text-align', 'center');
-    $(".rating-container").empty();
-    console.log($(this).closest(".card-wrapper").attr('data-nr'));
-    var dataNr = $(this).closest(".card-wrapper").attr('data-nr');
-    $("#theModal").attr('data-nr', dataNr);
-    for (var i = 0; i < transport.types[dataNr].images.length; i++) {
-        $(".image-" + i).attr('src', "img/" + transport.types[dataNr].images[i]);
-    }
-    $(".modal-title").text(transport.types[dataNr].name);
-    $(".modal-description").text(transport.types[dataNr].description);
-    $(".card-wrapper").find($(".rating")[dataNr]).addClass('rating-modal').removeClass('rating').clone().appendTo(".rating-container");
-})
 
 
     $(document).ready(function () {
@@ -191,9 +221,7 @@ $(document).on('resize, ready', function() {
    var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
    var numberOfDays;
    $("#datepicker2").on('change', function() {
-    console.log("Hello");
     var firstDate = $( "#datepicker").datepicker( "getDate" )
     var secondDate = $( "#datepicker2").datepicker( "getDate" )
     var numberOfDays = Math.abs((firstDate.getTime() - secondDate.getTime()) / (oneDay));
-    console.log(numberOfDays);
    });

@@ -296,7 +296,6 @@ function filter(typer, typeOfTransport) {
     }
 }
 
-
 function goToPageWithResults() {
   $(".chat").hide(500);
   $('html,body').animate({

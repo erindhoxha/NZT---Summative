@@ -228,7 +228,11 @@ $blue: #0a84e1;
   right: 0.4em;
   border: 1.5px solid white;
 }
-
+.alert-danger {
+  background-color:black !important;
+  color:white !important;
+  border:none !important;
+}
 .offline {
   background-color: #c23616 !important;
 }
