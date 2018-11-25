@@ -16,6 +16,9 @@ $('.btn-accomodation').on('click', function () {
     console.log(numberOfDays);
     console.log(peopleValue);
 
+       
+
+
      if (numberOfDays > 15 || firstDate >= secondDate) {
         $(".alert").show(500);
         $(".line").hide(500);
@@ -43,6 +46,14 @@ $('.btn-accomodation').on('click', function () {
         var templateWrite = document.getElementById('card-container').innerHTML += dataTemplate;
 
      }
+
+
+   function doFiltering() {
+    $(".card-wrap").hide();
+    $(".card-wrap." + numberOfDays + "d." + peopleValue + "p").show();
+}
+    doFiltering();
+
 
      $(".btn-book").on('click', function () {
         var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
