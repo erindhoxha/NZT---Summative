@@ -1,3 +1,7 @@
+var answer = "";
+var answer2 = "";
+var answerData = "";
+
 //SLIDER
 var selector = ".card-wrap";
 $(".card-body").scrollTop();
@@ -83,6 +87,7 @@ function secondAnswer() {
       var template = Handlebars.compile(info);
       var dataTemplate = template(transport);
       var templateWrite = document.getElementById('card-container').innerHTML += dataTemplate;
+      answerData = transport;
       
       $(".button-send").addClass('sentSecondMessageTransport');
       // ADD TRANSPORT STUFF HERE
@@ -97,6 +102,7 @@ function secondAnswer() {
       var template = Handlebars.compile(info);
       var dataTemplate = template(accommodation);
       var templateWrite = document.getElementById('card-container').innerHTML += dataTemplate;
+      answerData = accommodation;
 
 
       $(".button-send").addClass('sentSecondMessageAccommodation');
@@ -161,22 +167,22 @@ function thirdAnswer() {
     $(".button-send").addClass('sentThirdMessageAccommodation');
     // DO STUFF FOR ACCOMMODATION HERE
     if (("1 one").includes(inputValue)) {
-      var answer = 1;
+      answer = 1;
       howManyPeople();
     } else if (("2 two").includes(inputValue)) {
-      var answer = 2;
+      answer = 2;
       howManyPeople();
     } else if (("3 three").includes(inputValue)) {
-      var answer = 3;
+      answer = 3;
       howManyPeople();
     } else if (("4 four").includes(inputValue)) {
-      var answer = 4;
+      answer = 4;
       howManyPeople();
     } else if (("5 five").includes(inputValue)) {
-      var answer = 5;
+      answer = 5;
       howManyPeople();
     } else if (("6 six").includes(inputValue)) {
-      var answer = 6;
+      answer = 6;
       howManyPeople();
     } else {
       $(".first_card_3").css('display', 'flex');
@@ -215,48 +221,49 @@ function fourthAnswer() {
     // HARDCODING
 
     if (("1 one").includes(inputValue)) {
-      var answer2 = 1;
+      answer2 = 1;
+      howManyDays();
     } else if (("2 two").includes(inputValue)) {
-      var answer2 = 2;
+      answer2 = 2;
       howManyDays();
     } else if (("3 three").includes(inputValue)) {
-      var answer2 = 3;
+      answer2 = 3;
       howManyDays();
     } else if (("4 four").includes(inputValue)) {
-      var answer2 = 4;
+      answer2 = 4;
       howManyDays();
     } else if (("5 five").includes(inputValue)) {
-      var answer2 = 5;
+      answer2 = 5;
       howManyDays();
     } else if (("6 six").includes(inputValue)) {
-      var answer2 = 6;
+      answer2 = 6;
       howManyDays();
     } else if (("7 seven").includes(inputValue)) {
-      var answer2 = 7;
+      answer2 = 7;
       howManyDays();
     } else if (("8 eight").includes(inputValue)) {
-      var answer2 = 8;
+      answer2 = 8;
       howManyDays();
     } else if (("9 nine").includes(inputValue)) {
-      var answer2 = 9;
+      answer2 = 9;
       howManyDays();
     } else if (("10 ten").includes(inputValue)) {
-      var answer2 = 10;
+      answer2 = 10;
       howManyDays();
     } else if (("11 eleven").includes(inputValue)) {
-      var answer2 = 11;
+      answer2 = 11;
       howManyDays();
     } else if (("12 twelve").includes(inputValue)) {
-      var answer2 = 12;
+      answer2 = 12;
       howManyDays();
     } else if (("13 thirteen").includes(inputValue)) {
-      var answer2 = 13;
+      answer2 = 13;
       howManyDays();
     } else if (("14 fourteen").includes(inputValue)) {
-      var answer2 = 14;
+      answer2 = 14;
       howManyDays();
     } else if (("15 fifteen").includes(inputValue)) {
-      var answer2 = 15;
+      answer2 = 15;
       howManyDays();
     }
 
@@ -302,4 +309,30 @@ function goToPageWithResults() {
       scrollTop: $(".container-result").offset().top
     },
     'slow');
+    
+    $(".btn-book").on('click', function () {
+      var oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
+      $("#datepicker2").on('change', function () {
+    
+          $(".price-modal").text('Price: $' + answerData.types[dataNr].price * answer2);
+      });
+    
+      $(".modal-body").css('text-align', 'center');
+      $(".rating-container").empty();
+      console.log($(this).closest(".card-wrapper").attr('data-nr'));
+      var dataNr = $(this).closest(".card-wrapper").attr('data-nr');
+      $("#theModal").attr('data-nr', dataNr);
+      for (var i = 0; i < answerData.types[dataNr].images.length; i++) {
+          $(".image-" + i).attr('src', "img/" + answerData.types[dataNr].images[i]);
+      }
+      $(".price-modal").text('Price: $' + answerData.types[dataNr].price + " x " + answer2 + " days = $" + answerData.types[dataNr].price * answer2);
+      $(".modal-title").text(answerData.types[dataNr].name);
+      $(".modal-description").text(answerData.types[dataNr].description);
+      $(".card-wrapper").find($(".rating")[dataNr]).clone().appendTo(".rating-container");
+    })
 }
+
+
+
+
+
