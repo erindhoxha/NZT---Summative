@@ -114,6 +114,17 @@ $blue: #0a84e1;
 .modal-image {
   height:100%;
 }
+.overload-wrapper {
+  width:30%;
+  height:30%;
+  background-color:transparent;
+  z-index:2;
+  position:absolute;
+  top:45%;
+  left:50%;
+  transform:translate(-50%, -50%);
+}
+
 .people {
   i {
     font-size:20px;
