@@ -34,6 +34,8 @@ $(".button-send").on('click', function () {
   firstAnswer();
   console.log(answer);
   console.log(answer2);
+  $(".card-wrap").hide(300);
+  $(".card-wrap." + answer + "p." + answer2 + "d").show();
 })
 
 function firstAnswer() {
@@ -76,7 +78,7 @@ function secondAnswer() {
     $(".user_card_2").fadeIn(300);
     $(".secondAnswer").text(inputValue.charAt(0).toUpperCase() + inputValue.slice(1));
     if (("transport").indexOf(inputValue) > -1) {
-
+      $("#card-container").empty();
 
       var info = document.getElementById('summative-template').innerHTML;
       var template = Handlebars.compile(info);
@@ -90,7 +92,7 @@ function secondAnswer() {
       $(".card-body").scrollTop(1000);
     } else if (("accommodation").indexOf(inputValue) > -1 || ("accomodation").indexOf(inputValue) > -1 || ("acomodation").indexOf(inputValue) > -1) {
 
-
+      $("#card-container").empty();
       var info = document.getElementById('summative-template').innerHTML;
       var template = Handlebars.compile(info);
       var dataTemplate = template(accommodation);
@@ -195,6 +197,7 @@ function thirdAnswer() {
     var name = $(".firstAnswer").text();
     $(".fourthAnswer").text("Ok cool " + name + ", you've chosen: " + answer + " people. How many days do you wish to stay?");
     var people = answer;
+
     $(".card-body").scrollTop(1000);
     $(".button-send").addClass('sentMessagePeople');
     $(".button-send").removeClass('sentThirdMessageAccommodation');
