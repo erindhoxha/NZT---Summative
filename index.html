@@ -29,10 +29,8 @@
 
 
   <div class="overlay">
-
     <!-- CHAT -->
     <div class="container-fluid flex">
-      
       <div class="row justify-content-center">
         <div class="col-lg-6 col-md-6 col-xl-6 chat">
           <div class="card-chat card">
@@ -48,11 +46,8 @@
                 </div>
               <i class="fas fa-sync-alt reload"></i>
               </div>
-
             </div>
-
             <div class="card-body msg_card_body">
-
               <div class="d-flex justify-content-start mb-4">
                 <div class="img_cont_msg">
                   <img src="img/nzlogo.png" style="filter:invert(1); width:100%;" class="rounded-circle user_img_msg">
@@ -64,8 +59,6 @@
                   <!-- FIRST QUESTION -->
                 </div>
               </div>
-
-
               <div class="justify-content-end mb-4 user_card">
                 <div class="msg_cotainer_send">
                   <!-- FIRST ANSWER -->
@@ -77,8 +70,6 @@
                   <img src="img/bot.png" class="rounded-circle user_img_msg">
                 </div>
               </div>
-
-
               <div class="chat-container justify-content-start mb-4 first_card">
                 <div class="img_cont_msg">
                   <img src="img/bot.png" class="rounded-circle user_img_msg">
@@ -90,8 +81,6 @@
                   <!-- FIRST QUESTION -->
                 </div>
               </div>
-
-
               <div class="justify-content-end mb-4 user_card_2">
                 <div class="msg_cotainer_send">
                   <!-- Second ANSWER -->
@@ -103,9 +92,6 @@
                   <img src="img/bot.png" class="rounded-circle user_img_msg">
                 </div>
               </div>
-
-
-
               <div class="chat-container justify-content-start mb-4 first_card_2">
                 <div class="img_cont_msg">
                   <img src="img/bot.png" class="rounded-circle user_img_msg">
@@ -117,8 +103,6 @@
                   <!-- Third QUESTION -->
                 </div>
               </div>
-
-
               <div class="justify-content-end mb-4 user_card_3">
                 <div class="msg_cotainer_send">
                   <!-- Second ANSWER -->
@@ -130,7 +114,6 @@
                   <img src="img/bot.png" class="rounded-circle user_img_msg">
                 </div>
               </div>
-
               <div class="chat-container justify-content-start mb-4 first_card_3">
                 <div class="img_cont_msg">
                   <img src="img/bot.png" class="rounded-circle user_img_msg">
@@ -142,7 +125,6 @@
                   <!-- Third QUESTION -->
                 </div>
               </div>
-
               <div class="justify-content-end mb-4 user_card_4">
                 <div class="msg_cotainer_send">
                   <!-- Second ANSWER -->
@@ -166,11 +148,7 @@
                   <!-- Third QUESTION -->
                 </div>
               </div>
-
-
-
             </div>
-
             <div class="card-footer">
               <div class="input-group">
                 <input name="" class="form-control type_msg" id="type_msg" placeholder="Type your message..."></textarea>
@@ -184,8 +162,6 @@
       </div>
     </div>
   </div>
-
-
   <nav class="follow-up-input" id="follow-up-input">
     <div class="input-container">
       <select type="text" id="sortAlphabetically">
@@ -193,14 +169,11 @@
         <option>Accommodation</option>
         <option>Transport</option>
       </select>
-
-
       <select type="text" id="sortByHighestPrice">
         <option>Sort</option>
         <option>Accommodation</option>
         <option>Transport</option>
       </select>
-
       <select type="text" id="sortByLowestPrice">
         <option>Sort</option>
         <option>Accommodation</option>
@@ -208,12 +181,10 @@
       </select>
     </div>
   </nav>
-
   <div class="chat-popup">
     <p>Hi there, do you need help?</p>
     <i class="far fa-times-circle close-btn"></i>
   </div>
-
   <img class="chat_icon" src="img/chat_icon.png">
   <nav class="navbar navbar-dark" id="navbar-lg">
       <a class="navbar-brand" href="#"><img class="img-logo-nav"src="img/newzealand.png"></a>
@@ -234,7 +205,6 @@
         </ul>
       </div>
     </nav>
-
   <div class="wrapper">
     <div id="container-transport">
       <div id="content">
@@ -246,21 +216,14 @@
           <div class="alert alert-danger" role="alert">
               Sorry, you can't book for more than 15 days, or less than 0. Please, try again.
             </div>
-
           <div class="input-container">
-
-
             <select type="text" id="accom-or-transport">
               <option>What do you need?</option>
               <option>Accommodation</option>
               <option>Transport</option>
             </select>
-
-
             <input type="text" id="datepicker" placeholder="dd / mm / yyyy" class="datepicker-input">
             <input type="text" id="datepicker2" placeholder="dd / mm / yyyy" class="datepicker-input2">
-          
-
             <select type="text" id="people-search">
               <option>1 People</option>
               <option>2 People</option>
@@ -269,7 +232,6 @@
               <option>5 People</option>
               <option>6 People</option>
             </select>
-
           </div>
           <button type="button" data-toggle="modal" data-target="#accomodationModal" class='btn btn-lg btn-primary btn-accomodation'>Find
               accomodation</button>
@@ -277,14 +239,11 @@
       </div>
     </div>
   </div>
-
-
         <div class="container-fluid">
           <div class="row container mx-auto container-result" id="card-container">
-
+            <!-- HANDLEBARS WILL BE RENDERED HERE -->
           </div>
         </div>
-
   <div class="container container-travel text-dark text-center mt-5">
     <h2>Unleash the traveller inside you</h2>
     <p class="undertitle">Discover our top destinations</p>
@@ -309,7 +268,6 @@
           </figcaption>
           <a href="#"></a>
         </figure>
-
       </div>
       <div class="col-lg-4">
         <figure class="snip1543 hover mt-2" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine"><img src="https://images.pexels.com/photos/724955/pexels-photo-724955.png?auto=compress&cs=tinysrgb&h=350"
@@ -323,13 +281,10 @@
       </div>
     </div>
   </div>
-
   <div class="footer">
       <p>New Zealand Tourism</p>
   </div>
-
   <!-- REVIEWS MODAL -->
-
   <!-- Modal -->
 <div class="modal fade" id="reviewsModal" tabindex="-1" role="dialog" aria-labelledby="reviewsModal" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -350,8 +305,6 @@
       </div>
     </div>
   </div>
-
-
   <!-- Add your site or application content here -->
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -362,7 +315,6 @@
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="js/bootstrap.js"></script>
-
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () {
@@ -380,7 +332,7 @@
   <script>
     AOS.init();
     </script>
-
+<!-- HANDLEBARS START HERE -->
   <script id="summative-template" type="text/x-handlebars-template">
     {{#each types}}
     <div class="col-lg-12 col-md-6 col-sm-12 text-dark mt-2 z__index {{class}} card-wrap" >
@@ -461,8 +413,7 @@
     </div>
   </div>
 </script>
-
-
+<!-- HANDLEBARS START HERE -->
   <script type="text/javascript">
 
       const typewriter = new Typewriter('#typewriter', {
@@ -472,10 +423,8 @@
     });
 
   </script>
-
   <script src="js/main.js"></script>
-  
-
+  <!-- ALWAYS READ MAIN.JS AT THE END -->
 </body>
 
 </html>
