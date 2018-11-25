@@ -1,4 +1,5 @@
 //SLIDER
+var selector = ".card-wrap";
 $(".card-body").scrollTop();
 $(".chat_icon").on('click', function () {
   $(".chat-popup").hide();
@@ -34,8 +35,6 @@ $(".button-send").on('click', function () {
   firstAnswer();
   console.log(answer);
   console.log(answer2);
-  $(".card-wrap").hide(300);
-  $(".card-wrap." + answer + "p." + answer2 + "d").show();
 })
 
 function firstAnswer() {
@@ -93,6 +92,7 @@ function secondAnswer() {
     } else if (("accommodation").indexOf(inputValue) > -1 || ("accomodation").indexOf(inputValue) > -1 || ("acomodation").indexOf(inputValue) > -1) {
 
       $("#card-container").empty();
+
       var info = document.getElementById('summative-template').innerHTML;
       var template = Handlebars.compile(info);
       var dataTemplate = template(accommodation);
@@ -130,7 +130,6 @@ function thirdAnswer() {
     // DO STUFF FOR TRANSPORT HERE
     if (("1 one").includes(inputValue)) {
       answer = 1;
-      console.log(answer);
       howManyPeople();
     } else if (("2 two").includes(inputValue)) {
       answer = 2;
@@ -163,27 +162,21 @@ function thirdAnswer() {
     // DO STUFF FOR ACCOMMODATION HERE
     if (("1 one").includes(inputValue)) {
       var answer = 1;
-      console.log(answer);
       howManyPeople();
     } else if (("2 two").includes(inputValue)) {
       var answer = 2;
-      console.log(answer);
       howManyPeople();
     } else if (("3 three").includes(inputValue)) {
       var answer = 3;
-      console.log(answer);
       howManyPeople();
     } else if (("4 four").includes(inputValue)) {
       var answer = 4;
-      console.log(answer);
       howManyPeople();
     } else if (("5 five").includes(inputValue)) {
       var answer = 5;
-      console.log(answer);
       howManyPeople();
     } else if (("6 six").includes(inputValue)) {
       var answer = 6;
-      console.log(answer);
       howManyPeople();
     } else {
       $(".first_card_3").css('display', 'flex');
@@ -197,11 +190,13 @@ function thirdAnswer() {
     var name = $(".firstAnswer").text();
     $(".fourthAnswer").text("Ok cool " + name + ", you've chosen: " + answer + " people. How many days do you wish to stay?");
     var people = answer;
-
     $(".card-body").scrollTop(1000);
     $(".button-send").addClass('sentMessagePeople');
     $(".button-send").removeClass('sentThirdMessageAccommodation');
     $(".button-send").removeClass('sentThirdMessageTransport');
+    selector += "." + answer + "p";
+    $(".card-wrap").hide();
+    $(selector).show()
   }
 }
 
@@ -221,62 +216,47 @@ function fourthAnswer() {
 
     if (("1 one").includes(inputValue)) {
       var answer2 = 1;
-      console.log(answer2);
     } else if (("2 two").includes(inputValue)) {
       var answer2 = 2;
-      console.log(answer2);
       howManyDays();
     } else if (("3 three").includes(inputValue)) {
       var answer2 = 3;
-      console.log(answer2);
       howManyDays();
     } else if (("4 four").includes(inputValue)) {
       var answer2 = 4;
-      console.log(answer2);
       howManyDays();
     } else if (("5 five").includes(inputValue)) {
       var answer2 = 5;
-      console.log(answer2);
       howManyDays();
     } else if (("6 six").includes(inputValue)) {
       var answer2 = 6;
-      console.log(answer2);
       howManyDays();
     } else if (("7 seven").includes(inputValue)) {
       var answer2 = 7;
-      console.log(answer2);
       howManyDays();
     } else if (("8 eight").includes(inputValue)) {
       var answer2 = 8;
-      console.log(answer2);
       howManyDays();
     } else if (("9 nine").includes(inputValue)) {
       var answer2 = 9;
-      console.log(answer2);
       howManyDays();
     } else if (("10 ten").includes(inputValue)) {
       var answer2 = 10;
-      console.log(answer2);
       howManyDays();
     } else if (("11 eleven").includes(inputValue)) {
       var answer2 = 11;
-      console.log(answer2);
       howManyDays();
     } else if (("12 twelve").includes(inputValue)) {
       var answer2 = 12;
-      console.log(answer2);
       howManyDays();
     } else if (("13 thirteen").includes(inputValue)) {
       var answer2 = 13;
-      console.log(answer2);
       howManyDays();
     } else if (("14 fourteen").includes(inputValue)) {
       var answer2 = 14;
-      console.log(answer2);
       howManyDays();
     } else if (("15 fifteen").includes(inputValue)) {
       var answer2 = 15;
-      console.log(answer2);
       howManyDays();
     }
 
@@ -286,6 +266,9 @@ function fourthAnswer() {
       $(".card-body").scrollTop(1000);
       $(".button-send").removeClass('sentMessagePeople');
       setTimeout(goToPageWithResults, 3000)
+       selector += "." + answer2 + "d";
+      $(".card-wrap").hide();
+      $(selector).show()
     }
   }
 }
