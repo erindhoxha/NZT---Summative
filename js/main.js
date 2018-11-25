@@ -1,3 +1,4 @@
+
 $(".alert").hide();
 // $('body').css('overflow', 'hidden');
 $('.btn-accomodation').on('click', function () {
@@ -8,14 +9,15 @@ $('.btn-accomodation').on('click', function () {
 
     var firstDate = $("#datepicker").datepicker("getDate")
     var secondDate = $("#datepicker2").datepicker("getDate")
+    if (firstDate == undefined || secondDate == undefined) {
+        $(".alert").show();
+    } else {
     var numberOfDays = Math.abs((firstDate.getTime() - secondDate.getTime()) / (oneDay));
+    }
 
     console.log(transportOrAccommodation)
     console.log(numberOfDays);
     console.log(peopleValue);
-
-
-
 
     if (numberOfDays > 15 || firstDate >= secondDate) {
         $(".alert").show(500);
@@ -29,12 +31,15 @@ $('.btn-accomodation').on('click', function () {
             },
             'slow');
     }
+    
     if (transportOrAccommodation == "Accommodation") {
 
         var info = document.getElementById('summative-template').innerHTML;
         var template = Handlebars.compile(info);
         var dataTemplate = template(accommodation);
         var templateWrite = document.getElementById('card-container').innerHTML += dataTemplate;
+
+        var answerData = accommodation;
 
     } else if (transportOrAccommodation == "Transport") {
 
@@ -43,6 +48,7 @@ $('.btn-accomodation').on('click', function () {
         var dataTemplate = template(transport);
         var templateWrite = document.getElementById('card-container').innerHTML += dataTemplate;
 
+        var answerData = transport;
     }
 
     // FILTER THE CARDS - ADD THE CLASSES WHICH IS APPROPRIATE .daysd + .peoplep + card-wrap
@@ -57,7 +63,7 @@ $('.btn-accomodation').on('click', function () {
         var oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
         $("#datepicker2").on('change', function () {
 
-            $(".price-modal").text('Price: $' + transport.types[dataNr].price * numberOfDays);
+            $(".price-modal").text('Price: $' + answerData.types[dataNr].price * numberOfDays);
         });
 
         $(".modal-body").css('text-align', 'center');
@@ -65,14 +71,14 @@ $('.btn-accomodation').on('click', function () {
         console.log($(this).closest(".card-wrapper").attr('data-nr'));
         var dataNr = $(this).closest(".card-wrapper").attr('data-nr');
         $("#theModal").attr('data-nr', dataNr);
-        for (var i = 0; i < transport.types[dataNr].images.length; i++) {
-            $(".image-" + i).attr('src', "img/" + transport.types[dataNr].images[i]);
+        for (var i = 0; i < answerData.types[dataNr].images.length; i++) {
+            $(".image-" + i).attr('src', "img/" + answerData.types[dataNr].images[i]);
         }
-        $(".modal-title").text(transport.types[dataNr].name);
-        $(".modal-description").text(transport.types[dataNr].description);
-        $(".card-wrapper").find($(".rating")[dataNr]).addClass('rating-modal').removeClass('rating').clone().appendTo(".rating-container");
+        $(".price-modal").text('Price: $' + answerData.types[dataNr].price + " x " + numberOfDays + " days = $" + answerData.types[dataNr].price * numberOfDays);
+        $(".modal-title").text(answerData.types[dataNr].name);
+        $(".modal-description").text(answerData.types[dataNr].description);
+        $(".card-wrapper").find($(".rating")[dataNr]).clone().appendTo(".rating-container");
     })
-
 });
 
 /* Demo purposes only */

@@ -87,6 +87,14 @@
   margin-top: auto;
   margin-bottom: auto; }
 
+.modal-image {
+  height: 100%; }
+
+.people {
+  margin: 10px; }
+  .people i {
+    font-size: 20px; }
+
 .card-chat {
   height: 500px;
   border-radius: 15px !important;

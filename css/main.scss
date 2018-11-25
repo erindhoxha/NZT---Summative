@@ -111,7 +111,15 @@ $blue: #0a84e1;
   margin-top: auto;
   margin-bottom: auto;
 }
-
+.modal-image {
+  height:100%;
+}
+.people {
+  i {
+    font-size:20px;
+  }
+  margin:10px;
+}
 .card-chat {
   height: 500px;
   border-radius: 15px !important;
