@@ -16,10 +16,13 @@ $('.btn-accomodation').on('click', function () {
     console.log(numberOfDays);
     console.log(peopleValue);
 
-     if (numberOfDays > 15 || firstDate > secondDate) {
+     if (numberOfDays > 15 || firstDate >= secondDate) {
         $(".alert").show(500);
+        $(".line").hide(500);
      } else {
-             // $('body').css('overflow', 'auto');
+        // $('body').css('overflow', 'auto');
+        $(".alert").hide(500);
+        $(".line").show(500);
     $('html,body').animate({
         scrollTop: $(".container-result").offset().top
     },
@@ -218,10 +221,3 @@ $(document).on('resize, ready', function() {
     }
    }
 
-   var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
-   var numberOfDays;
-   $("#datepicker2").on('change', function() {
-    var firstDate = $( "#datepicker").datepicker( "getDate" )
-    var secondDate = $( "#datepicker2").datepicker( "getDate" )
-    var numberOfDays = Math.abs((firstDate.getTime() - secondDate.getTime()) / (oneDay));
-   });

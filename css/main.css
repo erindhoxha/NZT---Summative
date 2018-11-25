@@ -317,7 +317,13 @@ html {
   background-color: #4689BC;
   color: #fff;
   font-weight: 400;
-  border-radius: 50px; }
+  border-radius: 50px;
+  transition: 0.3s ease all; }
+
+.btn-book:hover {
+  transform: scale(1.1);
+  border-radius: 0px;
+  background-color: #2873AC; }
 
 .btn-transport {
   border: 1px solid white !important;

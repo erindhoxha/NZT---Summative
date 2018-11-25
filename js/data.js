@@ -2,13 +2,13 @@ var transport = {
   types: [
     {
       name: "KTM 500 EXC 2800",
-      class: "motorbike",
+      class: "motorbike 1p 1d 2d 3d 4d 5d",
       image: "motorbike-1.jpeg",
       description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
       checked: ["checked", "checked"],
       unchecked: ["unchecked", "unchecked", "unchecked"],
       available: "Available",
-      price: "288",
+      price: "109",
       value: "$99 until Dec 2018",
       reviews: 8,
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
@@ -16,13 +16,13 @@ var transport = {
     },
     {
       name: "KTM 500 EXC 2800",
-      class: "motorbike",
+      class: "motorbike 1p 1d 2d 3d 4d 5d",
       image: "motorbike-2.jpeg",
       description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
       checked: ["checked", "checked"],
       unchecked: ["unchecked", "unchecked", "unchecked"],
       available: "Available",
-      price: "288",
+      price: "109",
       value: "$99 until Dec 2018",
       reviews: 8,
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
@@ -30,13 +30,13 @@ var transport = {
     },
     {
       name: "KTM 500 EXC 2800",
-      class: "motorbike",
+      class: "motorbike 1p 1d 2d 3d 4d 5d",
       image: "motorbike-3.jpeg",
       description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
       checked: ["checked", "checked"],
       unchecked: ["unchecked", "unchecked", "unchecked"],
       available: "Available",
-      price: "288",
+      price: "109",
       value: "$99 until Dec 2018",
       reviews: 8,
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
@@ -44,13 +44,13 @@ var transport = {
     },
     {
       name: "KTM 500 EXC 2800",
-      class: "motorbike",
+      class: "motorbike 1p 1d 2d 3d 4d 5d",
       image: "motorbike-4.jpeg",
       description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
       checked: ["checked", "checked"],
       unchecked: ["unchecked", "unchecked", "unchecked"],
       available: "Available",
-      price: "288",
+      price: "109",
       value: "$99 until Dec 2018",
       reviews: 8,
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
@@ -58,13 +58,13 @@ var transport = {
     },
     {
       name: "KTM 500 EXC 2800",
-      class: "motorbike",
+      class: "motorbike 1p 1d 2d 3d 4d 5d",
       image: "motorbike-5.jpeg",
       description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
       checked: ["checked", "checked"],
       unchecked: ["unchecked", "unchecked", "unchecked"],
       available: "Available",
-      price: "288",
+      price: "109",
       value: "$99 until Dec 2018",
       reviews: 8,
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
@@ -72,13 +72,13 @@ var transport = {
     },
     {
       name: "KTM 500 EXC 2800",
-      class: "motorbike",
+      class: "motorbike 1p 1d 2d 3d 4d 5d",
       image: "motorbike-6.jpeg",
       description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
       checked: ["checked", "checked"],
       unchecked: ["unchecked", "unchecked", "unchecked"],
       available: "Available",
-      price: "288",
+      price: "109",
       value: "$99 until Dec 2018",
       reviews: 8,
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
@@ -86,13 +86,13 @@ var transport = {
     },
     {
       name: "KTM 500 EXC 2800",
-      class: "motorbike",
+      class: "motorbike 1p 1d 2d 3d 4d 5d",
       image: "motorbike-7.jpeg",
       description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
       checked: ["checked", "checked"],
       unchecked: ["unchecked", "unchecked", "unchecked"],
       available: "Available",
-      price: "288",
+      price: "109",
       value: "$99 until Dec 2018",
       reviews: 8,
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
@@ -100,7 +100,7 @@ var transport = {
     },
     {
       name: "KTM 500 EXC 2800",
-      class: "car",
+      class: "car 1p 2p 1p 1d 2d 3d 4d 5d 6d 7d 8d 9d 10d",
       image: "car-1.jpg",
       description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
       checked: ["checked", "checked"],
@@ -114,7 +114,7 @@ var transport = {
     },
     {
       name: "KTM 500 EXC 2800",
-      class: "car",
+      class: "car 1p 2p 1p 1d 2d 3d 4d 5d 6d 7d 8d 9d 10d",
       image: "car-2.png",
       description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
       checked: ["checked", "checked"],
@@ -128,7 +128,7 @@ var transport = {
     },
     {
       name: "KTM 500 EXC 2800",
-      class: "car",
+      class: "car 1p 2p 1p 1d 2d 3d 4d 5d 6d 7d 8d 9d 10d",
       image: "car-3.png",
       description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
       checked: ["checked", "checked"],
@@ -142,7 +142,7 @@ var transport = {
     },
     {
       name: "KTM 500 EXC 2800",
-      class: "car",
+      class: "car 1p 2p 1p 1d 2d 3d 4d 5d 6d 7d 8d 9d 10d",
       image: "car-4.png",
       description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
       checked: ["checked", "checked"],
@@ -156,7 +156,7 @@ var transport = {
     },
     {
       name: "KTM 500 EXC 2800",
-      class: "car",
+      class: "car 1p 2p 1p 1d 2d 3d 4d 5d 6d 7d 8d 9d 10d",
       image: "car-5.jpg",
       description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
       checked: ["checked", "checked"],
@@ -170,7 +170,7 @@ var transport = {
     },
     {
       name: "KTM 500 EXC 2800",
-      class: "largecar",
+      class: "largecar 1p 2p 3p 4p 5p 3d 4d 5d 6d 7d 8d 9d 10d",
       image: "large-car-1.jpg",
       description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
       checked: ["checked", "checked"],
@@ -184,7 +184,7 @@ var transport = {
     },
     {
       name: "KTM 500 EXC 2800",
-      class: "largecar",
+      class: "largecar 1p 2p 3p 4p 5p 3d 4d 5d 6d 7d 8d 9d 10d",
       image: "large-car-2.jpg",
       description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
       checked: ["checked", "checked"],
@@ -198,7 +198,7 @@ var transport = {
     },
     {
       name: "KTM 500 EXC 2800",
-      class: "largecar",
+      class: "largecar 1p 2p 3p 4p 5p 3d 4d 5d 6d 7d 8d 9d 10d",
       image: "large-car-3.jpg",
       description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
       checked: ["checked", "checked"],
@@ -212,7 +212,7 @@ var transport = {
     },
     {
       name: "KTM 500 EXC 2800",
-      class: "largecar",
+      class: "largecar 1p 2p 3p 4p 5p 3d 4d 5d 6d 7d 8d 9d 10d",
       image: "large-car-4.jpg",
       description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
       checked: ["checked", "checked"],
@@ -226,7 +226,7 @@ var transport = {
     },
     {
       name: "KTM 500 EXC 2800",
-      class: "largecar",
+      class: "largecar 1p 2p 3p 4p 5p 3d 4d 5d 6d 7d 8d 9d 10d",
       image: "large-car-5.jpg",
       description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
       checked: ["checked", "checked"],
@@ -240,7 +240,7 @@ var transport = {
     },
     {
       name: "KTM 500 EXC 2800",
-      class: "largecar",
+      class: "largecar 1p 2p 3p 4p 5p 3d 4d 5d 6d 7d 8d 9d 10d",
       image: "large-car-6.jpeg",
       description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
       checked: ["checked", "checked"],
@@ -254,7 +254,7 @@ var transport = {
     },
     {
       name: "KTM 500 EXC 2800",
-      class: "motorhome",
+      class: "motorhome 2p 3p 4p 5p 6p 2d 3d 4d 5d 6d 7d 8d 9d 10d 11d 12d 13d 14d 15d",
       image: "motor-van-1.jpg",
       description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
       checked: ["checked", "checked"],
@@ -268,7 +268,7 @@ var transport = {
     },
     {
       name: "KTM 500 EXC 2800",
-      class: "motorhome",
+      class: "motorhome 2p 3p 4p 5p 6p 2d 3d 4d 5d 6d 7d 8d 9d 10d 11d 12d 13d 14d 15d",
       image: "motor-van-3.jpg",
       description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
       checked: ["checked", "checked"],
@@ -282,7 +282,7 @@ var transport = {
     },
     {
       name: "KTM 500 EXC 2800",
-      class: "motorhome",
+      class: "motorhome 2p 3p 4p 5p 6p 2d 3d 4d 5d 6d 7d 8d 9d 10d 11d 12d 13d 14d 15d",
       image: "motor-van-4.jpg",
       description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
       checked: ["checked", "checked"],
@@ -296,7 +296,7 @@ var transport = {
     },
     {
       name: "KTM 500 EXC 2800",
-      class: "motorhome",
+      class: "motorhome 2p 3p 4p 5p 6p 2d 3d 4d 5d 6d 7d 8d 9d 10d 11d 12d 13d 14d 15d",
       image: "motor-van-5.jpg",
       description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
       checked: ["checked", "checked"],
@@ -310,7 +310,7 @@ var transport = {
     },
     {
       name: "KTM 500 EXC 2800",
-      class: "motorhome",
+      class: "motorhome 2p 3p 4p 5p 6p 2d 3d 4d 5d 6d 7d 8d 9d 10d 11d 12d 13d 14d 15d",
       image: "motor-van-3.jpg",
       description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
       checked: ["checked", "checked", "checked"],
@@ -331,7 +331,7 @@ var accommodation = {
   types: [
     {
       name: "Hotel Victoria",
-      class: "hotel",
+      class: "hotel 1p 2p 1d 2d 3d 4d 5d",
       image: "hotel-1.jpeg",
       description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
       checked: ["checked", "checked"],
@@ -345,7 +345,7 @@ var accommodation = {
     },
     {
       name: "Hotel Victoria",
-      class: "hotel",
+      class: "hotel 1p 2p 1d 2d 3d 4d 5d",
       image: "hotel-2.jpeg",
       description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
       checked: ["checked", "checked"],
@@ -359,7 +359,7 @@ var accommodation = {
     },
     {
       name: "Hotel Victoria",
-      class: "hotel",
+      class: "hotel 1p 2p 1d 2d 3d 4d 5d",
       image: "hotel-3.jpeg",
       description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
       checked: ["checked", "checked"],
@@ -373,7 +373,7 @@ var accommodation = {
     },
     {
       name: "Hotel Victoria",
-      class: "hotel",
+      class: "hotel 1p 2p 1d 2d 3d 4d 5d",
       image: "hotel-4.jpeg",
       description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
       checked: ["checked", "checked"],
@@ -387,7 +387,7 @@ var accommodation = {
     },
     {
       name: "Hotel Victoria",
-      class: "hotel",
+      class: "hotel 1p 2p 1d 2d 3d 4d 5d",
       image: "hotel-4.jpeg",
       description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
       checked: ["checked", "checked"],
@@ -401,7 +401,7 @@ var accommodation = {
     },
     {
       name: "Hostel Victoria",
-      class: "hostel",
+      class: "hostel 1p 1d 2d 3d 4d 5d 6d 7d 8d 9d 10d",
       image: "hostel-1.jpeg",
       description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
       checked: ["checked", "checked"],
@@ -415,7 +415,7 @@ var accommodation = {
     },
     {
       name: "Hostel Victoria",
-      class: "hostel",
+      class: "hostel 1p 1d 2d 3d 4d 5d 6d 7d 8d 9d 10d",
       image: "hostel-2.jpg",
       description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
       checked: ["checked", "checked"],
@@ -429,7 +429,7 @@ var accommodation = {
     },
     {
       name: "Motel Victoria",
-      class: "motel",
+      class: "motel 2p 3p 4p 3d 4d 5d 6d 7d 8d 9d 10d",
       image: "motel-1.jpeg",
       description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
       checked: ["checked", "checked"],
@@ -443,7 +443,7 @@ var accommodation = {
     },
     {
       name: "Motel Victoria",
-      class: "motel",
+      class: "motel 2p 3p 4p 3d 4d 5d 6d 7d 8d 9d 10d",
       image: "motel-2.jpeg",
       description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
       checked: ["checked", "checked"],
@@ -457,7 +457,7 @@ var accommodation = {
     },
     {
       name: "House Victoria",
-      class: "house",
+      class: "house 1p 2p 3p 4p 2d 3d 4d 5d 6d 7d 8d 9d 10d 11d 12d 13d 14d 15d",
       image: "house-1.jpeg",
       description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
       checked: ["checked", "checked"],
@@ -471,7 +471,7 @@ var accommodation = {
     },
     {
       name: "House Victoria",
-      class: "house",
+      class: "house 1p 2p 3p 4p 2d 3d 4d 5d 6d 7d 8d 9d 10d 11d 12d 13d 14d 15d",
       image: "house-2.jpeg",
       description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
       checked: ["checked", "checked"],
@@ -485,7 +485,7 @@ var accommodation = {
     },
     {
       name: "House Victoria",
-      class: "house",
+      class: "house 1p 2p 3p 4p 2d 3d 4d 5d 6d 7d 8d 9d 10d 11d 12d 13d 14d 15d",
       image: "house-3.jpeg",
       description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
       checked: ["checked", "checked"],
@@ -499,7 +499,7 @@ var accommodation = {
     },
     {
       name: "House Victoria",
-      class: "house",
+      class: "house 1p 2p 3p 4p 2d 3d 4d 5d 6d 7d 8d 9d 10d 11d 12d 13d 14d 15d",
       image: "house-4.jpeg",
       description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
       checked: ["checked", "checked"],
@@ -513,7 +513,7 @@ var accommodation = {
     },
     {
       name: "House Victoria",
-      class: "house",
+      class: "house 1p 2p 3p 4p 2d 3d 4d 5d 6d 7d 8d 9d 10d 11d 12d 13d 14d 15d",
       image: "house-6.jpeg",
       description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
       checked: ["checked", "checked"],
