@@ -91,15 +91,32 @@
 .modal-image {
   height: 100%; }
 
+.nzt-container {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  z-index: 9999999999999999;
+  position: absolute; }
+
+.hide-everything {
+  display: none; }
+
+.svg-nzt-embed {
+  -webkit-filter: invert(1);
+  filter: invert(1);
+  width: 200px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
 .overload-wrapper {
   width: 30%;
   height: 30%;
   background-color: transparent;
-  z-index: 2;
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
+  z-index: 2; }
 
 .people {
   margin: 10px; }
@@ -346,9 +363,13 @@ html {
   color: #fff;
   font-weight: 400;
   border-radius: 50px;
+  -webkit-transition: 0.3s ease all;
+  -o-transition: 0.3s ease all;
   transition: 0.3s ease all; }
 
 .btn-book:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
   transform: scale(1.1);
   border-radius: 0px;
   background-color: #2873AC; }
@@ -739,6 +760,15 @@ h1 {
   width: 220px;
   cursor: pointer; }
 
+.datepicker-input::-webkit-input-placeholder, .datepicker-input2::-webkit-input-placeholder {
+  color: #ebebeb; }
+
+.datepicker-input:-ms-input-placeholder, .datepicker-input2:-ms-input-placeholder {
+  color: #ebebeb; }
+
+.datepicker-input::-ms-input-placeholder, .datepicker-input2::-ms-input-placeholder {
+  color: #ebebeb; }
+
 .datepicker-input::placeholder, .datepicker-input2::placeholder {
   color: #ebebeb; }
 
@@ -1016,7 +1046,6 @@ h1 {
   .select {
     margin-bottom: 4px;
     margin-top: 4px; }
-
   /* smartphones, iPhone, portrait 480x320 phones */
   .header-title {
     font-size: 35px; }
@@ -1024,7 +1053,6 @@ h1 {
     right: 15px !important; }
   .btn-accomodation {
     margin-top: 4px !important; }
-
   .follow-up-input {
     display: none;
     visibility: hidden; }
