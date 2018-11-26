@@ -88,6 +88,24 @@
   margin-top: auto;
   margin-bottom: auto; }
 
+.modal-image {
+  height: 100%; }
+
+.overload-wrapper {
+  width: 30%;
+  height: 30%;
+  background-color: transparent;
+  z-index: 2;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.people {
+  margin: 10px; }
+  .people i {
+    font-size: 20px; }
+
 .card-chat {
   height: 500px;
   border-radius: 15px !important;
@@ -189,6 +207,11 @@
   bottom: 0.2em;
   right: 0.4em;
   border: 1.5px solid white; }
+
+.alert-danger {
+  background-color: black !important;
+  color: white !important;
+  border: none !important; }
 
 .offline {
   background-color: #c23616 !important; }
@@ -322,7 +345,13 @@ html {
   background-color: #4689BC;
   color: #fff;
   font-weight: 400;
-  border-radius: 50px; }
+  border-radius: 50px;
+  transition: 0.3s ease all; }
+
+.btn-book:hover {
+  transform: scale(1.1);
+  border-radius: 0px;
+  background-color: #2873AC; }
 
 .btn-transport {
   border: 1px solid white !important;
@@ -710,15 +739,6 @@ h1 {
   width: 220px;
   cursor: pointer; }
 
-.datepicker-input::-webkit-input-placeholder, .datepicker-input2::-webkit-input-placeholder {
-  color: #ebebeb; }
-
-.datepicker-input:-ms-input-placeholder, .datepicker-input2:-ms-input-placeholder {
-  color: #ebebeb; }
-
-.datepicker-input::-ms-input-placeholder, .datepicker-input2::-ms-input-placeholder {
-  color: #ebebeb; }
-
 .datepicker-input::placeholder, .datepicker-input2::placeholder {
   color: #ebebeb; }
 
@@ -994,14 +1014,17 @@ h1 {
   .card-text {
     font-size: 13px; }
   .select {
-    margin-bottom: 10px; }
+    margin-bottom: 4px;
+    margin-top: 4px; }
+
   /* smartphones, iPhone, portrait 480x320 phones */
   .header-title {
     font-size: 35px; }
   .chat_icon {
     right: 15px !important; }
   .btn-accomodation {
-    margin-top: 5px; }
+    margin-top: 4px !important; }
+
   .follow-up-input {
     display: none;
     visibility: hidden; }
