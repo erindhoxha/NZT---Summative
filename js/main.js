@@ -86,7 +86,28 @@ $('.btn-accomodation').on('click', function () {
         $(".modal-title").text(answerData.types[dataNr].name);
         $(".modal-description").text(answerData.types[dataNr].description);
         $(".card-wrapper").find($(".rating")[dataNr]).clone().appendTo(".rating-container");
+        $(".modal-body .rating").addClass("modal-rating");
+        $(".modal-body .rating").removeClass("rating");
+        for (var i = 0; i < $(".meals").length; i++) {
+            $(".meals-image-" + i).attr('src', answerData.types[dataNr].mealsImage[i]);
+          }
+        $(".special-modal").text(answerData.types[dataNr].value);
+        if ($(".special-modal").text() == "") {
+            $(".special-modal").hide();
+        }
     })
+
+
+        $(".btn-review-modal").on('click', function () {
+            console.log($(this).closest(".card-wrapper").attr('data-nr'));
+            var dataNr = $(this).closest(".card-wrapper").attr('data-nr');
+
+            for (var i = 0; i < $(".review").length; i++) {
+                $(".review-" + i + "-text").text(answerData.types[dataNr].reviews[i]);
+            }
+            $(".modal-review-title").text(answerData.types[dataNr].name);
+
+        })
 });
 
 /* Demo purposes only */
@@ -244,3 +265,4 @@ function scrollWindow() {
         prevScrollpos = currentScrollPos;
     }
 }
+

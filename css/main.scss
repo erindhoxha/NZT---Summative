@@ -128,9 +128,38 @@ $blue: #0a84e1;
   background-color:$verylight;
   color:white;
 }
-.meals-image {
+.meals-image, .meals-image-0, .meals-image-1 {
   width:80%;
   margin:0 auto;
+}
+.thumbs-down {
+  margin-right:10px;
+}
+.rating-review {
+  text-align:left;
+  // text-align:center;
+}
+.x-btn {
+  color:white;
+}
+.review-modal-content {
+  background-color: rgba(0, 0, 0, 0.83) !important;
+  color:white !important;
+  padding-bottom: 30px !important;
+}
+.review-0-text, .review-1-text, .review-2-text {
+  text-align:center;
+  margin-top:10px;
+}
+.review {
+  border-bottom: 1px solid #ebebeb;
+  img {
+    width:100%;
+  }
+  width:50%;
+  margin:0 auto;
+  padding-top:20px;
+  padding-bottom:20px;
 }
 .meals {
   width:42%;
@@ -1175,6 +1204,10 @@ h1 {
   cursor: pointer;
 }
 @media (min-width:220px) {
+  .fuelCard {
+    width:100%;
+    padding-left:0px;
+  }
   .follow-up-input {
     display:none;
     visibility:hidden;
@@ -1273,6 +1306,9 @@ h1 {
 }
 
 @media (min-width:961px) {
+  .fuelCard {
+    margin-bottom:10px !important;
+  }
   .header-title {
     font-size:53px;
   }
@@ -1285,16 +1321,17 @@ h1 {
 
 
 @media (min-width:1000px) {
+
   .btn-book {
     width:20%;
     float:right;
     margin-right:15px !important;
-    margin-top:10px !important
+    margin-top:10px !important;
+    margin-bottom: 10px !important;
   }
   .input-container {
     margin-top: 10px;
     margin-bottom:10px;
-
   }
   .follow-up-input {
     display:block;
@@ -1323,7 +1360,7 @@ h1 {
       flex-direction:row;
     }
     .card-img-top {
-      width:30% !important;
+      width:32% !important;
       height:20% !important;
     }
     .card-body {
@@ -1352,13 +1389,13 @@ h1 {
     float:right;
   }
   .rating {
-    width:100%;
-    float:none;
+    width:50%;
+    float:left;
   }
   /* big landscape tablets, laptops, and desktops */
 }
 
-.special {
+.special, .special-modal {
   position:absolute;
   background-color:#D45050;
   color:white;

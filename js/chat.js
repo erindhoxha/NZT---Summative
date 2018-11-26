@@ -329,6 +329,9 @@ function goToPageWithResults() {
       $(".modal-title").text(answerData.types[dataNr].name);
       $(".modal-description").text(answerData.types[dataNr].description);
       $(".card-wrapper").find($(".rating")[dataNr]).clone().appendTo(".rating-container");
+      for (var i = 0; i < $(".meals").length; i++) {
+        $(".meals-image-" + i).attr('src', answerData.types[dataNr].mealsImage[i]);
+      }
     })
 }
 

@@ -14,7 +14,8 @@ var transport = {
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["motorbike-1.jpeg", "motorbike-2.jpeg", "motorbike-3.jpeg"],
       people: 1,
-      fuel: "3.7l/100km"
+      fuel: "3.7l/100km",
+      reviews:["Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie."]
     },
     {
       name: "KTM 500 EXC 2800",
@@ -30,7 +31,8 @@ var transport = {
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["motorbike-2.jpeg", "motorbike-2.jpeg", "motorbike-3.jpeg"],
       people: 1,
-      fuel: "3.7l/100km"
+      fuel: "3.7l/100km",
+      reviews:["Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie."]
     },
     {
       name: "KTM 500 EXC 2800",
@@ -46,7 +48,8 @@ var transport = {
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["motorbike-3.jpeg", "motorbike-2.jpeg", "motorbike-3.jpeg"],
       people: 1,
-      fuel: "3.7l/100km"
+      fuel: "3.7l/100km",
+      reviews:["Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie."]
     },
     {
       name: "KTM 500 EXC 2800",
@@ -62,7 +65,8 @@ var transport = {
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["motorbike-4.jpeg", "motorbike-2.jpeg", "motorbike-3.jpeg"],
       people: 1,
-      fuel: "3.7l/100km"
+      fuel: "3.7l/100km",
+      reviews:["Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie."]
     },
     {
       name: "KTM 500 EXC 2800",
@@ -78,7 +82,8 @@ var transport = {
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["motorbike-5.jpeg", "motorbike-2.jpeg", "motorbike-3.jpeg"],
       people: 1,
-      fuel: "3.7l/100km"
+      fuel: "3.7l/100km",
+      reviews:["Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie."]
     },
     {
       name: "KTM 500 EXC 2800",
@@ -94,7 +99,8 @@ var transport = {
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["motorbike-6.jpeg", "motorbike-2.jpeg", "motorbike-3.jpeg"],
       people: 1,
-      fuel: "3.7l/100km"
+      fuel: "3.7l/100km",
+      reviews:["Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie."]
     },
     {
       name: "KTM 500 EXC 2800",
@@ -110,7 +116,8 @@ var transport = {
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["motorbike-7.jpeg", "motorbike-6.jpeg", "motorbike-3.jpeg"],
       people: 1,
-      fuel: "3.7l/100km"
+      fuel: "3.7l/100km",
+      reviews:["Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie."]
     },
     {
       name: "KTM 500 EXC 2800",
@@ -126,7 +133,8 @@ var transport = {
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["car-1.jpg", "car-2.png", "car-3.png"],
       people: "1-2",
-      fuel: "8.5l/100km"
+      fuel: "8.5l/100km",
+      reviews:["Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie."]
     },
     {
       name: "KTM 500 EXC 2800",
@@ -142,7 +150,8 @@ var transport = {
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["car-2.png", "car-2.png", "car-3.png"],
       people: "1-2",
-      fuel: "8.5l/100km"
+      fuel: "8.5l/100km",
+      reviews:["Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie."]
     },
     {
       name: "KTM 500 EXC 2800",
@@ -158,7 +167,8 @@ var transport = {
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["car-3.png", "car-2.png", "car-3.png"],
       people: "1-2",
-      fuel: "8.5l/100km"
+      fuel: "8.5l/100km",
+      reviews:["Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie."]
     },
     {
       name: "KTM 500 EXC 2800",
@@ -174,7 +184,8 @@ var transport = {
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["car-4.png", "car-2.png", "car-3.png"],
       people: "1-2",
-      fuel: "8.5l/100km"
+      fuel: "8.5l/100km",
+      reviews:["Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie."]
     },
     {
       name: "KTM 500 EXC 2800",
@@ -190,7 +201,8 @@ var transport = {
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["car-5.jpg", "car-2.png", "car-3.png"],
       people: "1-2",
-      fuel: "8.5l/100km"
+      fuel: "8.5l/100km",
+      reviews:["Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie."]
     },
     {
       name: "KTM 500 EXC 2800",
@@ -206,7 +218,8 @@ var transport = {
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["large-car-1.jpg", "large-car-2.jpg", "large-car-3.jpg"],
       people: "1-5",
-      fuel: "9.7l/100km"
+      fuel: "9.7l/100km",
+      reviews:["Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie."]
     },
     {
       name: "KTM 500 EXC 2800",
@@ -222,7 +235,8 @@ var transport = {
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["large-car-2.jpg", "large-car-2.jpg", "large-car-3.jpg"],
       people: "1-5",
-      fuel: "9.7l/100km"
+      fuel: "9.7l/100km",
+      reviews:["Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie."]
     },
     {
       name: "KTM 500 EXC 2800",
@@ -238,7 +252,8 @@ var transport = {
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["large-car-3.jpg", "large-car-2.jpg", "large-car-3.jpg"],
       people: "1-5",
-      fuel: "9.7l/100km"
+      fuel: "9.7l/100km",
+      reviews:["Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie."]
     },
     {
       name: "KTM 500 EXC 2800",
@@ -254,7 +269,8 @@ var transport = {
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["large-car-4.jpg", "large-car-2.jpg", "large-car-3.jpg"],
       people: "1-5",
-      fuel: "9.7l/100km"
+      fuel: "9.7l/100km",
+      reviews:["Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie."]
     },
     {
       name: "KTM 500 EXC 2800",
@@ -270,7 +286,8 @@ var transport = {
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["large-car-5.jpg", "large-car-2.jpg", "large-car-3.jpg"],
       people: "1-5",
-      fuel: "9.7l/100km"
+      fuel: "9.7l/100km",
+      reviews:["Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie."]
     },
     {
       name: "KTM 500 EXC 2800",
@@ -286,7 +303,8 @@ var transport = {
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["large-car-6.jpeg", "large-car-2.jpg", "large-car-3.jpg"],
       people: "1-5",
-      fuel: "9.7l/100km"
+      fuel: "9.7l/100km",
+      reviews:["Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie."]
     },
     {
       name: "KTM 500 EXC 2800",
@@ -317,7 +335,8 @@ var transport = {
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["motor-van-3.jpg", "motor-van-3.jpg", "motor-van-4.jpg"],
       people: "2-6",
-      fuel: "17l/100km"
+      fuel: "17l/100km",
+      reviews:["Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie."]
     },
     {
       name: "KTM 500 EXC 2800",
@@ -333,7 +352,8 @@ var transport = {
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["motor-van-4.jpg", "motor-van-3.jpg", "motor-van-4.jpg"],
       people: "2-6",
-      fuel: "17l/100km"
+      fuel: "17l/100km",
+      reviews:["Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie."]
     },
     {
       name: "KTM 500 EXC 2800",
@@ -349,7 +369,8 @@ var transport = {
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["motor-van-5.jpg", "motor-van-3.jpg", "motor-van-4.jpg"],
       people: "2-6",
-      fuel: "17l/100km"
+      fuel: "17l/100km",
+      reviews:["Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie."]
     },
     {
       name: "KTM 500 EXC 2800",
@@ -365,7 +386,8 @@ var transport = {
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["motor-van-3.jpg", "motor-van-3.jpg", "motor-van-4.jpg"],
       people: "2-6",
-      fuel: "17l/100km"
+      fuel: "17l/100km",
+      reviews:["Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie."]
     },
   ]
 };
@@ -388,7 +410,8 @@ var accommodation = {
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["hotel-1.jpeg", "hotel-2.jpeg", "hotel-3.jpeg"],
       people: "1-2",
-      meals: "breakfast"
+      mealsImage: ["img/breakfast.jpeg", "img/lunch.jpeg"],
+      reviews:["Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie."]
     },
     {
       name: "Hotel Victoria",
@@ -403,7 +426,9 @@ var accommodation = {
       reviews: 8,
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["hotel-2.jpeg", "hotel-2.jpeg", "hotel-3.jpeg"],
-      people: "1-2"
+      people: "1-2",
+      mealsImage: ["img/breakfast.jpeg", "img/lunch.jpeg"],
+      reviews:["Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie."]
     },
     {
       name: "Hotel Victoria",
@@ -418,7 +443,9 @@ var accommodation = {
       reviews: 8,
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["hotel-3.jpeg", "hotel-2.jpeg", "hotel-3.jpeg"],
-      people: "1-2"
+      people: "1-2",
+      mealsImage: ["img/breakfast.jpeg", "img/lunch.jpeg"],
+      reviews:["Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie."]
     },
     {
       name: "Hotel Victoria",
@@ -434,7 +461,8 @@ var accommodation = {
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["hotel-4.jpeg", "hotel-2.jpeg", "hotel-3.jpeg"],
       people: "1-2",
-      meals: "Breakfast"
+      mealsImage: ["img/breakfast.jpeg", "img/lunch.jpeg"],
+      reviews:["Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie."]
     },
     {
       name: "Hotel Victoria",
@@ -449,7 +477,9 @@ var accommodation = {
       reviews: 8,
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["hotel-4.jpeg", "hotel-2.jpeg", "hotel-3.jpeg"],
-      people: "1-2"
+      people: "1-2",
+      mealsImage: ["img/breakfast.jpeg", "img/lunch.jpeg"],
+      reviews:["Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie."]
     },
     {
       name: "Hostel Victoria",
@@ -464,7 +494,9 @@ var accommodation = {
       reviews: 8,
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["hostel-1.jpeg", "hostel-2.jpg", "hostel-1.jpeg"],
-      people: 1
+      people: 1,
+      mealsImage: ["img/breakfast.jpeg", "img/lunch.jpeg"],
+      reviews:["Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie."]
     },
     {
       name: "Hostel Victoria",
@@ -479,7 +511,9 @@ var accommodation = {
       reviews: 8,
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["hostel-2.jpeg", "hostel-2.jpg", "hostel-1.jpeg"],
-      people: 1
+      people: 1,
+      mealsImage: ["img/breakfast.jpeg", "img/lunch.jpeg"],
+      reviews:["Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie."]
     },
     {
       name: "Motel Victoria",
@@ -494,7 +528,9 @@ var accommodation = {
       reviews: 8,
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["motel-1.jpeg", "motel-2.jpeg", "motel-1.jpeg"],
-      people: "2-4"
+      people: "2-4",
+      mealsImage: ["img/breakfast.jpeg", "img/lunch.jpeg"],
+      reviews:["Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie."]
     },
     {
       name: "Motel Victoria",
@@ -509,7 +545,9 @@ var accommodation = {
       reviews: 8,
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["motel-2.jpeg", "motel-2.jpeg", "motel-1.jpeg"],
-      people: "2-4"
+      people: "2-4",
+      mealsImage: ["img/breakfast.jpeg", "img/lunch.jpeg"],
+      reviews:["Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie."]
     },
     {
       name: "House Victoria",
@@ -524,7 +562,9 @@ var accommodation = {
       reviews: 8,
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["house-1.jpeg", "house-2.jpeg", "house-3.jpeg"],
-      people: "1-4"
+      people: "1-4",
+      mealsImage: ["img/breakfast.jpeg", "img/lunch.jpeg"],
+      reviews:["Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie."]
     },
     {
       name: "House Victoria",
@@ -539,7 +579,9 @@ var accommodation = {
       reviews: 8,
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["house-2.jpeg", "house-2.jpeg", "house-3.jpeg"],
-      people: "1-4"
+      people: "1-4",
+      mealsImage: ["img/breakfast.jpeg", "img/lunch.jpeg"],
+      reviews:["Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie."]
     },
     {
       name: "House Victoria",
@@ -554,7 +596,9 @@ var accommodation = {
       reviews: 8,
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["house-3.jpeg", "house-2.jpeg", "house-3.jpeg"],
-      people: "1-4"
+      people: "1-4",
+      mealsImage: ["img/breakfast.jpeg", "img/lunch.jpeg"],
+      reviews:["Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie."]
     },
     {
       name: "House Victoria",
@@ -569,7 +613,9 @@ var accommodation = {
       reviews: 8,
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["house-4.jpeg", "house-2.jpeg", "house-3.jpeg"],
-      people: "1-4"
+      people: "1-4",
+      mealsImage: ["img/breakfast.jpeg", "img/lunch.jpeg"],
+      reviews:["Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie."]
     },
     {
       name: "House Victoria",
@@ -584,7 +630,9 @@ var accommodation = {
       reviews: 8,
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["house-6.jpeg", "house-2.jpeg", "house-3.jpeg"],
-      people: "1-4"
+      people: "1-4",
+      mealsImage: ["img/breakfast.jpeg", "img/lunch.jpeg"],
+      reviews:["Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie."]
     },
   ]
 };
