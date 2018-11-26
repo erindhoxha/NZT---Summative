@@ -82,12 +82,12 @@ function secondAnswer() {
     $(".secondAnswer").text(inputValue.charAt(0).toUpperCase() + inputValue.slice(1));
     if (("transport").indexOf(inputValue) > -1) {
       $("#card-container").empty();
-
       var info = document.getElementById('summative-template').innerHTML;
       var template = Handlebars.compile(info);
       var dataTemplate = template(transport);
       var templateWrite = document.getElementById('card-container').innerHTML += dataTemplate;
       answerData = transport;
+      $(".meals").hide();
       
       $(".button-send").addClass('sentSecondMessageTransport');
       // ADD TRANSPORT STUFF HERE
@@ -97,13 +97,12 @@ function secondAnswer() {
     } else if (("accommodation").indexOf(inputValue) > -1 || ("accomodation").indexOf(inputValue) > -1 || ("acomodation").indexOf(inputValue) > -1) {
 
       $("#card-container").empty();
-
       var info = document.getElementById('summative-template').innerHTML;
       var template = Handlebars.compile(info);
       var dataTemplate = template(accommodation);
       var templateWrite = document.getElementById('card-container').innerHTML += dataTemplate;
       answerData = accommodation;
-
+      $(".fuel").hide();
 
       $(".button-send").addClass('sentSecondMessageAccommodation');
       $(".first_card_2").css('display', 'flex');
