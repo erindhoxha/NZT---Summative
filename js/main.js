@@ -1,3 +1,9 @@
+$(function () {
+    setTimeout(function () {
+        $('.nzt-container').fadeOut(500);
+        $('.hide-everything').show();
+    }, 1000);
+});
 
 $(".alert").hide();
 // $('body').css('overflow', 'hidden');
