@@ -14,6 +14,7 @@ var transport = {
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["motorbike-1.jpeg", "motorbike-2.jpeg", "motorbike-3.jpeg"],
       people: 1,
+      fuel: "3.7l/100km"
     },
     {
       name: "KTM 500 EXC 2800",
@@ -28,7 +29,8 @@ var transport = {
       reviews: 8,
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["motorbike-2.jpeg", "motorbike-2.jpeg", "motorbike-3.jpeg"],
-      people: 1
+      people: 1,
+      fuel: "3.7l/100km"
     },
     {
       name: "KTM 500 EXC 2800",
@@ -43,7 +45,8 @@ var transport = {
       reviews: 8,
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["motorbike-3.jpeg", "motorbike-2.jpeg", "motorbike-3.jpeg"],
-      people: 1
+      people: 1,
+      fuel: "3.7l/100km"
     },
     {
       name: "KTM 500 EXC 2800",
@@ -58,7 +61,8 @@ var transport = {
       reviews: 8,
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["motorbike-4.jpeg", "motorbike-2.jpeg", "motorbike-3.jpeg"],
-      people: 1
+      people: 1,
+      fuel: "3.7l/100km"
     },
     {
       name: "KTM 500 EXC 2800",
@@ -73,7 +77,8 @@ var transport = {
       reviews: 8,
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["motorbike-5.jpeg", "motorbike-2.jpeg", "motorbike-3.jpeg"],
-      people: 1
+      people: 1,
+      fuel: "3.7l/100km"
     },
     {
       name: "KTM 500 EXC 2800",
@@ -88,7 +93,8 @@ var transport = {
       reviews: 8,
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["motorbike-6.jpeg", "motorbike-2.jpeg", "motorbike-3.jpeg"],
-      people: 1
+      people: 1,
+      fuel: "3.7l/100km"
     },
     {
       name: "KTM 500 EXC 2800",
@@ -103,7 +109,8 @@ var transport = {
       reviews: 8,
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["motorbike-7.jpeg", "motorbike-6.jpeg", "motorbike-3.jpeg"],
-      people: 1
+      people: 1,
+      fuel: "3.7l/100km"
     },
     {
       name: "KTM 500 EXC 2800",
@@ -118,7 +125,8 @@ var transport = {
       reviews: 8,
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["car-1.jpg", "car-2.png", "car-3.png"],
-      people: "1-2"
+      people: "1-2",
+      fuel: "8.5l/100km"
     },
     {
       name: "KTM 500 EXC 2800",
@@ -133,7 +141,8 @@ var transport = {
       reviews: 8,
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["car-2.png", "car-2.png", "car-3.png"],
-      people: "1-2"
+      people: "1-2",
+      fuel: "8.5l/100km"
     },
     {
       name: "KTM 500 EXC 2800",
@@ -148,7 +157,8 @@ var transport = {
       reviews: 8,
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["car-3.png", "car-2.png", "car-3.png"],
-      people: "1-2"
+      people: "1-2",
+      fuel: "8.5l/100km"
     },
     {
       name: "KTM 500 EXC 2800",
@@ -163,7 +173,8 @@ var transport = {
       reviews: 8,
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["car-4.png", "car-2.png", "car-3.png"],
-      people: "1-2"
+      people: "1-2",
+      fuel: "8.5l/100km"
     },
     {
       name: "KTM 500 EXC 2800",
@@ -178,7 +189,8 @@ var transport = {
       reviews: 8,
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["car-5.jpg", "car-2.png", "car-3.png"],
-      people: "1-2"
+      people: "1-2",
+      fuel: "8.5l/100km"
     },
     {
       name: "KTM 500 EXC 2800",
@@ -192,7 +204,9 @@ var transport = {
       value: "$99 until Dec 2018",
       reviews: 8,
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
-      images: ["large-car-1.jpg", "large-car-2.jpg", "large-car-3.jpg"]
+      images: ["large-car-1.jpg", "large-car-2.jpg", "large-car-3.jpg"],
+      people: "1-5",
+      fuel: "9.7l/100km"
     },
     {
       name: "KTM 500 EXC 2800",
@@ -207,7 +221,8 @@ var transport = {
       reviews: 8,
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["large-car-2.jpg", "large-car-2.jpg", "large-car-3.jpg"],
-      people: "1-5"
+      people: "1-5",
+      fuel: "9.7l/100km"
     },
     {
       name: "KTM 500 EXC 2800",
@@ -222,7 +237,8 @@ var transport = {
       reviews: 8,
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["large-car-3.jpg", "large-car-2.jpg", "large-car-3.jpg"],
-      people: "1-5"
+      people: "1-5",
+      fuel: "9.7l/100km"
     },
     {
       name: "KTM 500 EXC 2800",
@@ -237,7 +253,8 @@ var transport = {
       reviews: 8,
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["large-car-4.jpg", "large-car-2.jpg", "large-car-3.jpg"],
-      people: "1-5"
+      people: "1-5",
+      fuel: "9.7l/100km"
     },
     {
       name: "KTM 500 EXC 2800",
@@ -252,7 +269,8 @@ var transport = {
       reviews: 8,
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["large-car-5.jpg", "large-car-2.jpg", "large-car-3.jpg"],
-      people: "1-5"
+      people: "1-5",
+      fuel: "9.7l/100km"
     },
     {
       name: "KTM 500 EXC 2800",
@@ -267,7 +285,8 @@ var transport = {
       reviews: 8,
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["large-car-6.jpeg", "large-car-2.jpg", "large-car-3.jpg"],
-      people: "1-5"
+      people: "1-5",
+      fuel: "9.7l/100km"
     },
     {
       name: "KTM 500 EXC 2800",
@@ -297,7 +316,8 @@ var transport = {
       reviews: 8,
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["motor-van-3.jpg", "motor-van-3.jpg", "motor-van-4.jpg"],
-      people: 2-6
+      people: "2-6",
+      fuel: "17l/100km"
     },
     {
       name: "KTM 500 EXC 2800",
@@ -312,7 +332,8 @@ var transport = {
       reviews: 8,
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["motor-van-4.jpg", "motor-van-3.jpg", "motor-van-4.jpg"],
-      people: "2-6"
+      people: "2-6",
+      fuel: "17l/100km"
     },
     {
       name: "KTM 500 EXC 2800",
@@ -327,7 +348,8 @@ var transport = {
       reviews: 8,
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["motor-van-5.jpg", "motor-van-3.jpg", "motor-van-4.jpg"],
-      people: "2-6"
+      people: "2-6",
+      fuel: "17l/100km"
     },
     {
       name: "KTM 500 EXC 2800",
@@ -342,7 +364,8 @@ var transport = {
       reviews: 8,
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["motor-van-3.jpg", "motor-van-3.jpg", "motor-van-4.jpg"],
-      people: "2-6"
+      people: "2-6",
+      fuel: "17l/100km"
     },
   ]
 };
@@ -364,7 +387,8 @@ var accommodation = {
       reviews: 8,
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["hotel-1.jpeg", "hotel-2.jpeg", "hotel-3.jpeg"],
-      people: "1-2"
+      people: "1-2",
+      meals: "breakfast"
     },
     {
       name: "Hotel Victoria",
@@ -409,7 +433,8 @@ var accommodation = {
       reviews: 8,
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
       images: ["hotel-4.jpeg", "hotel-2.jpeg", "hotel-3.jpeg"],
-      people: "1-2"
+      people: "1-2",
+      meals: "Breakfast"
     },
     {
       name: "Hotel Victoria",

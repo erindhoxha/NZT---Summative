@@ -366,6 +366,12 @@
             {{/each}}
             <a href="#" data-toggle="modal" data-target="#reviewsModal">({{reviews}} reviews)</a>
           </div>
+          
+          {{#if fuel}}
+          <div class="fuelCard">
+            <p class="fuelcard-text">Fuel spend: {{fuel}}</p>
+          </div>
+          {{/if}}
           <button class="btn btn-book m-0 mt-4 btn-block" data-toggle="modal" data-target="#theModal">Book now</button>
         </div>
       </div>
@@ -415,6 +421,23 @@
           <hr>
           <p class="price-modal">Price: </p>
         </div>
+        <div class="meals">
+          <img class="meals-image" src="img/breakfast.jpeg">
+          <h6 class="meals-header">Breakfast & coffee.</h6>
+          <button class="btn btn-block btn-add-to-cart">Add to cart</button>
+        </div>
+        <div class="meals">
+          <img class="meals-image" src="img/lunch.jpeg">
+          <h6 class="meals-header">Lunch & Dinner</h6>
+          <button class="btn btn-block btn-add-to-cart">Add to cart</button>
+        </div>
+
+        <div class="fuel">
+            <img class="fuel-image" src="img/lunch.jpeg">
+            <h6 class="fuel-header">You'll approximately spend: </h6>
+            <h6 class="fuel-price"></h6>
+          </div>
+
       </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-continue btn-block">Continue</button>
@@ -425,10 +448,9 @@
 </script>
 <!-- HANDLEBARS START HERE -->
   <script type="text/javascript">
-    
-
+  
       const typewriter = new Typewriter('#typewriter', {
-      strings: ['Kia ora.', 'Kia Ora!'],
+      strings: ['Kia ora.', 'Welcome!', 'Russian Hello!', 'All languages'],
       autoStart: true,
       loop: true,
     });

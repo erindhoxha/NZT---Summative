@@ -2,7 +2,7 @@ $(function () {
     setTimeout(function () {
         $('.nzt-container').fadeOut(500);
         $('.hide-everything').show();
-    }, 1000);
+    }, 2200);
 });
 
 $(".alert").hide();
@@ -25,6 +25,7 @@ $('.btn-accomodation').on('click', function () {
     console.log(numberOfDays);
     console.log(peopleValue);
 
+
     if (numberOfDays > 15 || firstDate >= secondDate) {
         $(".alert").show(500);
         $(".line").hide(500);
@@ -39,21 +40,21 @@ $('.btn-accomodation').on('click', function () {
     }
     
     if (transportOrAccommodation == "Accommodation") {
-
+        $("#card-container").empty();
         var info = document.getElementById('summative-template').innerHTML;
         var template = Handlebars.compile(info);
         var dataTemplate = template(accommodation);
         var templateWrite = document.getElementById('card-container').innerHTML += dataTemplate;
-
+        $(".fuel").hide();
         var answerData = accommodation;
-
+        
     } else if (transportOrAccommodation == "Transport") {
-
+        $("#card-container").empty();
         var info = document.getElementById('summative-template').innerHTML;
         var template = Handlebars.compile(info);
         var dataTemplate = template(transport);
         var templateWrite = document.getElementById('card-container').innerHTML += dataTemplate;
-
+        $(".meals").hide();
         var answerData = transport;
     }
 
@@ -80,6 +81,7 @@ $('.btn-accomodation').on('click', function () {
         for (var i = 0; i < answerData.types[dataNr].images.length; i++) {
             $(".image-" + i).attr('src', "img/" + answerData.types[dataNr].images[i]);
         }
+        $(".fuel-price").text(answerData.types.fuel);
         $(".price-modal").text('Price: $' + answerData.types[dataNr].price + " x " + numberOfDays + " days = $" + answerData.types[dataNr].price * numberOfDays);
         $(".modal-title").text(answerData.types[dataNr].name);
         $(".modal-description").text(answerData.types[dataNr].description);

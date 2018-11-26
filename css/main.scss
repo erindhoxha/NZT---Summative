@@ -120,7 +120,23 @@ $blue: #0a84e1;
   background-color: black;
   z-index: 9999999999999999;
   position:absolute;
-  
+}
+.meals-header {
+  margin-top:10px;
+}
+.btn-add-to-cart {
+  background-color:$verylight;
+  color:white;
+}
+.meals-image {
+  width:80%;
+  margin:0 auto;
+}
+.meals {
+  width:42%;
+  margin:3%;
+  border:1px solid #ebebeb;
+  float:left;
 }
 .hide-everything {
   display:none;
@@ -438,7 +454,25 @@ html {
   border: 1px solid white !important;
   border-radius: 0px !important;
 }
-
+.fuelcard-text {
+  font-size:15px;
+}
+.fuelCard {
+  width:50%;
+  float:left;
+  padding-left:10px;
+  padding-top:10px;
+}
+.fuel {
+  .fuel-image {
+    width:50%;
+  }
+  border-top:1px solid #ebebeb;
+  padding:20px;
+  h6 {
+    padding:20px;
+  }
+}
 #content {
   text-align: center;
   padding: 20px;
