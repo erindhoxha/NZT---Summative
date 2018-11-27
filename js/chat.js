@@ -54,7 +54,9 @@ function firstAnswer() {
   $(".first_card").css('visibility', 'visible');
   $(".first_card").css('display', 'flex');
   $(".first_card").fadeIn(300);
-  $(".answer").text("Hi " + inputValue.charAt(0).toUpperCase() + inputValue.slice(1) + ", are you interested for Accommodation or Transport?");
+  var name = inputValue.charAt(0).toUpperCase() + inputValue.slice(1);
+  // var nameWithColours = name.fontcolor('green');
+  $(".answer").text("Hi " + name + ", are you interested for Accommodation or Transport?");
   $(".type_msg").val("");
   if ($(".button-send").hasClass('classSentFirstMessage')) {
     // do nothing
@@ -272,8 +274,25 @@ function fourthAnswer() {
       $(".first_card_4").css('display', 'flex');
       $(".fifthAnswer").text("Sweet, you've chosen: " + answer2 + " days. By the answer you've given us, we'll send you through the results.");
       $(".card-body").scrollTop(1000);
+
+      $(function () {
+        setTimeout(function () {
+            $('.nzt-container').fadeIn(500);
+            $('.hide-everything').fadeOut(500);
+        },3200);
+    });
+
+
+    $(function () {
+      setTimeout(function () {
+          $('.nzt-container').fadeOut(500);
+          $('.hide-everything').fadeIn(500);
+      },4200);
+  });
+
       $(".button-send").removeClass('sentMessagePeople');
-      setTimeout(goToPageWithResults, 3000)
+
+      setTimeout(goToPageWithResults, 4300)
        selector += "." + answer2 + "d";
       $(".card-wrap").hide();
       $(selector).show()
@@ -339,6 +358,11 @@ function goToPageWithResults() {
           $(".meals-image-" + i).attr('src', answerData.types[dataNr].mealsImage[i]);
         }
       }
+
+      if (transpOrAcc == transport) {
+        $(".fuel-usage").text(transpOrAcc.types[dataNr].fuel);
+      }
+
       $(".special-modal").text(answerData.types[dataNr].value);
       if ($(".special-modal").text() == "") {
           $(".special-modal").hide();

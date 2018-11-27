@@ -285,7 +285,7 @@ function scrollWindow() {
             document.getElementById("navbar").style.top = "0px";
             document.getElementById("navbar").style.transition = "0.3s ease";
         } else {
-            document.getElementById("navbar").style.top = "-60px";
+            document.getElementById("navbar").style.top = "-57px";
         }
         prevScrollpos = currentScrollPos;
     }
@@ -340,6 +340,7 @@ $(".btn-sort-lowest").on('click', function () {
              }
             }
 
+            
             if (transpOrAcc == transport) {
             $(".fuel-usage").text(transpOrAcc.types[dataNr].fuel);
             }

@@ -1251,6 +1251,9 @@ h1 {
 }
 
 @media (min-width:250px) {
+  .chat_icon {
+    width: 60px;
+  }
   .card-text {
     font-size:13px;
   }
@@ -1307,6 +1310,9 @@ h1 {
 }
 
 @media (min-width:481px) {
+  .chat_icon {
+    width: 70px;
+  }
   .header-title {
     font-size:46px;
   }
@@ -1322,6 +1328,9 @@ h1 {
 }
 
 @media (min-width:768px) {
+  .chat_icon {
+    width: 75px;
+  }
   .btn-book {
     width:100%;
     float:none;
