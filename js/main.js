@@ -4,7 +4,7 @@ $(function () {
         $('.hide-everything').show();
     }, 2200);
 });
-
+var transpOrAcc = "";
 $(".alert").hide();
 // $('body').css('overflow', 'hidden');
 $('.btn-accomodation').on('click', function () {
@@ -20,7 +20,14 @@ $('.btn-accomodation').on('click', function () {
     } else {
     var numberOfDays = Math.abs((firstDate.getTime() - secondDate.getTime()) / (oneDay));
     }
-
+    if ($("#accom-or-transport").val() == "What do you need?") {
+        $(".alert").show();
+    }
+    if (transportOrAccommodation == "Accommodation") {
+    transpOrAcc = accommodation;
+    } else {
+    transpOrAcc = transport;
+    }
     console.log(transportOrAccommodation)
     console.log(numberOfDays);
     console.log(peopleValue);
@@ -88,25 +95,35 @@ $('.btn-accomodation').on('click', function () {
         $(".card-wrapper").find($(".rating")[dataNr]).clone().appendTo(".rating-container");
         $(".modal-body .rating").addClass("modal-rating");
         $(".modal-body .rating").removeClass("rating");
+        $(".modal-body .modal-rating .btn-review-modal").addClass('btn-review-modal-new');
+        $(".modal-body .modal-rating .btn-review-modal").removeClass('btn-review-modal');
+        if (answerData == accommodation) {
         for (var i = 0; i < $(".meals").length; i++) {
             $(".meals-image-" + i).attr('src', answerData.types[dataNr].mealsImage[i]);
-          }
+         }
+        }
+        if (answerData == transport) {
+        $(".fuel-usage").text(answerData.types[dataNr].fuel);
+        }
         $(".special-modal").text(answerData.types[dataNr].value);
         if ($(".special-modal").text() == "") {
             $(".special-modal").hide();
         }
-    })
-
-
-        $(".btn-review-modal").on('click', function () {
             console.log($(this).closest(".card-wrapper").attr('data-nr'));
             var dataNr = $(this).closest(".card-wrapper").attr('data-nr');
-
             for (var i = 0; i < $(".review").length; i++) {
                 $(".review-" + i + "-text").text(answerData.types[dataNr].reviews[i]);
             }
             $(".modal-review-title").text(answerData.types[dataNr].name);
+    })
 
+        $(".btn-review-modal").on('click', function () {
+            console.log($(this).closest(".card-wrapper").attr('data-nr'));
+            var dataNr = $(this).closest(".card-wrapper").attr('data-nr');
+            for (var i = 0; i < $(".review").length; i++) {
+                $(".review-" + i + "-text").text(answerData.types[dataNr].reviews[i]);
+            }
+            $(".modal-review-title").text(answerData.types[dataNr].name);
         })
 });
 
@@ -260,9 +277,18 @@ function scrollWindow() {
             document.getElementById("navbar").style.top = "0px";
             document.getElementById("navbar").style.transition = "0.3s ease";
         } else {
-            document.getElementById("navbar").style.top = "-55px";
+            document.getElementById("navbar").style.top = "-60px";
         }
         prevScrollpos = currentScrollPos;
     }
 }
 
+$(".select-styled").on('click blur', function () {
+    doFilteringSort();
+})
+
+function doFilteringSort() {
+        $(".card-wrap").hide();
+        var selector = ".card-wrap";
+        transpOrAcc.types.price;    
+}

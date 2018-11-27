@@ -331,6 +331,8 @@ function goToPageWithResults() {
       $(".modal-body .rating").addClass("modal-rating");
       $(".modal-body .rating").removeClass("rating");
       if (answerData == accommodation) {
+          $(".fuel-usage").text(answerData.types[dataNr].people + " ");
+          $(".fuel-usage").append('<i class="fas fa-user"></i>');
         for (var i = 0; i < $(".meals").length; i++) {
           $(".meals-image-" + i).attr('src', answerData.types[dataNr].mealsImage[i]);
         }
@@ -339,6 +341,22 @@ function goToPageWithResults() {
       if ($(".special-modal").text() == "") {
           $(".special-modal").hide();
       }
+        console.log($(this).closest(".card-wrapper").attr('data-nr'));
+        var dataNr = $(this).closest(".card-wrapper").attr('data-nr');
+        for (var i = 0; i < $(".review").length; i++) {
+          $(".review-" + i + "-text").text(answerData.types[dataNr].reviews[i]);
+        }
+        $(".modal-review-title").text(answerData.types[dataNr].name);
+    })
+
+
+    $(".btn-review-modal").on('click', function () {
+      console.log($(this).closest(".card-wrapper").attr('data-nr'));
+      var dataNr = $(this).closest(".card-wrapper").attr('data-nr');
+      for (var i = 0; i < $(".review").length; i++) {
+        $(".review-" + i + "-text").text(answerData.types[dataNr].reviews[i]);
+      }
+      $(".modal-review-title").text(answerData.types[dataNr].name);
     })
 }
 
