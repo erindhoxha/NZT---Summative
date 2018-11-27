@@ -474,6 +474,18 @@ html {
   border-radius: 50px;
   transition:0.3s ease all;
 }
+.btn-sort {
+  margin-left:5px;
+  margin-right:5px;
+  background-color:$verylight;
+  color:#fff;
+  font-weight:400;
+  border-radius:20px;
+  transition:0.3s ease all;
+}
+.btn-sort:hover {
+  transform:scale(1.1);
+}
 .btn-book:hover {
   transform:scale(1.1);
   border-radius:0px;

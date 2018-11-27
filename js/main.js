@@ -2,7 +2,7 @@ $(function () {
     setTimeout(function () {
         $('.nzt-container').fadeOut(500);
         $('.hide-everything').show();
-    }, 2200);
+    }, 00);
 });
 var transpOrAcc = "";
 $(".alert").hide();
@@ -98,6 +98,9 @@ $('.btn-accomodation').on('click', function () {
         $(".modal-body .modal-rating .btn-review-modal").addClass('btn-review-modal-new');
         $(".modal-body .modal-rating .btn-review-modal").removeClass('btn-review-modal');
         if (answerData == accommodation) {
+            $(".fuel-usage").text("");
+            $(".fuel-usage").text(answerData.types[dataNr].people + " ");
+            $(".fuel-usage").append('<i class="fas fa-user"></i>');
         for (var i = 0; i < $(".meals").length; i++) {
             $(".meals-image-" + i).attr('src', answerData.types[dataNr].mealsImage[i]);
          }
@@ -283,15 +286,15 @@ function scrollWindow() {
     }
 }
 
+var types = "";
 $(".select-styled").on('click blur', function () {
-    doFilteringSort();
-})
-
-function doFilteringSort() {
-        $(".card-wrap").hide();
-        var selector = ".card-wrap";
-
-        transpOrAcc.types.sort(function (a, b) {
+        types = transpOrAcc.types.sort(function (a, b) {
             return parseFloat(a.price) - parseFloat(b.price);
         });
-}
+        var nearResult = { types };
+        $("#card-container").empty();       
+        var info = document.getElementById('summative-template').innerHTML;
+               var template = Handlebars.compile(info);
+               var dataTemplate = template(nearResult);
+               var templateWrite = document.getElementById('card-container').innerHTML += dataTemplate;
+})
