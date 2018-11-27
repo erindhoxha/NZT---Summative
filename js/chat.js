@@ -87,6 +87,7 @@ function secondAnswer() {
       var dataTemplate = template(transport);
       var templateWrite = document.getElementById('card-container').innerHTML += dataTemplate;
       answerData = transport;
+      transpOrAcc = transport;
       $(".meals").hide();
       
       $(".button-send").addClass('sentSecondMessageTransport');
@@ -102,6 +103,7 @@ function secondAnswer() {
       var dataTemplate = template(accommodation);
       var templateWrite = document.getElementById('card-container').innerHTML += dataTemplate;
       answerData = accommodation;
+      transpOrAcc = accommodation;
       $(".fuel").hide();
 
       $(".button-send").addClass('sentSecondMessageAccommodation');

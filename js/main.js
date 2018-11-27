@@ -2,7 +2,7 @@ $(function () {
     setTimeout(function () {
         $('.nzt-container').fadeOut(500);
         $('.hide-everything').show();
-    }, 00);
+    }, 2200);
 });
 var transpOrAcc = "";
 $(".alert").hide();
