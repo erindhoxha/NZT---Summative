@@ -7,7 +7,6 @@ $(function () {
 var transpOrAcc = "";
 var numberOfDays = "";
 $(".alert").hide();
-// $('body').css('overflow', 'hidden');
 $('.btn-accomodation').on('click', function () {
     var transportOrAccommodation = $("#accom-or-transport").val();
     var peopleValue = $("#people-search").val().slice(0, 1);

@@ -18,7 +18,9 @@ $background: #523448;
 $gray: #5B5B5B;
 $blue: #0a84e1;
 
-
+.guests-text {
+  font-size:1em;
+}
 //  CONTAINER RESULT 
 
 // CONTAINER RESULT
@@ -1252,7 +1254,7 @@ h1 {
 
 @media (min-width:250px) {
   .chat_icon {
-    width: 60px;
+    width: 65px;
   }
   .card-text {
     font-size:13px;

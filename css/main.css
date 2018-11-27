@@ -11,6 +11,9 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700");
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
 @import url(https://fonts.googleapis.com/css?family=Teko:700);
+.guests-text {
+  font-size: 1em; }
+
 .input-container select {
   margin: 10px !important; }
 
@@ -1057,7 +1060,7 @@ h1 {
     background-color: black; } }
 @media (min-width: 250px) {
   .chat_icon {
-    width: 60px; }
+    width: 65px; }
 
   .card-text {
     font-size: 13px; }
