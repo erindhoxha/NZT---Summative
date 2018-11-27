@@ -18,12 +18,12 @@ var transport = {
       reviews:["Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie."]
     },
     {
-      name: "KTM 500 EXC 2800",
+      name: "KTM This has more reviews 500 EXC 2800",
       class: "motorbike 1p 1d 2d 3d 4d 5d",
       image: "motorbike-2.jpeg",
       description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
-      checked: ["checked", "checked"],
-      unchecked: ["unchecked", "unchecked", "unchecked"],
+      checked: ["checked", "checked", "checked"],
+      unchecked: ["unchecked", "unchecked"],
       available: "Available",
       price: "1090",
       value: "$99 until Dec 2018",

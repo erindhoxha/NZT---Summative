@@ -397,16 +397,17 @@ html {
   transition: 0.3s ease all; }
 
 .btn-sort {
-  margin-left: 5px;
-  margin-right: 5px;
+  font-size: 16px;
+  margin-left: 10px;
+  margin-right: 10px;
   background-color: #4689BC;
   color: #fff;
-  font-weight: 400;
+  font-weight: 300;
   border-radius: 20px;
   transition: 0.3s ease all; }
 
 .btn-sort:hover {
-  transform: scale(1.1); }
+  background-color: #2873AC; }
 
 .btn-book:hover {
   transform: scale(1.1);
