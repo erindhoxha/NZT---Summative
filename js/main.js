@@ -89,7 +89,7 @@ $('.btn-accomodation').on('click', function () {
         for (var i = 0; i < answerData.types[dataNr].images.length; i++) {
             $(".image-" + i).attr('src', "img/" + answerData.types[dataNr].images[i]);
         }
-        $(".fuel-price").text(answerData.types.fuel);
+        $(".fuel-price").text(answerData.types[dataNr].approxFuelSpend);
         $(".price-modal").text('Price: $' + answerData.types[dataNr].price + " x " + numberOfDays + " days = $" + answerData.types[dataNr].price * numberOfDays);
         $(".modal-title").text(answerData.types[dataNr].name);
         $(".modal-description").text(answerData.types[dataNr].description);
