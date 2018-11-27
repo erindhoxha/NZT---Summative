@@ -290,5 +290,8 @@ $(".select-styled").on('click blur', function () {
 function doFilteringSort() {
         $(".card-wrap").hide();
         var selector = ".card-wrap";
-        transpOrAcc.types.price;    
+
+        transpOrAcc.types.sort(function (a, b) {
+            return parseFloat(a.price) - parseFloat(b.price);
+        });
 }
