@@ -406,6 +406,18 @@ html {
   border-radius: 20px;
   transition: 0.3s ease all; }
 
+.exit {
+  padding: 0rem 1rem 1rem 1rem; }
+  .exit button {
+    background-color: #D45050;
+    color: white;
+    border-radius: 50px; }
+
+.gas-pump {
+  font-size: 50px !important;
+  margin-top: 18px;
+  color: #4689BC; }
+
 .btn-sort:hover {
   background-color: #2873AC; }
 

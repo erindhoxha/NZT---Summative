@@ -349,6 +349,11 @@ function goToPageWithResults() {
           $(".review-" + i + "-text").text(answerData.types[dataNr].reviews[i]);
         }
         $(".modal-review-title").text(answerData.types[dataNr].name);
+
+
+        $(".btn-exit").on('click', function() {
+          $('#theModal').modal('hide');
+      });
     })
 
 

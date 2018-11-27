@@ -119,6 +119,10 @@ $('.btn-accomodation').on('click', function () {
                 $(".review-" + i + "-text").text(answerData.types[dataNr].reviews[i]);
             }
             $(".modal-review-title").text(answerData.types[dataNr].name);
+
+            $(".btn-exit").on('click', function() {
+                $('#theModal').modal('hide');
+            });
     })
 
         $(".btn-review-modal").on('click', function () {
@@ -350,6 +354,10 @@ $(".btn-sort-lowest").on('click', function () {
                     $(".review-" + i + "-text").text(transpOrAcc.types[dataNr].reviews[i]);
                 }
                 $(".modal-review-title").text(transpOrAcc.types[dataNr].name);
+
+                $(".btn-exit").on('click', function() {
+                    $('#theModal').modal('hide');
+                });
         })
         
             $(".btn-review-modal").on('click', function () {
@@ -388,8 +396,6 @@ $(".btn-sort-alphabetically").on('click', function () {
     var dataTemplate = template(nearResult);
     var templateWrite = document.getElementById('card-container').innerHTML += dataTemplate;
 })
-
-
 
 
 
