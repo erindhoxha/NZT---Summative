@@ -1287,4 +1287,16 @@ h1 {
   margin-top: 20px;
   margin: 20px auto 0px auto; }
 
+.guests-text {
+  font-size: 21px;
+  font-weight: 800; }
+
+.container-guests {
+  margin-top: 120px;
+  padding: 10px;
+  background-color: #ebebeb; }
+
+.img-card-akl {
+  width: 100%; }
+
 /*# sourceMappingURL=main.css.map */

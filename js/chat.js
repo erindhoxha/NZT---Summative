@@ -384,7 +384,16 @@ function goToPageWithResults() {
     $(".btn-continue").on('click', function(){
       $(".total-price").text('$' + totalPrice);
   })
-  
+
+    totalPrice = parseInt(totalPrice);
+    $(".btn-add-to-cart.add-to-card-breakfast").on('click', function() {
+      $(".total-price").text('$' + totalPrice + ' + $70 Breakfast option = ' + totalPrice);
+    });
+    
+    $(".btn-add-to-cart.add-to-card-lunch-dinner").on('click', function() {
+      $(".total-price").text('$' + totalPrice + ' + $70 Lunch option = ' + totalPrice);
+    });
+
     $(".btn-review-modal").on('click', function () {
       console.log($(this).closest(".card-wrapper").attr('data-nr'));
       var dataNr = $(this).closest(".card-wrapper").attr('data-nr');
