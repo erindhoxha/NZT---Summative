@@ -37,6 +37,8 @@
 
 
 <div class="hide-everything">
+
+
   <div class="overlay">
     <!-- CHAT -->
     <div class="container-fluid flex">
@@ -242,6 +244,9 @@
           </div>
         </div>
   <div class="container container-travel text-dark text-center mt-5">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#checkoutModal">
+          Launch demo modal
+        </button>
     <h2>Unleash the traveller inside you</h2>
     <p class="undertitle">Discover our top destinations</p>
     <div class="line2"></div>
@@ -282,6 +287,54 @@
     <h3 class="guests-text">What guests are saying about homes in New Zealand</h3>
     <p>New Zealand homes were rated 4.8 out of 5 stars with 1,000,000+ reviews</p>
   </div>
+  
+  <!-- CHECKOUT MODAL -->
+  <!-- Button trigger modal -->
+  <!-- Modal -->
+  <div class="modal fade" id="checkoutModal" tabindex="-1" role="dialog" aria-labelledby="checkoutModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="row">
+            <div class="col-lg-6">
+                <h5 class="modal-title" id="checkoutModal">Payment Details</h5>
+            </div>
+            <div class="col-lg-6">
+              <img class="payment-details-img" src="img/payment-details.png">
+            </div>
+          </div>  
+        </div>
+        <div class="modal-body">
+          <form>
+          <div class="row">
+            <div class="col-lg-12">
+              <label for="card-number">CARD NUMBER</label><br>
+              <input type="number" class="card-number-input">
+            </div>
+            <div class="col-lg-12">
+                <label for="card-number">EXPIRATION DATE</label><br>
+                <input type="number" class="card-number-input">
+              </div>
+              <div class="col-lg-12">
+                  <label for="card-number">CVC</label><br>
+                  <input type="number" class="card-number-input">
+                </div>
+                <div class="col-lg-12">
+                    <label for="card-number">COUPON CODE</label><br>
+                    <input type="number" class="card-number-input">
+                  </div>
+                  <button type="button" class="btn btn-block btn-default">Pay</button>
+          </div>
+        </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="footer">
       <p>New Zealand Tourism</p>
   </div>
@@ -478,7 +531,7 @@
 
       </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-continue btn-block">Continue</button>
+          <button type="button" class="btn btn-continue btn-block"  data-toggle="modal" data-target="#checkoutModal">Continue</button>
         </div>
         <div class="exit">
             <button type="button" class="btn btn-exit btn-block">Go Back</button>
