@@ -130,6 +130,14 @@ $('.btn-accomodation').on('click', function () {
         $(".total-price").text('$' + totalPrice);
     })
 
+    totalPrice = parseInt(totalPrice);
+    $(".btn-add-to-cart.add-to-card-breakfast").on('click', function() {
+        $(".total-price").text('$' + totalPrice + ' + $70 Breakfast option = ' + totalPrice);
+    });
+    $(".btn-add-to-cart.add-to-card-lunch-dinner").on('click', function() {
+        $(".total-price").text('$' + totalPrice + ' + $70 Lunch option = ' + totalPrice);
+    });
+
     $(".btn-review-modal").on('click', function () {
             console.log($(this).closest(".card-wrapper").attr('data-nr'));
             var dataNr = $(this).closest(".card-wrapper").attr('data-nr');
@@ -412,6 +420,7 @@ $(".btn-sort-highest").on('click', function () {
             }
             $(".fuel-price").text(transpOrAcc.types.fuel);
             $(".price-modal").text('Price: $' + transpOrAcc.types[dataNr].price + " x " + numberOfDays + " days = $" + transpOrAcc.types[dataNr].price * numberOfDays);
+            totalPrice = transpOrAcc.types[dataNr].price * numberOfDays;
             $(".modal-title").text(transpOrAcc.types[dataNr].name);
             $(".modal-description").text(transpOrAcc.types[dataNr].description);
             $(".card-wrapper").find($(".rating")[dataNr]).clone().appendTo(".rating-container");
@@ -450,6 +459,10 @@ $(".btn-sort-highest").on('click', function () {
                 $(".btn-exit").on('click', function() {
                     $('#theModal').modal('hide');
                 });
+        })
+
+        $(".btn-continue").on('click', function(){
+            $(".total-price").text('$' + totalPrice);
         })
         
             $(".btn-review-modal").on('click', function () {
@@ -493,6 +506,7 @@ $(".btn-sort-alphabetically").on('click', function () {
             }
             $(".fuel-price").text(transpOrAcc.types.fuel);
             $(".price-modal").text('Price: $' + transpOrAcc.types[dataNr].price + " x " + numberOfDays + " days = $" + transpOrAcc.types[dataNr].price * numberOfDays);
+            totalPrice = transpOrAcc.types[dataNr].price * numberOfDays;
             $(".modal-title").text(transpOrAcc.types[dataNr].name);
             $(".modal-description").text(transpOrAcc.types[dataNr].description);
             $(".card-wrapper").find($(".rating")[dataNr]).clone().appendTo(".rating-container");
@@ -532,7 +546,13 @@ $(".btn-sort-alphabetically").on('click', function () {
                     $('#theModal').modal('hide');
                 });
         })
-        
+
+            $(".btn-continue").on('click', function(){
+                $(".total-price").text('$' + totalPrice);
+            });
+
+
+
             $(".btn-review-modal").on('click', function () {
                 console.log($(this).closest(".card-wrapper").attr('data-nr'));
                 var dataNr = $(this).closest(".card-wrapper").attr('data-nr');

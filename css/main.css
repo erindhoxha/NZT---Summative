@@ -1231,7 +1231,7 @@ h1 {
   height: 40px; }
 
 .card-expiration-input {
-  width: 50%;
+  width: 28%;
   height: 40px; }
 
 .card-exp-div {
@@ -1257,6 +1257,18 @@ h1 {
     border: 1px solid #ebebeb;
     border-radius: 5px;
     text-indent: 10px; }
+
+.modal {
+  overflow: auto !important; }
+
+.modal-payment-form-modal {
+  width: 100%;
+  margin: 0 auto; }
+
+.alert-danger-new {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb; }
 
 .total-price {
   background-color: #074676;

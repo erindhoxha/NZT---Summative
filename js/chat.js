@@ -346,6 +346,7 @@ function goToPageWithResults() {
           $(".image-" + i).attr('src', "img/" + answerData.types[dataNr].images[i]);
       }
       $(".price-modal").text('Price: $' + answerData.types[dataNr].price + " x " + answer2 + " days = $" + answerData.types[dataNr].price * answer2);
+      totalPrice = answerData.types[dataNr].price * answer2;
       $(".modal-title").text(answerData.types[dataNr].name);
       $(".modal-description").text(answerData.types[dataNr].description);
       $(".card-wrapper").find($(".rating")[dataNr]).clone().appendTo(".rating-container");
@@ -380,7 +381,10 @@ function goToPageWithResults() {
       });
     })
 
-
+    $(".btn-continue").on('click', function(){
+      $(".total-price").text('$' + totalPrice);
+  })
+  
     $(".btn-review-modal").on('click', function () {
       console.log($(this).closest(".card-wrapper").attr('data-nr'));
       var dataNr = $(this).closest(".card-wrapper").attr('data-nr');
