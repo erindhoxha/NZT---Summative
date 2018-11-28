@@ -1230,4 +1230,49 @@ h1 {
   width: 100%;
   height: 40px; }
 
+.card-expiration-input {
+  width: 50%;
+  height: 40px; }
+
+.card-exp-div {
+  margin-top: 20px; }
+
+.card-cvc-div {
+  margin-top: 20px; }
+
+.card-coupon-div {
+  margin-top: 20px; }
+
+.card-cvc-input {
+  width: 50%;
+  height: 40px; }
+
+.card-coupon-input {
+  width: 100%;
+  height: 40px; }
+
+.payment-form {
+  padding: 20px; }
+  .payment-form input {
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+    text-indent: 10px; }
+
+.total-price {
+  background-color: #074676;
+  color: white;
+  padding: 10px; }
+
+.card-total-price-div {
+  margin-top: 30px;
+  margin-bottom: 20px; }
+
+.btn-pay {
+  background-color: #4689BC;
+  color: white;
+  width: 94%;
+  height: 40px;
+  margin-top: 20px;
+  margin: 20px auto 0px auto; }
+
 /*# sourceMappingURL=main.css.map */

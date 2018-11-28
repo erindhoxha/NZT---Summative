@@ -6,6 +6,7 @@ $(function () {
 });
 var transpOrAcc = "";
 var numberOfDays = "";
+var totalPrice = "";
 $(".alert").hide();
 $('.btn-accomodation').on('click', function () {
     var transportOrAccommodation = $("#accom-or-transport").val();
@@ -90,6 +91,7 @@ $('.btn-accomodation').on('click', function () {
         }
         $(".fuel-price").text(answerData.types[dataNr].approxFuelSpend);
         $(".price-modal").text('Price: $' + answerData.types[dataNr].price + " x " + numberOfDays + " days = $" + answerData.types[dataNr].price * numberOfDays);
+        totalPrice = answerData.types[dataNr].price * numberOfDays;
         $(".modal-title").text(answerData.types[dataNr].name);
         $(".modal-description").text(answerData.types[dataNr].description);
         $(".card-wrapper").find($(".rating")[dataNr]).clone().appendTo(".rating-container");
@@ -123,15 +125,19 @@ $('.btn-accomodation').on('click', function () {
                 $('#theModal').modal('hide');
             });
     })
+    
+    $(".btn-continue").on('click', function(){
+        $(".total-price").text('$' + totalPrice);
+    })
 
-        $(".btn-review-modal").on('click', function () {
+    $(".btn-review-modal").on('click', function () {
             console.log($(this).closest(".card-wrapper").attr('data-nr'));
             var dataNr = $(this).closest(".card-wrapper").attr('data-nr');
             for (var i = 0; i < $(".review").length; i++) {
                 $(".review-" + i + "-text").text(answerData.types[dataNr].reviews[i]);
             }
             $(".modal-review-title").text(answerData.types[dataNr].name);
-        })
+    })
 });
 
 /* Demo purposes only */
@@ -194,9 +200,6 @@ $('select').each(function () {
     });
 
 });
-
-
-
 
 $(document).ready(function () {
     // hide .navbar first
@@ -322,6 +325,7 @@ $(".btn-sort-lowest").on('click', function () {
             }
             $(".fuel-price").text(transpOrAcc.types.fuel);
             $(".price-modal").text('Price: $' + transpOrAcc.types[dataNr].price + " x " + numberOfDays + " days = $" + transpOrAcc.types[dataNr].price * numberOfDays);
+            totalPrice = transpOrAcc.types[dataNr].price * numberOfDays;
             $(".modal-title").text(transpOrAcc.types[dataNr].name);
             $(".modal-description").text(transpOrAcc.types[dataNr].description);
             $(".card-wrapper").find($(".rating")[dataNr]).clone().appendTo(".rating-container");
@@ -334,6 +338,7 @@ $(".btn-sort-lowest").on('click', function () {
                 $(".fuel-usage").text("");
                 $(".fuel-usage").text(transpOrAcc.types[dataNr].people + " ");
                 $(".fuel-usage").append('<i class="fas fa-user"></i>');
+                $(".fuel").hide();
             for (var i = 0; i < $(".meals").length; i++) {
                 $(".meals-image-" + i).attr('src', transpOrAcc.types[dataNr].mealsImage[i]);
              }
@@ -342,6 +347,7 @@ $(".btn-sort-lowest").on('click', function () {
             
             if (transpOrAcc == transport) {
             $(".fuel-usage").text(transpOrAcc.types[dataNr].fuel);
+            $(".meals").hide();
             }
             $(".special-modal").text(transpOrAcc.types[dataNr].value);
             if ($(".special-modal").text() == "") {
@@ -359,6 +365,11 @@ $(".btn-sort-lowest").on('click', function () {
                     $('#theModal').modal('hide');
                 });
         })
+
+
+            $(".btn-continue").on('click', function(){
+                $(".total-price").text('$' + totalPrice);
+            })
         
             $(".btn-review-modal").on('click', function () {
                 console.log($(this).closest(".card-wrapper").attr('data-nr'));
@@ -413,6 +424,7 @@ $(".btn-sort-highest").on('click', function () {
                 $(".fuel-usage").text("");
                 $(".fuel-usage").text(transpOrAcc.types[dataNr].people + " ");
                 $(".fuel-usage").append('<i class="fas fa-user"></i>');
+                $(".fuel").hide();
             for (var i = 0; i < $(".meals").length; i++) {
                 $(".meals-image-" + i).attr('src', transpOrAcc.types[dataNr].mealsImage[i]);
              }
@@ -421,6 +433,7 @@ $(".btn-sort-highest").on('click', function () {
             
             if (transpOrAcc == transport) {
             $(".fuel-usage").text(transpOrAcc.types[dataNr].fuel);
+            $(".meals").hide();
             }
             $(".special-modal").text(transpOrAcc.types[dataNr].value);
             if ($(".special-modal").text() == "") {
@@ -492,6 +505,7 @@ $(".btn-sort-alphabetically").on('click', function () {
                 $(".fuel-usage").text("");
                 $(".fuel-usage").text(transpOrAcc.types[dataNr].people + " ");
                 $(".fuel-usage").append('<i class="fas fa-user"></i>');
+                $(".fuel").hide();
             for (var i = 0; i < $(".meals").length; i++) {
                 $(".meals-image-" + i).attr('src', transpOrAcc.types[dataNr].mealsImage[i]);
              }
@@ -500,6 +514,7 @@ $(".btn-sort-alphabetically").on('click', function () {
             
             if (transpOrAcc == transport) {
             $(".fuel-usage").text(transpOrAcc.types[dataNr].fuel);
+            $(".meals").hide();
             }
             $(".special-modal").text(transpOrAcc.types[dataNr].value);
             if ($(".special-modal").text() == "") {
