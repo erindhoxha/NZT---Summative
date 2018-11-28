@@ -1297,6 +1297,14 @@ h1 {
   background-color: #ebebeb; }
 
 .img-card-akl {
-  width: 100%; }
+  width: 80%;
+  border-radius: 5px; }
+
+.guests {
+  margin-top: 50px; }
+
+.card-col {
+  padding: 0px;
+  margin-top: 20px; }
 
 /*# sourceMappingURL=main.css.map */
