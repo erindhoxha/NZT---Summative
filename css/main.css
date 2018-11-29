@@ -139,6 +139,33 @@
   border-radius: 5px;
   background-image: url("../img/hostel-1.jpeg"); }
 
+.img-wrapper-2 {
+  height: 300px;
+  width: 220px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  background-image: url("../img/hotel-2.jpeg"); }
+
+.img-wrapper-3 {
+  height: 300px;
+  width: 220px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  background-image: url("../img/hotel-3.jpeg"); }
+
+.img-wrapper-4 {
+  height: 300px;
+  width: 220px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  background-image: url("../img/hotel-4.jpeg"); }
+
 .fa-thumbs-up {
   color: #4689BC !important;
   transition: 0.5s ease-out;
@@ -391,11 +418,11 @@ html {
 
 .wrapper {
   background-image: url("../img/bg-nature.jpeg");
-  border-radius: 0 0 100% 100% / 50%;
+  border-radius: 0 0% 100% 100% / 20%;
   background-attachment: fixed; }
 
 .wrapper-wrapper {
-  border-radius: 0 0 100% 100% / 50%;
+  border-radius: 0 0% 100% 100% / 20%;
   background: rgba(32, 124, 229, 0.79);
   background: -moz-linear-gradient(top, rgba(32, 124, 229, 0.79) 0%, rgba(0, 0, 0, 0.94) 73%, black 100%);
   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(32, 124, 229, 0.79)), color-stop(73%, rgba(0, 0, 0, 0.94)), color-stop(100%, black));
