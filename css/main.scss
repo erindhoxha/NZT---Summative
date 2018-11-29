@@ -67,6 +67,8 @@ $blue: #0a84e1;
 }
 .wrapper {
   background-image:url('../img/bg.jpeg');
+  border-radius: 0 0 100% 100% / 50%;
+
 }
 .line2 {
   border-bottom:2px solid black;
@@ -143,6 +145,28 @@ $blue: #0a84e1;
 }
 .x-btn {
   color:white;
+}
+.img-card {
+  height:300px;
+  width:220px;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  padding-bottom:30px;
+  align-items:center;
+  background-color:rgba(0,0,0,0.2);
+  h6 {
+    text-shadow: 2px 2px 15px black;
+  }
+}
+.img-wrapper {
+  height:300px;
+  width:220px;
+  overflow:hidden;
+  background-size:cover;
+  background-position:center;
+  border-radius:5px;
+  background-image:url("../img/hostel-1.jpeg");
 }
 .review-modal-content {
   background-color: rgba(0, 0, 0, 0.83) !important;
@@ -436,7 +460,7 @@ html {
 
 #container-transport {
   color: white;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(255, 255, 255, 0.05) !important;
   height: 100vh;
   background: rgba(32, 124, 229, 0.79);
   background: -moz-linear-gradient(top, rgba(32, 124, 229, 0.79) 0%, rgba(0, 0, 0, 0.94) 73%, rgba(0, 0, 0, 1) 100%);
@@ -1234,6 +1258,9 @@ h1 {
   cursor: pointer;
 }
 @media (min-width:220px) {
+  .card-col {
+    text-align: center;
+  }
   .fuelCard {
     width:100%;
     padding-left:0px;
@@ -1253,6 +1280,29 @@ h1 {
 }
 
 @media (min-width:250px) {
+  .card-col {
+    img {
+      width:100%;
+    }
+    width:100%;
+  }
+  .guests-homes-title {
+    margin-top:80px !important;
+  }
+  .guests {
+    text-align:center;
+    margin-bottom:20px;
+  }
+  .img-card-akl-testimonial {
+    min-height:200px !important;
+  }
+  .card-col-testimonial-1, .card-col-testimonial-2, .card-col-testimonial-3 {
+    padding-right:0px;
+  }
+  .card-col-icons {
+    text-align:center !important;
+    margin:0 auto !important;
+  }
   .chat_icon {
     width: 65px;
   }
@@ -1330,6 +1380,13 @@ h1 {
 }
 
 @media (min-width:768px) {
+  .card-col-testimonial-1, .card-col-testimonial-2, .card-col-testimonial-3 {
+    padding:20px !important;
+  }
+  .guests {
+    margin-left:auto;
+    margin-right:auto;
+  }
   .chat_icon {
     width: 75px;
   }
@@ -1341,6 +1398,10 @@ h1 {
     width:100%;
     float:none;
   }
+  .card-col {
+    padding:20px !important;
+  }
+
   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 }
 
@@ -1592,11 +1653,7 @@ h1 {
 .description-star {
   color:$verylight;
 }
-.card-col {
-  width:80%;
-}
 .img-card-akl {
-  width:90%;
   border-radius:5px;
 }
 .container-book {
