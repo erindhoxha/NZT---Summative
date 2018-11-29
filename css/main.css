@@ -380,7 +380,7 @@ html {
   font-size: 60px; }
 
 .wrapper {
-  background-image: url("../img/bg.jpeg");
+  background-image: url("../img/bg-nature.jpeg");
   border-radius: 0 0 100% 100% / 50%;
   background-attachment: fixed; }
 
@@ -433,13 +433,13 @@ html {
   transition: 0.3s ease all; }
 
 .btn-sort {
-  font-size: 16px;
+  font-size: 15px;
   margin-left: 10px;
   margin-right: 10px;
   background-color: #4689BC;
   color: #fff;
-  font-weight: 300;
-  border-radius: 20px;
+  font-weight: 500;
+  border-radius: 0px;
   transition: 0.3s ease all; }
 
 .exit {
@@ -537,7 +537,7 @@ textarea {
   padding: 0.2em 0; }
 
 .follow-up-input {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
   padding: 20px;
   text-align: center;
   position: fixed;
@@ -884,6 +884,9 @@ h1 {
   display: none; }
 
 @media only screen and (max-width: 991px) {
+  .recommended-container {
+    display: none; }
+
   .book-container {
     border-left: 0px !important; } }
 .z___index {

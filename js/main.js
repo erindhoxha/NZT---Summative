@@ -219,7 +219,7 @@ $(document).ready(function () {
                 $('.follow-up-input').fadeOut();
             }
             // set distance user needs to scroll before we start fadeIn
-            else if ($(this).scrollTop() > 500) {
+            else if ($(this).scrollTop() > 700 && $(".card-wrap").length != 0) {
                 $('.follow-up-input').fadeIn();
             } else {
                 $('.follow-up-input').fadeOut();
@@ -331,8 +331,9 @@ $(".btn-sort-lowest").on('click', function () {
             for (var i = 0; i < transpOrAcc.types[dataNr].images.length; i++) {
                 $(".image-" + i).attr('src', "img/" + transpOrAcc.types[dataNr].images[i]);
             }
-            $(".fuel-price").text(transpOrAcc.types.fuel);
             $(".price-modal").text('Price: $' + transpOrAcc.types[dataNr].price + " x " + numberOfDays + " days = $" + transpOrAcc.types[dataNr].price * numberOfDays);
+            $(".fuel-price").text(transpOrAcc.types[dataNr].approxFuelSpend);
+
             totalPrice = transpOrAcc.types[dataNr].price * numberOfDays;
             $(".modal-title").text(transpOrAcc.types[dataNr].name);
             $(".modal-description").text(transpOrAcc.types[dataNr].description);
@@ -378,6 +379,14 @@ $(".btn-sort-lowest").on('click', function () {
             $(".btn-continue").on('click', function(){
                 $(".total-price").text('$' + totalPrice);
             })
+
+            totalPrice = parseInt(totalPrice);
+            $(".btn-add-to-cart.add-to-card-breakfast").on('click', function() {
+                $(".total-price").text('$' + totalPrice + ' + $70 Breakfast option = ' + totalPrice);
+            });
+            $(".btn-add-to-cart.add-to-card-lunch-dinner").on('click', function() {
+                $(".total-price").text('$' + totalPrice + ' + $70 Lunch option = ' + totalPrice);
+            });
         
             $(".btn-review-modal").on('click', function () {
                 console.log($(this).closest(".card-wrapper").attr('data-nr'));
@@ -418,7 +427,7 @@ $(".btn-sort-highest").on('click', function () {
             for (var i = 0; i < transpOrAcc.types[dataNr].images.length; i++) {
                 $(".image-" + i).attr('src', "img/" + transpOrAcc.types[dataNr].images[i]);
             }
-            $(".fuel-price").text(transpOrAcc.types.fuel);
+            $(".fuel-price").text(transpOrAcc.types[dataNr].approxFuelSpend);
             $(".price-modal").text('Price: $' + transpOrAcc.types[dataNr].price + " x " + numberOfDays + " days = $" + transpOrAcc.types[dataNr].price * numberOfDays);
             totalPrice = transpOrAcc.types[dataNr].price * numberOfDays;
             $(".modal-title").text(transpOrAcc.types[dataNr].name);
@@ -464,7 +473,14 @@ $(".btn-sort-highest").on('click', function () {
         $(".btn-continue").on('click', function(){
             $(".total-price").text('$' + totalPrice);
         })
-        
+        totalPrice = parseInt(totalPrice);
+        $(".btn-add-to-cart.add-to-card-breakfast").on('click', function() {
+            $(".total-price").text('$' + totalPrice + ' + $70 Breakfast option = ' + totalPrice);
+        });
+        $(".btn-add-to-cart.add-to-card-lunch-dinner").on('click', function() {
+            $(".total-price").text('$' + totalPrice + ' + $70 Lunch option = ' + totalPrice);
+        });
+
             $(".btn-review-modal").on('click', function () {
                 console.log($(this).closest(".card-wrapper").attr('data-nr'));
                 var dataNr = $(this).closest(".card-wrapper").attr('data-nr');
@@ -504,7 +520,7 @@ $(".btn-sort-alphabetically").on('click', function () {
             for (var i = 0; i < transpOrAcc.types[dataNr].images.length; i++) {
                 $(".image-" + i).attr('src', "img/" + transpOrAcc.types[dataNr].images[i]);
             }
-            $(".fuel-price").text(transpOrAcc.types.fuel);
+            $(".fuel-price").text(transpOrAcc.types[dataNr].approxFuelSpend);
             $(".price-modal").text('Price: $' + transpOrAcc.types[dataNr].price + " x " + numberOfDays + " days = $" + transpOrAcc.types[dataNr].price * numberOfDays);
             totalPrice = transpOrAcc.types[dataNr].price * numberOfDays;
             $(".modal-title").text(transpOrAcc.types[dataNr].name);
@@ -550,7 +566,13 @@ $(".btn-sort-alphabetically").on('click', function () {
             $(".btn-continue").on('click', function(){
                 $(".total-price").text('$' + totalPrice);
             });
-
+            totalPrice = parseInt(totalPrice);
+            $(".btn-add-to-cart.add-to-card-breakfast").on('click', function() {
+                $(".total-price").text('$' + totalPrice + ' + $70 Breakfast option = ' + totalPrice);
+            });
+            $(".btn-add-to-cart.add-to-card-lunch-dinner").on('click', function() {
+                $(".total-price").text('$' + totalPrice + ' + $70 Lunch option = ' + totalPrice);
+            });
 
 
             $(".btn-review-modal").on('click', function () {
