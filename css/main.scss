@@ -136,6 +136,7 @@ $blue: #0a84e1;
   margin-right:10px;
 }
 .rating-review {
+  font-size:14px;
   text-align:left;
   // text-align:center;
 }
@@ -164,24 +165,32 @@ $blue: #0a84e1;
   border-radius:5px;
   background-image:url("../img/hostel-1.jpeg");
 }
-.review-modal-content {
-  background-color: rgba(0, 0, 0, 0.83) !important;
-  color:white !important;
-  padding-bottom: 30px !important;
+.fa-thumbs-up {
+  color:$verylight !important;
+  transition:0.5s ease-out;
+  cursor:pointer;
 }
-.review-0-text, .review-1-text, .review-2-text {
-  text-align:center;
-  margin-top:10px;
+.fa-thumbs-up:hover {
+  transform:scale(1.1);
+}
+.fa-thumbs-down {
+  color:red;
+  opacity:0;
 }
 .review {
-  border-bottom: 1px solid #ebebeb;
-  img {
-    width:100%;
-  }
-  width:50%;
-  margin:0 auto;
-  padding-top:20px;
-  padding-bottom:20px;
+  padding:15px;
+  border:1px solid #ebebeb;
+}
+.modal-body-review {
+  padding:20px !important;
+}
+.review-0-text, .review-1-text, .review-2-text {
+  margin-top:10px;
+  font-size:15px;
+  font-weight:400;
+}
+.review-img {
+  width:100%;
 }
 .meals {
   width:42%;
@@ -1308,6 +1317,7 @@ h1 {
   }
   .img-card-akl-testimonial {
     min-height:200px !important;
+    object-fit:cover;
   }
   .card-col-testimonial-1, .card-col-testimonial-2, .card-col-testimonial-3 {
     padding-right:0px;
@@ -1393,6 +1403,7 @@ h1 {
 }
 
 @media (min-width:768px) {
+
   .card-col-testimonial-1, .card-col-testimonial-2, .card-col-testimonial-3 {
     padding:20px !important;
   }
@@ -1414,11 +1425,19 @@ h1 {
   .card-col {
     padding:20px !important;
   }
+  .img-booked {
+    height:400px !important;
+    object-fit:cover;
+  }
 
   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 }
 
 @media (min-width:961px) {
+  .img-booked {
+    height:150px !important;
+    object-fit:cover;
+  }
   .fuelCard {
     margin-bottom:10px !important;
   }
@@ -1497,6 +1516,10 @@ h1 {
   /* hi-res laptops and desktops */
 }
 @media (min-width:1200px) {
+  .img-booked {
+    height: 130px;
+    object-fit: cover;
+  }
   .btn-book {
     width:20%;
     float:right;
@@ -1615,7 +1638,7 @@ h1 {
 .img-card-akl-testimonial {
   width:100%;
   border-radius:5px;
-  min-height:250px;
+  object-fit:cover;
 }
 .description-testimonial {
   font-size:14px;

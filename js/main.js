@@ -1,3 +1,8 @@
+var info = document.getElementById('summative-template').innerHTML;
+var template = Handlebars.compile(info);
+var dataTemplate = template(accommodation);
+var templateWrite = document.getElementById('card-container').innerHTML += dataTemplate;
+
 $(function () {
     setTimeout(function () {
         $('.nzt-container').fadeOut(500);

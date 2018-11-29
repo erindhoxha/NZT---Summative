@@ -296,66 +296,8 @@
             <p>New Zealand homes were rated 4.8 out of 5 stars with 1,000,000+ reviews</p>
           </div>
     </div>
-    <div class="row text-dark">
-      <div class="col-lg-3 col-md-6 col-xs-12 card-col mx-auto">
-        <img class="img-card-akl" src="img/house-1.jpeg">
-        <h6 class="description-small">TREEEHOUSE • AUCKLAND</h6>
-        <h6 class="description-title">Romantic Bush Chalet - Kauri Chalet</h6>
-        <h6 class="description-price">$175 NZD per night • Free cancellation</h6>
-        <h6 class="description-host">
-            <i class="fas fa-star description-star"></i>
-            <i class="fas fa-star description-star"></i>
-            <i class="fas fa-star description-star"></i>
-            <i class="fas fa-star description-star"></i>
-            <i class="fas fa-star description-star"></i>
-          373 • Superhost</h6>
-        <button type="button" class="btn btn-block btn-pay">See more</button>
-      </div>
-
-      <div class="col-lg-3 col-md-6 col-xs-12 card-col mx-auto">
-          <img class="img-card-akl" src="img/house-1.jpeg">
-          <h6 class="description-small">TREEEHOUSE • AUCKLAND</h6>
-          <h6 class="description-title">Romantic Bush Chalet - Kauri Chalet</h6>
-          <h6 class="description-price">$175 NZD per night • Free cancellation</h6>
-          <h6 class="description-host">
-              <i class="fas fa-star description-star"></i>
-              <i class="fas fa-star description-star"></i>
-              <i class="fas fa-star description-star"></i>
-              <i class="fas fa-star description-star"></i>
-              <i class="fas fa-star description-star"></i>
-            373 • Superhost</h6>
-        <button type="button" class="btn btn-block btn-pay">See more</button>
-        </div>
-
-        <div class="col-lg-3 col-md-6 col-xs-12 card-col mx-auto">
-            <img class="img-card-akl" src="img/house-1.jpeg">
-            <h6 class="description-small">TREEEHOUSE • AUCKLAND</h6>
-            <h6 class="description-title">Romantic Bush Chalet - Kauri Chalet</h6>
-            <h6 class="description-price">$175 NZD per night • Free cancellation</h6>
-            <h6 class="description-host">
-                <i class="fas fa-star description-star"></i>
-                <i class="fas fa-star description-star"></i>
-                <i class="fas fa-star description-star"></i>
-                <i class="fas fa-star description-star"></i>
-                <i class="fas fa-star description-star"></i>
-              373 • Superhost</h6>
-        <button type="button" class="btn btn-block btn-pay">See more</button>
-          </div>
-
-          <div class="col-lg-3 col-md-6 col-xs-12 card-col mx-auto">
-              <img class="img-card-akl" src="img/house-1.jpeg">
-              <h6 class="description-small">TREEEHOUSE • AUCKLAND</h6>
-              <h6 class="description-title">Romantic Bush Chalet - Kauri Chalet</h6>
-              <h6 class="description-price">$175 NZD per night • Free cancellation</h6>
-              <h6 class="description-host">
-                  <i class="fas fa-star description-star"></i>
-                  <i class="fas fa-star description-star"></i>
-                  <i class="fas fa-star description-star"></i>
-                  <i class="fas fa-star description-star"></i>
-                  <i class="fas fa-star description-star"></i>
-                373 • Superhost</h6>
-        <button type="button" class="btn btn-block btn-pay">See more</button>
-            </div>
+    <div class="row text-dark" id="just-booked-container">
+    <!-- JUST BOOKED DATA RENDERED HERE -->
     </div>
   </div>
 </div>
@@ -370,7 +312,9 @@
       </div>
       <div class="row text-dark">
         <div class="col-lg-4 col-md-6 col-xs-12 card-col-testimonial-1">
+          <div class="img-div">
           <img class="img-card-akl-testimonial" src="img/house-1.jpeg">
+          </div>
           <h6 class="description-testimonial-star">
               <i class="fas fa-star description-star"></i>
               <i class="fas fa-star description-star"></i>
@@ -386,7 +330,9 @@
         </div>
 
         <div class="col-lg-4 col-md-6 col-xs-12 card-col-testimonial-2">
-            <img class="img-card-akl-testimonial" src="img/hotel-6.jpeg">
+            <div class="img-div">
+            <img class="img-card-akl-testimonial" src="img/house-4.jpeg">
+            </div>
             <h6 class="description-testimonial-star">
                 <i class="fas fa-star description-star"></i>
                 <i class="fas fa-star description-star"></i>
@@ -401,7 +347,9 @@
           </div>
 
           <div class="col-lg-4 col-md-6 col-xs-12 card-col-testimonial-3">
-              <img class="img-card-akl-testimonial" src="img/house-1.jpeg">
+              <div class="img-div">
+              <img class="img-card-akl-testimonial" src="img/house-6.jpeg">
+              </div>
               <h6 class="description-testimonial-star">
                   <i class="fas fa-star description-star"></i>
                   <i class="fas fa-star description-star"></i>
@@ -601,7 +549,7 @@
           </div>
             
             <div class="col-lg-12 text-left">
-              <label for="card-number">CARD NUMBER</label><br>
+              <label for="card-number">asdasdasdasd asdasdasd</label><br>
               <input type="number" class="card-number-input" id="card-number" placeholder="XXXX XXXX XXXX XXXX" required>
             </div>
           <div class="col-lg-6 col-xs-6 col-md-6 col-6 card-exp-div text-left">
@@ -640,60 +588,73 @@
 <div class="modal fade" id="reviewsModal" tabindex="-1" role="dialog" aria-labelledby="reviewsModal" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content review-modal-content">
-        <div class="modal-header">
-          <h5 class="modal-review-title" id="reviewsModal">Modal title</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span class="x-btn" aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="review">
-            <img src="img/person1.jpeg" class="review-0-image">
-            <h6 class="review-0-text">Review Text</h6>
-            <div class="rating-review">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star unchecked"></span>
-            <div class="float-right">
-                <i class="thumbs fas fa-thumbs-down"></i>
-                <i class="thumbs fas fa-thumbs-up"></i>
-            </div>
-            </div>  
-            </div>
-
-          <div class="review">
-              <img src="img/person1.jpeg" class="review-1-image">
-              <h6 class="review-1-text">Review Text</h6>
-              <div class="rating-review">
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star unchecked"></span>
-              <div class="float-right">
-                  <i class="thumbs fas fa-thumbs-down"></i>
-                  <i class="thumbs fas fa-thumbs-up"></i>
+        <div class="modal-body modal-body-review">
+         <div class="review mb-3">
+          <div class="row">
+            <div class="col-lg-4">
+            <img src="img/person1.jpeg" class="review-img review-0-image">                
               </div>
-              </div>  
+              <div class="col-lg-8">
+                  <h6 class="review-0-text">Review Text</h6>
+                  <div class="rating-review">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star unchecked"></span>
+                  <div class="float-right">
+                      <i class="thumbs fas fa-thumbs-down"></i>
+                      <i class="thumbs fas fa-thumbs-up"></i>
+                  </div>  
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="review mb-3">
+              <div class="row">
+                <div class="col-lg-4">
+                <img src="img/person1.jpeg" class="review-img review-1-image">                
+                  </div>
+                  <div class="col-lg-8">
+                      <h6 class="review-1-text">Review Text</h6>
+                      <div class="rating-review">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star unchecked"></span>
+                      <div class="float-right">
+                          <i class="thumbs fas fa-thumbs-down"></i>
+                          <i class="thumbs fas fa-thumbs-up"></i>
+                      </div>  
+                      </div>
+                  </div>
+                </div>
               </div>
 
-            <div class="review">
-                <img src="img/person1.jpeg" class="review-2-image">
-                <h6 class="review-2-text">Review Text</h6>
-                <div class="rating-review">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star unchecked"></span>
-                <div class="float-right">
-                    <i class="thumbs fas fa-thumbs-down"></i>
-                    <i class="thumbs fas fa-thumbs-up"></i>
-                </div>
-                </div>  
-                </div>
+
+              <div class="review mb-3">
+                  <div class="row">
+                    <div class="col-lg-4">
+                    <img src="img/person1.jpeg" class="review-img review-2-image">                
+                      </div>
+                      <div class="col-lg-8">
+                          <h6 class="review-2-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, fugiat.</h6>
+                          <div class="rating-review">
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star unchecked"></span>
+                          <div class="float-right">
+                              <i class="thumbs fas fa-thumbs-down"></i>
+                              <i class="thumbs fas fa-thumbs-up"></i>
+                          </div>  
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+
         </div>
       </div>
     </div>
@@ -839,6 +800,28 @@
     </div>
   </div>
 </script>
+
+<script id="just-booked-template" type="text/x-handlebars-template">
+  {{#each types}}
+  <div class="col-lg-3 col-md-6 col-xs-12 card-col mx-auto">
+    <img class="img-card-akl img-responsive img-booked" src="{{img}}">
+    <h6 class="description-small">{{nameTop}}</h6>
+    <h6 class="description-title">{{title}}</h6>
+    <h6 class="description-price">{{price}}</h6>
+    <h6 class="description-host">
+      {{#each checked}}
+      <i class="fas fa-star description-star"></i>
+      {{/each}}
+      {{#each unchecked}}
+      <i class="fas fa-star description-star"></i>
+      {{/each}}
+      {{superHostTitle}}</h6>
+    <button type="button" class="btn btn-block btn-pay">See more</button>
+  </div>
+  {{/each}}
+</script>
+
+
 <!-- HANDLEBARS START HERE -->
   <script type="text/javascript">
   
@@ -848,6 +831,13 @@
       loop: true,
       delay: 100,
     });
+
+    // RENDER BOOKING ACCOMMODATION
+    var info = document.getElementById('just-booked-template').innerHTML;
+    var template = Handlebars.compile(info);
+    var dataTemplate = template(justBookedData);
+    var templateWrite = document.getElementById('just-booked-container').innerHTML += dataTemplate;
+
 
 
   </script>
