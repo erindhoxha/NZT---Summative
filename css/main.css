@@ -47,10 +47,6 @@
   height: 2px;
   margin: 0 auto; }
 
-.wrapper {
-  background-image: url("../img/bg.jpeg");
-  border-radius: 0 0 100% 100% / 50%; }
-
 .line2 {
   border-bottom: 2px solid black;
   width: 50px;
@@ -382,6 +378,21 @@ html {
 .red-text {
   color: #4689BC;
   font-size: 60px; }
+
+.wrapper {
+  background-image: url("../img/bg.jpeg");
+  border-radius: 0 0 100% 100% / 50%;
+  background-attachment: fixed; }
+
+.wrapper-wrapper {
+  border-radius: 0 0 100% 100% / 50%;
+  background: rgba(32, 124, 229, 0.79);
+  background: -moz-linear-gradient(top, rgba(32, 124, 229, 0.79) 0%, rgba(0, 0, 0, 0.94) 73%, black 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(32, 124, 229, 0.79)), color-stop(73%, rgba(0, 0, 0, 0.94)), color-stop(100%, black));
+  background: -webkit-linear-gradient(top, rgba(32, 124, 229, 0.79) 0%, rgba(0, 0, 0, 0.94) 73%, black 100%);
+  background: -o-linear-gradient(top, rgba(32, 124, 229, 0.79) 0%, rgba(0, 0, 0, 0.94) 73%, black 100%);
+  background: -ms-linear-gradient(top, rgba(32, 124, 229, 0.79) 0%, rgba(0, 0, 0, 0.94) 73%, black 100%);
+  background: linear-gradient(to bottom, rgba(32, 124, 229, 0.4) 0%, rgba(0, 0, 0, 0.9) 73%, black 100%); }
 
 #container-transport {
   color: white;
