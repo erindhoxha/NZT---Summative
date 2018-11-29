@@ -29,9 +29,9 @@ $('.btn-accomodation').on('click', function () {
     } else {
     transpOrAcc = transport;
     }
-    console.log(transportOrAccommodation)
-    console.log(numberOfDays);
-    console.log(peopleValue);
+    // console.log(transportOrAccommodation)
+    // console.log(numberOfDays);
+    // console.log(peopleValue);
 
 
     if (numberOfDays > 15 || firstDate >= secondDate) {
@@ -83,7 +83,7 @@ $('.btn-accomodation').on('click', function () {
 
         $(".modal-body").css('text-align', 'center');
         $(".rating-container").empty();
-        console.log($(this).closest(".card-wrapper").attr('data-nr'));
+        // console.log($(this).closest(".card-wrapper").attr('data-nr'));
         var dataNr = $(this).closest(".card-wrapper").attr('data-nr');
         $("#theModal").attr('data-nr', dataNr);
         for (var i = 0; i < answerData.types[dataNr].images.length; i++) {
@@ -114,7 +114,7 @@ $('.btn-accomodation').on('click', function () {
         if ($(".special-modal").text() == "") {
             $(".special-modal").hide();
         }
-            console.log($(this).closest(".card-wrapper").attr('data-nr'));
+            // console.log($(this).closest(".card-wrapper").attr('data-nr'));
             var dataNr = $(this).closest(".card-wrapper").attr('data-nr');
             for (var i = 0; i < $(".review").length; i++) {
                 $(".review-" + i + "-text").text(answerData.types[dataNr].reviews[i]);
@@ -139,7 +139,7 @@ $('.btn-accomodation').on('click', function () {
     });
 
     $(".btn-review-modal").on('click', function () {
-            console.log($(this).closest(".card-wrapper").attr('data-nr'));
+            // console.log($(this).closest(".card-wrapper").attr('data-nr'));
             var dataNr = $(this).closest(".card-wrapper").attr('data-nr');
             for (var i = 0; i < $(".review").length; i++) {
                 $(".review-" + i + "-text").text(answerData.types[dataNr].reviews[i]);
@@ -325,7 +325,7 @@ $(".btn-sort-lowest").on('click', function () {
         
             $(".modal-body").css('text-align', 'center');
             $(".rating-container").empty();
-            console.log($(this).closest(".card-wrapper").attr('data-nr'));
+            // console.log($(this).closest(".card-wrapper").attr('data-nr'));
             var dataNr = $(this).closest(".card-wrapper").attr('data-nr');
             $("#theModal").attr('data-nr', dataNr);
             for (var i = 0; i < transpOrAcc.types[dataNr].images.length; i++) {
@@ -363,7 +363,7 @@ $(".btn-sort-lowest").on('click', function () {
                 $(".special-modal").hide();
             }
 
-                console.log($(this).closest(".card-wrapper").attr('data-nr'));
+                // console.log($(this).closest(".card-wrapper").attr('data-nr'));
                 var dataNr = $(this).closest(".card-wrapper").attr('data-nr');
                 for (var i = 0; i < $(".review").length; i++) {
                     $(".review-" + i + "-text").text(transpOrAcc.types[dataNr].reviews[i]);
@@ -389,7 +389,7 @@ $(".btn-sort-lowest").on('click', function () {
             });
         
             $(".btn-review-modal").on('click', function () {
-                console.log($(this).closest(".card-wrapper").attr('data-nr'));
+                // console.log($(this).closest(".card-wrapper").attr('data-nr'));
                 var dataNr = $(this).closest(".card-wrapper").attr('data-nr');
                 for (var i = 0; i < $(".review").length; i++) {
                     $(".review-" + i + "-text").text(transpOrAcc.types[dataNr].reviews[i]);
@@ -421,7 +421,7 @@ $(".btn-sort-highest").on('click', function () {
         
             $(".modal-body").css('text-align', 'center');
             $(".rating-container").empty();
-            console.log($(this).closest(".card-wrapper").attr('data-nr'));
+            // console.log($(this).closest(".card-wrapper").attr('data-nr'));
             var dataNr = $(this).closest(".card-wrapper").attr('data-nr');
             $("#theModal").attr('data-nr', dataNr);
             for (var i = 0; i < transpOrAcc.types[dataNr].images.length; i++) {
@@ -458,7 +458,7 @@ $(".btn-sort-highest").on('click', function () {
                 $(".special-modal").hide();
             }
 
-                console.log($(this).closest(".card-wrapper").attr('data-nr'));
+                // console.log($(this).closest(".card-wrapper").attr('data-nr'));
                 var dataNr = $(this).closest(".card-wrapper").attr('data-nr');
                 for (var i = 0; i < $(".review").length; i++) {
                     $(".review-" + i + "-text").text(transpOrAcc.types[dataNr].reviews[i]);
@@ -482,7 +482,7 @@ $(".btn-sort-highest").on('click', function () {
         });
 
             $(".btn-review-modal").on('click', function () {
-                console.log($(this).closest(".card-wrapper").attr('data-nr'));
+                // console.log($(this).closest(".card-wrapper").attr('data-nr'));
                 var dataNr = $(this).closest(".card-wrapper").attr('data-nr');
                 for (var i = 0; i < $(".review").length; i++) {
                     $(".review-" + i + "-text").text(transpOrAcc.types[dataNr].reviews[i]);
@@ -514,7 +514,7 @@ $(".btn-sort-alphabetically").on('click', function () {
         
             $(".modal-body").css('text-align', 'center');
             $(".rating-container").empty();
-            console.log($(this).closest(".card-wrapper").attr('data-nr'));
+            // console.log($(this).closest(".card-wrapper").attr('data-nr'));
             var dataNr = $(this).closest(".card-wrapper").attr('data-nr');
             $("#theModal").attr('data-nr', dataNr);
             for (var i = 0; i < transpOrAcc.types[dataNr].images.length; i++) {
@@ -551,7 +551,7 @@ $(".btn-sort-alphabetically").on('click', function () {
                 $(".special-modal").hide();
             }
 
-                console.log($(this).closest(".card-wrapper").attr('data-nr'));
+                // console.log($(this).closest(".card-wrapper").attr('data-nr'));
                 var dataNr = $(this).closest(".card-wrapper").attr('data-nr');
                 for (var i = 0; i < $(".review").length; i++) {
                     $(".review-" + i + "-text").text(transpOrAcc.types[dataNr].reviews[i]);
@@ -576,7 +576,7 @@ $(".btn-sort-alphabetically").on('click', function () {
 
 
             $(".btn-review-modal").on('click', function () {
-                console.log($(this).closest(".card-wrapper").attr('data-nr'));
+                // console.log($(this).closest(".card-wrapper").attr('data-nr'));
                 var dataNr = $(this).closest(".card-wrapper").attr('data-nr');
                 for (var i = 0; i < $(".review").length; i++) {
                     $(".review-" + i + "-text").text(transpOrAcc.types[dataNr].reviews[i]);
