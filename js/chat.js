@@ -365,9 +365,11 @@ function goToPageWithResults() {
         $(".fuel-usage").text(transpOrAcc.types[dataNr].fuel);
       }
 
+      if (answerData.types[dataNr].value == undefined) {
+        $(".special-modal").hide();
+      } else {
+      $(".special-modal").show();
       $(".special-modal").text(answerData.types[dataNr].value);
-      if ($(".special-modal").text() == "") {
-          $(".special-modal").hide();
       }
         console.log($(this).closest(".card-wrapper").attr('data-nr'));
         var dataNr = $(this).closest(".card-wrapper").attr('data-nr');
@@ -384,16 +386,44 @@ function goToPageWithResults() {
 
     $(".btn-continue").on('click', function(){
       $(".total-price").text('$' + totalPrice);
+      clicked = false;
   })
 
-    totalPrice = parseInt(totalPrice);
-    $(".btn-add-to-cart.add-to-card-breakfast").on('click', function() {
-      $(".total-price").text('$' + totalPrice + ' + $70 Breakfast option = ' + totalPrice);
-    });
-    
-    $(".btn-add-to-cart.add-to-card-lunch-dinner").on('click', function() {
-      $(".total-price").text('$' + totalPrice + ' + $70 Lunch option = ' + totalPrice);
-    });
+  totalPrice = parseInt(totalPrice);
+
+
+   var clicked;
+
+  $(".btn-add-to-cart.add-to-card-breakfast").on('click', function() {
+      clicked = true;
+      totalPriceAfter = totalPrice + 70;
+      $(".total-price").text('$' + totalPrice + ' + $70 Breakfast option = $' + totalPriceAfter);
+      $("#card-coupon-code").css('border', '1px solid #ebebeb');        
+  });
+  $(".btn-add-to-cart.add-to-card-lunch-dinner").on('click', function() {
+      clicked = true;
+      totalPriceAfter = totalPrice + 70;
+      $(".total-price").text('$' + totalPrice + ' + $70 Lunch option = $' + totalPriceAfter);
+      $("#card-coupon-code").css('border', '1px solid #ebebeb');        
+  });
+
+  $(".coupon-go").on('click', function(){
+      if (clicked == true) {
+      var totalPriceCoupon = totalPriceAfter * 0.2;
+      var totalPriceSubtracted = totalPriceAfter - totalPriceCoupon;
+      totalPriceSubtracted = parseInt(totalPriceSubtracted);
+      totalPriceSubtracted = Math.floor(totalPriceSubtracted);  
+      } else {
+      var totalPriceCoupon = totalPrice * 0.2;
+      var totalPriceSubtracted = totalPrice - totalPriceCoupon;
+      totalPriceSubtracted = parseInt(totalPriceSubtracted);
+      totalPriceSubtracted = Math.floor(totalPriceSubtracted);            
+  }
+      if ($("#card-coupon-code").val() == "YOOBEE20") {
+          $(".total-price").text('$' + totalPrice + "-20% = " + totalPriceSubtracted);  
+          $("#card-coupon-code").css('border', '2px solid #05C205');        
+      }
+  });
 
     $(".btn-review-modal").on('click', function () {
       console.log($(this).closest(".card-wrapper").attr('data-nr'));
