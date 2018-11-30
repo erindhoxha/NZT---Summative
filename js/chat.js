@@ -274,7 +274,7 @@ function fourthAnswer() {
       $(".first_card_4").css('display', 'flex');
       $(".fifthAnswer").text("Sweet, you've chosen: " + answer2 + " days. By the answer you've given us, we'll send you through the results.");
       $(".card-body").scrollTop(1000);
-
+      $("body").css('cursor', 'wait');
       $(function () {
         setTimeout(function () {
             $('.nzt-container').fadeIn(500);
@@ -287,6 +287,7 @@ function fourthAnswer() {
       setTimeout(function () {
           $('.nzt-container').fadeOut(500);
           $('.hide-everything').fadeIn(500);
+          $("body").css('cursor', 'default');
       },4200);
   });
 
