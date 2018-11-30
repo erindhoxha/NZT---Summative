@@ -1590,8 +1590,29 @@ h1 {
   height:40px;
 }
 .card-coupon-input {
-  width:100%;
+  width:89%;
   height:40px;
+  float:left;
+}
+.coupon-go:hover {
+  transform:scale(1.1);
+}
+.coupon-go {
+  cursor:pointer;
+  transition:0.4s;
+  float:left;
+  width:10%;
+  margin-left:3px;
+  border:1px solid #ebebeb;
+  height:40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:$verylight;
+}
+.icon-submit-coupon {
+  font-size:24px;
+  color:white !important;
 }
 .payment-form {
   input {

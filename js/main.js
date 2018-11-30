@@ -5,6 +5,12 @@ $(function () {
         $('.hide-everything').show();
     }, 00);
 });
+
+var info = document.getElementById('summative-template').innerHTML;
+var template = Handlebars.compile(info);
+var dataTemplate = template(transport);
+var templateWrite = document.getElementById('card-container').innerHTML += dataTemplate;
+
 var transpOrAcc = "";
 var numberOfDays = "";
 var totalPrice = "";
@@ -134,6 +140,18 @@ $('.btn-search').on('click', function () {
     })
 
     totalPrice = parseInt(totalPrice);
+
+    $(".coupon-go").on('click', function(){
+        var totalPriceCoupon = totalPrice * 0.2;
+        var totalPriceSubtracted = totalPrice - totalPriceCoupon;
+        totalPriceSubtracted = parseInt(totalPriceSubtracted);
+        totalPriceSubtracted = Math.floor(totalPriceSubtracted);
+        if ($("#card-coupon-code").val() == "YOOBEE20") {
+            $(".total-price").text('$' + totalPrice + "-20% = " + totalPriceSubtracted);  
+            $("#card-coupon-code").css('border', '2px solid #05C205');        
+        }
+    });
+    
     $(".btn-add-to-cart.add-to-card-breakfast").on('click', function() {
         $(".total-price").text('$' + totalPrice + ' + $70 Breakfast option = ' + totalPrice);
     });
@@ -589,4 +607,13 @@ $(".btn-sort-alphabetically").on('click', function () {
 })
 
 
+// WHEN INPUT PAYMENT - CREDIT CARD - ADD SPACE AFTER 4 LETTERS
+
+document.querySelector('#card-number').addEventListener('keydown', (e) => {
+    e.target.value = e.target.value.replace(/(\d{4})(\d+)/g, '$1 $2')
+})
+/* Jquery */
+$('#card-number').keyup(function() {
+  $(this).val($(this).val().replace(/(\d{4})(\d+)/g, '$1 $2'))
+});
 
