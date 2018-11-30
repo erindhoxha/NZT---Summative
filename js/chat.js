@@ -385,6 +385,8 @@ function goToPageWithResults() {
     })
 
     $(".btn-continue").on('click', function(){
+      $("#card-coupon-code").val("");
+      $("#card-coupon-code").css('border', '1px solid #ebebeb');
       $(".total-price").text('$' + totalPrice);
       clicked = false;
   })
@@ -395,12 +397,16 @@ function goToPageWithResults() {
    var clicked;
 
   $(".btn-add-to-cart.add-to-card-breakfast").on('click', function() {
+      $("#card-coupon-code").val("");
+      $("#card-coupon-code").css('border', '1px solid #ebebeb');
       clicked = true;
       totalPriceAfter = totalPrice + 70;
       $(".total-price").text('$' + totalPrice + ' + $70 Breakfast option = $' + totalPriceAfter);
       $("#card-coupon-code").css('border', '1px solid #ebebeb');        
   });
   $(".btn-add-to-cart.add-to-card-lunch-dinner").on('click', function() {
+      $("#card-coupon-code").val("");
+      $("#card-coupon-code").css('border', '1px solid #ebebeb');
       clicked = true;
       totalPriceAfter = totalPrice + 70;
       $(".total-price").text('$' + totalPrice + ' + $70 Lunch option = $' + totalPriceAfter);
