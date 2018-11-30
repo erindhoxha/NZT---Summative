@@ -270,25 +270,35 @@ $(".close-btn").on('click', function () {
     $(".chat-popup").hide(500);
 })
 
-$(function () {
-    $("#datepicker").datepicker();
-});
-
-$(function () {
-    $("#datepicker2").datepicker();
-});
-
-var dateToday = new Date();
-
-$("#datepicker").datepicker({
-    dateFormat: 'dd-mm-yy',
-    minDate: dateToday
-});
-$("#datepicker2").datepicker({
-    dateFormat: 'dd-mm-yy',
-    minDate: dateToday
-});
-
+$( function() {
+    var dateFormat = "mm/dd/yy",
+      from = $( "#datepicker" )
+        .datepicker({
+          numberOfMonths: 1,
+          minDate: 0,
+        })
+        .on( "change", function() {
+          to.datepicker( "option", "minDate", getDate( this ) );
+        }),
+      to = $( "#datepicker2" ).datepicker({
+        defaultDate: "+1w",
+        minDate: 0,
+      })
+      .on( "change", function() {
+        from.datepicker( "option", "maxDate", getDate( this ) );
+      });
+ 
+    function getDate( element ) {
+      var date;
+      try {
+        date = $.datepicker.parseDate( dateFormat, element.value );
+      } catch( error ) {
+        date = null;
+      }
+ 
+      return date;
+    }
+  } );
 
 $(document).on('resize, ready', function () {
     // Add class if screen size equals
