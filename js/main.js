@@ -3,13 +3,13 @@ $(function () {
     setTimeout(function () {
         $('.nzt-container').fadeOut(500);
         $('.hide-everything').show();
-    }, 2200);
+    }, 00);
 });
 var transpOrAcc = "";
 var numberOfDays = "";
 var totalPrice = "";
 $(".alert").hide();
-$('.btn-accomodation').on('click', function () {
+$('.btn-search').on('click', function () {
     var transportOrAccommodation = $("#accom-or-transport").val();
     var peopleValue = $("#people-search").val().slice(0, 1);
     peopleValue = parseInt(peopleValue);
@@ -111,9 +111,11 @@ $('.btn-accomodation').on('click', function () {
         if (answerData == transport) {
         $(".fuel-usage").text(answerData.types[dataNr].fuel);
         }
-        $(".special-modal").text(answerData.types[dataNr].value);
-        if ($(".special-modal").text() == "") {
+        if (answerData.types[dataNr].value == undefined) {
             $(".special-modal").hide();
+        } else {
+        $(".special-modal").show();
+        $(".special-modal").text(answerData.types[dataNr].value);
         }
             // console.log($(this).closest(".card-wrapper").attr('data-nr'));
             var dataNr = $(this).closest(".card-wrapper").attr('data-nr');
