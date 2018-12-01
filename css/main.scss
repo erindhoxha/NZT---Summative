@@ -1757,8 +1757,22 @@ h1 {
   padding:0px;
   margin-top:20px;
 }
-
-
+.help-cvc {
+  cursor:pointer;
+}
+.help-cvc-div {
+  img {
+    width:100%;
+  }
+  width:80%;
+  position:absolute; 
+  background-color:white;
+  border:1px solid #ebebeb;
+  z-index:2;
+}
+.visa-card, .master-card, .discover-card, .american-express-card {
+  transition:0.3s ease all;
+}
 h1, h2, h3, h4, h5, h6, .header-title, p, i, span:before, span, span:after, body {
   cursor: default;
 }

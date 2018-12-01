@@ -5,7 +5,10 @@ $(function () {
         $('.hide-everything').show();
     }, 00);
 });
-
+var info = document.getElementById('summative-template').innerHTML;
+var template = Handlebars.compile(info);
+var dataTemplate = template(transport);
+var templateWrite = document.getElementById('card-container').innerHTML += dataTemplate;
 
 var transpOrAcc = "";
 var numberOfDays = "";
@@ -172,9 +175,19 @@ $('.btn-search').on('click', function () {
         totalPriceSubtracted = Math.floor(totalPriceSubtracted);            
     }
         if ($("#card-coupon-code").val() == "YOOBEE20") {
-            $(".total-price").text('$' + totalPrice + "-20% = " + totalPriceSubtracted);  
-            $("#card-coupon-code").css('border', '2px solid #05C205');        
+            $(".success-coupon").show(300);
+        if (clicked == true) {
+            $(".total-price").text('$' + totalPriceAfter + "-20% = $" + totalPriceSubtracted);  
+        } else {
+            $(".total-price").text('$' + totalPrice + "-20% = $" + totalPriceSubtracted);              
         }
+        $(".alert-coupon").hide(300);
+        $(".success-coupon").show(300);
+        $("#card-coupon-code").css('border', '2px solid #05C205');        
+    } else {
+        $(".success-coupon").hide(300);
+        $(".alert-coupon").show(300);
+    }
     });
 
     $(".btn-review-modal").on('click', function () {
@@ -467,10 +480,21 @@ $(".btn-sort-lowest").on('click', function () {
             totalPriceSubtracted = Math.floor(totalPriceSubtracted);            
         }
             if ($("#card-coupon-code").val() == "YOOBEE20") {
-                $(".total-price").text('$' + totalPrice + "-20% = " + totalPriceSubtracted);  
-                $("#card-coupon-code").css('border', '2px solid #05C205');        
+            $(".success-coupon").show(300);
+            if (clicked == true) {
+                $(".total-price").text('$' + totalPriceAfter + "-20% = $" + totalPriceSubtracted);  
+            } else {
+                $(".total-price").text('$' + totalPrice + "-20% = $" + totalPriceSubtracted);              
             }
+            $(".alert-coupon").hide(300);
+            $(".success-coupon").show(300);
+            $("#card-coupon-code").css('border', '2px solid #05C205');        
+        } else {
+            $(".success-coupon").hide(300);
+            $(".alert-coupon").show(300);
+        }
         });
+    
     
         
             $(".btn-review-modal").on('click', function () {
@@ -596,10 +620,20 @@ $(".btn-sort-highest").on('click', function () {
             totalPriceSubtracted = Math.floor(totalPriceSubtracted);            
         }
             if ($("#card-coupon-code").val() == "YOOBEE20") {
-                $(".total-price").text('$' + totalPrice + "-20% = " + totalPriceSubtracted);  
+            if (clicked == true) {
+                $(".total-price").text('$' + totalPriceAfter + "-20% = $" + totalPriceSubtracted);  
+            } else {
+                $(".total-price").text('$' + totalPrice + "-20% = $" + totalPriceSubtracted);              
+            }
+                $(".alert-coupon").hide(300);
+                $(".success-coupon").show(300);
                 $("#card-coupon-code").css('border', '2px solid #05C205');        
+            } else {
+                $(".success-coupon").hide(300);
+                $(".alert-coupon").show(300);
             }
         });
+    
             $(".btn-review-modal").on('click', function () {
                 // console.log($(this).closest(".card-wrapper").attr('data-nr'));
                 var dataNr = $(this).closest(".card-wrapper").attr('data-nr');
@@ -723,10 +757,21 @@ $(".btn-sort-alphabetically").on('click', function () {
             totalPriceSubtracted = Math.floor(totalPriceSubtracted);            
         }
             if ($("#card-coupon-code").val() == "YOOBEE20") {
-                $(".total-price").text('$' + totalPrice + "-20% = " + totalPriceSubtracted);  
-                $("#card-coupon-code").css('border', '2px solid #05C205');        
+            $(".success-coupon").show(300);
+            if (clicked == true) {
+                $(".total-price").text('$' + totalPriceAfter + "-20% = $" + totalPriceSubtracted);  
+            } else {
+                $(".total-price").text('$' + totalPrice + "-20% = $" + totalPriceSubtracted);              
             }
-        });
+            $(".alert-coupon").hide(300);
+            $(".success-coupon").show(300);
+            $("#card-coupon-code").css('border', '2px solid #05C205');        
+        } else {
+            $(".success-coupon").hide(300);
+            $(".alert-coupon").show(300);
+        }
+    });
+    
             $(".btn-review-modal").on('click', function () {
                 // console.log($(this).closest(".card-wrapper").attr('data-nr'));
                 var dataNr = $(this).closest(".card-wrapper").attr('data-nr');
@@ -745,6 +790,35 @@ document.querySelector('#card-number').addEventListener('keydown', (e) => {
 })
 /* Jquery */
 $('#card-number').keyup(function() {
+    if ($("#card-number").val().startsWith("4")) {
+        $(".visa-card").css('transform', 'scale(1.3)');
+    }else {
+        $(".visa-card").css('transform', 'scale(1)');
+    }
+    if ($("#card-number").val().startsWith("3")) {
+        $(".master-card").css('transform', 'scale(1.3)');
+    }else {
+        $(".master-card").css('transform', 'scale(1)');
+    }
+    if ($("#card-number").val().startsWith("2")) {
+        $(".discover-card").css('transform', 'scale(1.3)');
+    }else {
+        $(".discover-card").css('transform', 'scale(1)');
+    }
+    if ($("#card-number").val().startsWith("1")) {
+        $(".american-express-card").css('transform', 'scale(1.3)');
+    } else {
+        $(".american-express-card").css('transform', 'scale(1)');
+    }
+    
   $(this).val($(this).val().replace(/(\d{4})(\d+)/g, '$1 $2'))
 });
+$(".help-cvc-div").hide(0);
+
+$(".help-cvc").on('mouseover', function() {
+    $(".help-cvc-div").show(300);
+})
+$(".help-cvc").on('mouseout', function() {
+    $(".help-cvc-div").hide(300);
+})
 

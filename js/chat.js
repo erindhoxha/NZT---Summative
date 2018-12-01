@@ -414,22 +414,27 @@ function goToPageWithResults() {
   });
 
   $(".coupon-go").on('click', function(){
-      if (clicked == true) {
-      var totalPriceCoupon = totalPriceAfter * 0.2;
-      var totalPriceSubtracted = totalPriceAfter - totalPriceCoupon;
-      totalPriceSubtracted = parseInt(totalPriceSubtracted);
-      totalPriceSubtracted = Math.floor(totalPriceSubtracted);  
-      } else {
-      var totalPriceCoupon = totalPrice * 0.2;
-      var totalPriceSubtracted = totalPrice - totalPriceCoupon;
-      totalPriceSubtracted = parseInt(totalPriceSubtracted);
-      totalPriceSubtracted = Math.floor(totalPriceSubtracted);            
-  }
-      if ($("#card-coupon-code").val() == "YOOBEE20") {
-          $(".total-price").text('$' + totalPrice + "-20% = " + totalPriceSubtracted);  
-          $("#card-coupon-code").css('border', '2px solid #05C205');        
-      }
-  });
+    if (clicked == true) {
+    var totalPriceCoupon = totalPriceAfter * 0.2;
+    var totalPriceSubtracted = totalPriceAfter - totalPriceCoupon;
+    totalPriceSubtracted = parseInt(totalPriceSubtracted);
+    totalPriceSubtracted = Math.floor(totalPriceSubtracted);  
+    } else {
+    var totalPriceCoupon = totalPrice * 0.2;
+    var totalPriceSubtracted = totalPrice - totalPriceCoupon;
+    totalPriceSubtracted = parseInt(totalPriceSubtracted);
+    totalPriceSubtracted = Math.floor(totalPriceSubtracted);            
+}
+    if ($("#card-coupon-code").val() == "YOOBEE20") {
+    if (clicked == true) {
+        $(".total-price").text('$' + totalPriceAfter + "-20% = $" + totalPriceSubtracted);  
+    } else {
+        $(".total-price").text('$' + totalPrice + "-20% = $" + totalPriceSubtracted);              
+    }
+        $("#card-coupon-code").css('border', '2px solid #05C205');        
+    }
+});
+
 
     $(".btn-review-modal").on('click', function () {
       console.log($(this).closest(".card-wrapper").attr('data-nr'));

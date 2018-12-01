@@ -533,17 +533,21 @@
                 <h5 class="modal-title-payment" id="checkoutModal">Payment Details</h5>
             </div>
             <div class="col-lg-12">
-              <img class="payment-details-img" src="img/payment-details.png">
+              <img class="payment-details-img visa-card" src="img/visa.png">
+              <img class="payment-details-img master-card" src="img/mastercard.png">
+              <img class="payment-details-img discover-card" src="img/discover.png">
+              <img class="payment-details-img american-express-card" src="img/americanExpress.png">
+
             </div>
           </div>  
         </div>
         <div class="modal-body">
           <form class="payment-form">
           <div class="row">
-          <div class="alert alert-danger-new">
+          <div class="alert alert-danger-new alert-coupon">
               <strong>Oops!</strong> Something wrong happened, please try again.
           </div>
-          <div class="alert alert-success" role="alert">
+          <div class="alert alert-success success-coupon" role="alert">
             This is a success alert—check it out!
           </div>
             <div class="col-lg-12 text-left">
@@ -552,13 +556,17 @@
             </div>
           <div class="col-lg-6 col-xs-6 col-md-6 col-6 card-exp-div text-left">
               <label for="card-expiration-date">EXPIRATION DATE</label><br>
-              <input type="text" maxlength="2" class="card-expiration-input" id="card-expiration-date" placeholder="12" required>
-              <input type="text" maxlength="2" class="card-expiration-input" id="card-expiration-date" placeholder="34" required>
+              <input type="text" maxlength="2" class="card-expiration-input" id="card-expiration-date" placeholder="MM" required>
+              <input type="text" maxlength="2" class="card-expiration-input" id="card-expiration-date" placeholder="YY" required>
             </div>
           <div class="col-lg-6 col-xs-6 col-md-6 col-6 card-cvc-div text-left">
-              <label for="card-cvc">CVC</label><br>
+              <label for="card-cvc">CVC &nbsp;</label> <i class="fas fa-question-circle help-cvc"></i><br>
               <input type="text" maxlength="3" class="card-cvc-input" id="card-cvc" placeholder="XXX" required>
+              <div class="help-cvc-div">
+                <img class="cvc-help-img" src="img/cvchelp.png">
+              </div>
             </div>
+
           <div class="col-lg-12 card-coupon-div text-left">
               <label for="card-coupon-code">COUPON CODE</label><br>
               <input type="text" class="card-coupon-input" id="card-coupon-code" placeholder="Enter your coupon code here">
