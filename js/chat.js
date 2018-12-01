@@ -389,6 +389,7 @@ function goToPageWithResults() {
       $("#card-coupon-code").css('border', '1px solid #ebebeb');
       $(".total-price").text('$' + totalPrice);
       clicked = false;
+      $(".alert").hide();
   })
 
   totalPrice = parseInt(totalPrice);
@@ -399,6 +400,7 @@ function goToPageWithResults() {
   $(".btn-add-to-cart.add-to-card-breakfast").on('click', function() {
       $("#card-coupon-code").val("");
       $("#card-coupon-code").css('border', '1px solid #ebebeb');
+      $(".alert").hide();
       clicked = true;
       totalPriceAfter = totalPrice + 70;
       $(".total-price").text('$' + totalPrice + ' + $70 Breakfast option = $' + totalPriceAfter);
@@ -407,6 +409,7 @@ function goToPageWithResults() {
   $(".btn-add-to-cart.add-to-card-lunch-dinner").on('click', function() {
       $("#card-coupon-code").val("");
       $("#card-coupon-code").css('border', '1px solid #ebebeb');
+      $(".alert").hide();
       clicked = true;
       totalPriceAfter = totalPrice + 70;
       $(".total-price").text('$' + totalPrice + ' + $70 Lunch option = $' + totalPriceAfter);

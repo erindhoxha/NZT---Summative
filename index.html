@@ -225,7 +225,7 @@
               <option>Accommodation</option>
               <option>Transport</option>
             </select>
-            <input type="text" id="datepicker" placeholder="dd / mm / yyyy" class="datepicker-input">
+            <input type="text" id="datepicker" placeholder="dd / mm / yyyy" class="datepicker-input" data-date-format='dd-mm-yy'>
             <input type="text" id="datepicker2" placeholder="dd / mm / yyyy" class="datepicker-input2">
             <select type="text" id="people-search">
               <option>1 People</option>
@@ -236,7 +236,7 @@
               <option>6 People</option>
             </select>
           </div>
-          <button type="button" data-toggle="modal" data-target="#accomodationModal" class='btn btn-lg btn-primary btn-accomodation btn-search'>Find accommodation</button>
+          <button type="button" data-toggle="modal" data-target="#accomodationModal" class='btn btn-lg btn-primary btn-accomodation btn-search'>Search & find</button>
         </div>
     </div>
   </div>
@@ -545,10 +545,10 @@
           <form class="payment-form">
           <div class="row">
           <div class="alert alert-danger-new alert-coupon">
-              <strong>Oops!</strong> Something wrong happened, please try again.
+              <strong>Oops!</strong> The coupon didn't work. Please, try again.
           </div>
           <div class="alert alert-success success-coupon" role="alert">
-            This is a success alert—check it out!
+            Woah! You got a discount. Happy booking! :)
           </div>
             <div class="col-lg-12 text-left">
               <label for="card-number">Card Number</label><br>

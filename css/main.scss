@@ -1598,7 +1598,7 @@ h1 {
   transform:scale(1.1);
 }
 .coupon-go {
-  cursor:pointer;
+  cursor:pointer !important;
   transition:0.4s;
   float:left;
   width:10%;
@@ -1770,9 +1770,30 @@ h1 {
   border:1px solid #ebebeb;
   z-index:2;
 }
+.img-wrapper, .img-wrapper-2, .img-wrapper-3, .img-wrapper-4 {
+  transition:0.3s ease all;
+  cursor:pointer;
+}
+
+.img-wrapper:hover, .img-wrapper-2:hover, .img-wrapper-3:hover, .img-wrapper-4:hover {
+  transform:scale(1.1);
+  .img-card {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+
+  }
+}
 .visa-card, .master-card, .discover-card, .american-express-card {
   transition:0.3s ease all;
 }
 h1, h2, h3, h4, h5, h6, .header-title, p, i, span:before, span, span:after, body {
   cursor: default;
 }
+
+.alert-coupon, .success-coupon {
+  margin-left:auto;
+  margin-right:auto;
+  width:94%;
+}
+
+
+.ui-datepicker-current-day .ui-state-active { background-color: $dark !important; }
