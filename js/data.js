@@ -4,6 +4,8 @@ var transport = {
       name: "KTM 500 EXC 2800",
       class: "motorbike 1p 1d 2d 3d 4d 5d",
       image: "motorbike-1.jpeg",
+      image1: "motorbike-2.jpeg",
+      image2: "motorbike-3.jpeg",
       description: "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway",
       checked: ["checked", "checked"],
       unchecked: ["unchecked", "unchecked", "unchecked"],
