@@ -803,7 +803,7 @@ $('#card-number').keyup(function() {
     }else {
         $(".visa-card").css('transform', 'scale(1)');
     }
-    if ($("#card-number").val().startsWith("3")) {
+    if ($("#card-number").val().startsWith("5")) {
         $(".master-card").css('transform', 'scale(1.3)');
     }else {
         $(".master-card").css('transform', 'scale(1)');
@@ -813,7 +813,7 @@ $('#card-number').keyup(function() {
     }else {
         $(".discover-card").css('transform', 'scale(1)');
     }
-    if ($("#card-number").val().startsWith("1")) {
+    if ($("#card-number").val().startsWith("3")) {
         $(".american-express-card").css('transform', 'scale(1.3)');
     } else {
         $(".american-express-card").css('transform', 'scale(1)');

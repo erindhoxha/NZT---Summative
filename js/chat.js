@@ -277,7 +277,7 @@ function fourthAnswer() {
       $("body").css('cursor', 'wait');
       $(function () {
         setTimeout(function () {
-            $('.nzt-container').fadeIn(500);
+            $('.nzt-container').fadeIn(100);
             $('.hide-everything').fadeOut(500);
         },3200);
     });
@@ -286,7 +286,7 @@ function fourthAnswer() {
     $(function () {
       setTimeout(function () {
           $('.nzt-container').fadeOut(500);
-          $('.hide-everything').fadeIn(500);
+          $('.hide-everything').fadeIn(100);
           $("body").css('cursor', 'default');
       },4200);
   });

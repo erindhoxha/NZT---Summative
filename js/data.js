@@ -702,7 +702,6 @@ var accommodation = {
 };
 
 // JUST BOOKED DATA
-
 justBookedData = {
   types: [
     { 
@@ -745,3 +744,46 @@ justBookedData = {
   ]
 };
 
+
+// JUST BOOKED DATA
+transportInNewZealand = {
+  types: [
+    { 
+      img:"img/motor-van-1.jpg",
+      nameTop : "TREEEHOUSE • AUCKLAND", 
+      title : "Romantic Bush Chalet - Kauri Chalet",
+      price: "$175 NZD per night • Free cancellation",
+      checked: ["checked", "checked"],
+      unchecked: ["unchecked", "unchecked", "unchecked"],
+      superHostTitle: "373 • Superhost"
+    },
+    { 
+      nameTop : "TREEEHOUSE • AUCKLAND", 
+      title : "Romantic Bush Chalet - Kauri Chalet",
+      price: "$175 NZD per night • Free cancellation",
+      checked: ["checked", "checked"],
+      unchecked: ["unchecked", "unchecked", "unchecked"],
+      img:"img/motorbike-7.jpeg",
+      superHostTitle: "373 • Superhost"
+      
+    },
+    { 
+      nameTop : "TREEEHOUSE • AUCKLAND", 
+      title : "Romantic Bush Chalet - Kauri Chalet",
+      price: "$175 NZD per night • Free cancellation",
+      checked: ["checked", "checked"],
+      unchecked: ["unchecked", "unchecked", "unchecked"],
+      img:"img/smallcar.jpeg",
+      superHostTitle: "373 • Superhost"
+    },
+    { 
+      nameTop : "TREEEHOUSE • AUCKLAND", 
+      title : "Romantic Bush Chalet - Kauri Chalet",
+      price: "$175 NZD per night • Free cancellation",
+      checked: ["checked", "checked"],
+      unchecked: ["unchecked", "unchecked", "unchecked"],
+      img:"img/car-5.jpg",
+      superHostTitle: "373 • Superhost"
+    },
+  ]
+};

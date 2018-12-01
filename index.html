@@ -409,66 +409,8 @@
                 <p>New Zealand cars and transport were rated 4.8 out of 5 stars with 1,000,000+ reviews</p>
               </div>
         </div>
-        <div class="row text-dark">
-          <div class="col-lg-3 col-md-6 col-xs-12 card-col mx-auto">
-            <img class="img-card-akl img-booked" src="img/motor-van-1.jpg">
-            <h6 class="description-small">TREEEHOUSE • AUCKLAND</h6>
-            <h6 class="description-title">Romantic Bush Chalet - Kauri Chalet</h6>
-            <h6 class="description-price">$175 NZD per night • Free cancellation</h6>
-            <h6 class="description-host">
-                <i class="fas fa-star description-star"></i>
-                <i class="fas fa-star description-star"></i>
-                <i class="fas fa-star description-star"></i>
-                <i class="fas fa-star description-star"></i>
-                <i class="fas fa-star description-star"></i>
-              373 • Superhost</h6>
-        <button type="button" class="btn btn-block btn-pay">See more</button>
-          </div>
-    
-          <div class="col-lg-3 col-md-6 col-xs-12 card-col mx-auto">
-              <img class="img-card-akl img-booked" src="img/motorbike-7.jpeg">
-              <h6 class="description-small">TREEEHOUSE • AUCKLAND</h6>
-              <h6 class="description-title">Romantic Bush Chalet - Kauri Chalet</h6>
-              <h6 class="description-price">$175 NZD per night • Free cancellation</h6>
-              <h6 class="description-host">
-                  <i class="fas fa-star description-star"></i>
-                  <i class="fas fa-star description-star"></i>
-                  <i class="fas fa-star description-star"></i>
-                  <i class="fas fa-star description-star"></i>
-                  <i class="fas fa-star description-star"></i>
-                373 • Superhost</h6>
-        <button type="button" class="btn btn-block btn-pay">See more</button>
-            </div>
-    
-            <div class="col-lg-3 col-md-6 col-xs-12 card-col mx-auto">
-                <img class="img-card-akl img-booked" src="img/smallcar.jpeg">
-                <h6 class="description-small">TREEEHOUSE • AUCKLAND</h6>
-                <h6 class="description-title">Romantic Bush Chalet - Kauri Chalet</h6>
-                <h6 class="description-price">$175 NZD per night • Free cancellation</h6>
-                <h6 class="description-host">
-                    <i class="fas fa-star description-star"></i>
-                    <i class="fas fa-star description-star"></i>
-                    <i class="fas fa-star description-star"></i>
-                    <i class="fas fa-star description-star"></i>
-                    <i class="fas fa-star description-star"></i>
-                  373 • Superhost</h6>
-        <button type="button" class="btn btn-block btn-pay">See more</button>
-              </div>
-    
-              <div class="col-lg-3 col-md-6 col-xs-12 card-col mx-auto">
-                  <img class="img-card-akl img-booked" src="img/car-5.jpg">
-                  <h6 class="description-small">TREEEHOUSE • AUCKLAND</h6>
-                  <h6 class="description-title">Romantic Bush Chalet - Kauri Chalet</h6>
-                  <h6 class="description-price">$175 NZD per night • Free cancellation</h6>
-                  <h6 class="description-host">
-                      <i class="fas fa-star description-star"></i>
-                      <i class="fas fa-star description-star"></i>
-                      <i class="fas fa-star description-star"></i>
-                      <i class="fas fa-star description-star"></i>
-                      <i class="fas fa-star description-star"></i>
-                    373 • Superhost</h6>
-        <button type="button" class="btn btn-block btn-pay">See more</button>
-                </div>
+        <div class="row text-dark" id="transport-in-nz-container">
+
         </div>
       </div>
     </div>
@@ -853,6 +795,25 @@
   {{/each}}
 </script>
 
+<script id="transport-in-nz-template" type="text/x-handlebars-template">
+          {{#each types}}
+          <div class="col-lg-3 col-md-6 col-xs-12 card-col mx-auto">
+            <img class="img-card-akl img-booked" src="{{img}}">
+            <h6 class="description-small">{{nameTop}}</h6>
+            <h6 class="description-title">{{title}}</h6>
+            <h6 class="description-price">{{price}}</h6>
+            <h6 class="description-host">
+                {{#each checked}}
+                <i class="fas fa-star description-star"></i>
+                {{/each}}
+                {{#each unchecked}}
+                <i class="fas fa-star description-star"></i>
+                {{/each}}
+                {{superHostTitle}}</h6>
+        <button type="button" class="btn btn-block btn-pay">See more</button>
+          </div>
+          {{/each}}
+</script>
 
 <!-- HANDLEBARS START HERE -->
   <script type="text/javascript">
@@ -870,7 +831,11 @@
     var dataTemplate = template(justBookedData);
     var templateWrite = document.getElementById('just-booked-container').innerHTML += dataTemplate;
 
-
+    // RENDER BOOKING ACCOMMODATION
+    var infoTransport = document.getElementById('transport-in-nz-template').innerHTML;
+    var templateTransport = Handlebars.compile(infoTransport);
+    var dataTemplateTransport = templateTransport(transportInNewZealand);
+    var templateWriteTransport = document.getElementById('transport-in-nz-container').innerHTML += dataTemplateTransport;
 
   </script>
   <script src="js/main.js"></script>
