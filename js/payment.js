@@ -92,4 +92,11 @@ function dontLetTextOnInputs(addIdOrClassHere) {
 });
 }
 
-
+function isNumberKey(e) {
+    var currentChar = parseInt(String.fromCharCode(e.keyCode), 10);
+    if (!isNaN(currentChar)) {
+        var nextValue = $(expFrom).val() + currentChar;
+        if (parseInt(nextValue, 10) <= 12) return true;
+    }
+    return false;
+}

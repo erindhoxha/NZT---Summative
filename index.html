@@ -529,7 +529,7 @@
             </div>
           <div class="col-lg-6 col-xs-6 col-md-6 col-6 card-exp-div text-left">
               <label for="card-expiration-date">EXPIRATION DATE</label><br>
-              <input type="text" maxlength="2" class="card-expiration-input" id="card-expiration-date" placeholder="MM" required>
+              <input type="text" maxlength="2" class="card-expiration-input" id="card-expiration-date" onkeypress="return isNumberKey(event)" placeholder="MM" required>
               <input type="text" maxlength="2" class="card-expiration-input" id="card-expiration-date-to" placeholder="YY" required>
             </div>
           <div class="col-lg-6 col-xs-6 col-md-6 col-6 card-cvc-div text-left">
