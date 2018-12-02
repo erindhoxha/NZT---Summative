@@ -1570,8 +1570,13 @@ h1 {
 }
 
 .card-number-input {
-  width:100%;
+  width:89%;
   height:40px;
+  float:left;
+}
+.right-side-input {
+  width:10%;
+  float:left;
 }
 .card-expiration-input {
   width:28%;
