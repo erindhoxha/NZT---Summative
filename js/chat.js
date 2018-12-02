@@ -385,6 +385,10 @@ function goToPageWithResults() {
     })
 
     $(".btn-continue").on('click', function(){
+      dontLetTextOnInputs(cardNumber);
+      dontLetTextOnInputs(expFrom);
+      dontLetTextOnInputs(expTo);
+      dontLetTextOnInputs(cvcNumber);
       $("#card-coupon-code").val("");
       $("#card-coupon-code").css('border', '1px solid #ebebeb');
       $(".total-price").text('$' + totalPrice);
@@ -398,6 +402,10 @@ function goToPageWithResults() {
    var clicked;
 
   $(".btn-add-to-cart.add-to-card-breakfast").on('click', function() {
+      dontLetTextOnInputs(cardNumber);
+      dontLetTextOnInputs(expFrom);
+      dontLetTextOnInputs(expTo);
+      dontLetTextOnInputs(cvcNumber);
       $("#card-coupon-code").val("");
       $("#card-coupon-code").css('border', '1px solid #ebebeb');
       $(".alert").hide();
@@ -407,6 +415,10 @@ function goToPageWithResults() {
       $("#card-coupon-code").css('border', '1px solid #ebebeb');        
   });
   $(".btn-add-to-cart.add-to-card-lunch-dinner").on('click', function() {
+      dontLetTextOnInputs(cardNumber);
+      dontLetTextOnInputs(expFrom);
+      dontLetTextOnInputs(expTo);
+      dontLetTextOnInputs(cvcNumber);
       $("#card-coupon-code").val("");
       $("#card-coupon-code").css('border', '1px solid #ebebeb');
       $(".alert").hide();

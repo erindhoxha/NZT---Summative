@@ -12,6 +12,7 @@ for (var i = 2; i < 5; i++) {
 $(".card-change").hide();
 
 $('#card-number').keyup(function() {
+
   // VISA CARD
   if ($("#card-number").val().startsWith("4")) {
       $(".visa-card").css('transform', 'scale(1.3)');
@@ -71,3 +72,24 @@ buttonPay.on('click', function() {
       $(".ajs-close").css('float', 'right');
   }
 });
+
+
+// DISABLE TEXT INPUT FROM INPUTS
+var cardNumber = "#card-number";
+var expFrom = "#card-expiration-date";
+var expTo = "#card-expiration-date-to";
+var cvcNumber = "#card-cvc";
+
+
+
+
+function dontLetTextOnInputs(addIdOrClassHere) {
+    document.querySelector(addIdOrClassHere).addEventListener("keypress", function (evt) {
+    if (evt.which < 48 || evt.which > 57)
+    {
+        evt.preventDefault();
+    }
+});
+}
+
+
