@@ -1581,6 +1581,16 @@ h1 {
     margin-bottom: 12px;
   }
 }
+#prefix-input {
+  width:16%;
+  margin-right:2%;
+  float:left;
+  height:40px;
+}
+#phone-input {
+  width:82%;
+  float:left;
+}
 .right-side-input {
   width:10%;
   float:left;
@@ -1771,7 +1781,7 @@ h1 {
   margin-top:20px;
 }
 .help-cvc {
-  cursor:pointer;
+  cursor:help;
 }
 .help-cvc-div {
   img {
@@ -1848,4 +1858,12 @@ th, td {
 .description-table-header, .amount-table-header, .total, .total-amount, .bg-table {
   background-color:$verylight;
   color:white;
+}
+.img-print {
+  width:50px;
+  cursor:pointer;
+}
+.icon-div {
+  display:inline-block;
+  padding-top:10px;
 }

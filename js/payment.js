@@ -64,25 +64,35 @@ $(".help-cvc").on('mouseout', function() {
   $(".help-cvc-div").hide(300);
 })
 
-var buttonPay = $(".btn-pay");
+var buttonPay = $(".btn-pay-end");
 
 buttonPay.on('click', function() {
-  if ($(".card-number-input").val() != "" && $("#card-expiration-date").val() != "" && $("#card-expiration-date-to").val() != "" && $("#card-cvc").val() != "") {
+  if ($(".phone-input").val() != "" && $(".address-input").val() != "" && $(".email-input").val() != "" && $(".name-input").val() != "" && $(".card-number-input").val() != "" && $("#card-expiration-date").val() != "" && $("#card-expiration-date-to").val() != "" && $("#card-cvc").val() != "") {
       alertify.alert('Payment Successful!', 'Success! Your receipt will be sent into your email shortly.');
       $(".ajs-close").css('float', 'right');
+      $(".hide-everything").hide();
+      $(".receipt-container").show();
+      $(".fade").hide();
+      var oneDay = parseInt($(".total-price").text().slice(1));
+      var oneDaySub = oneDay / numberOfDays;
+      $(".amount").text(numberOfDays + " days x $" +  oneDaySub + " = " + $(".total-price").text());
+      $(".total-amount").text($(".total-price").text());
+      $(".bookedStuff").text($(".modal-title").text());
+      $(".modal-open").css('overflow', 'unset');
+      $(".yourName").text($(".name-input").val());
+      $(".yourPhone").text($(".prefix-input").val() + " - " + $(".phone-input").val());
+      $(".yourEmail").text($(".email-input").val());
+      $(".yourAddress").text($(".address-input").val());
+      $(".btn-pay-end").attr('type', 'button');
+  } else {
+    $(".btn-pay-end").attr('type', 'submit');
   }
 
-  $(".hide-everything").hide();
-  $(".receipt-container").show();
-  $(".fade").hide();
-  var oneDay = parseInt($(".total-price").text().slice(1));
-  var oneDaySub = oneDay / numberOfDays;
-  $(".amount").text(numberOfDays + " days x $" +  oneDaySub + " = " + $(".total-price").text());
-  $(".total-amount").text($(".total-price").text());
-  $(".bookedStuff").text($(".modal-title").text());
-  $(".modal-open").css('overflow', 'unset');
-});
 
+});
+function printThePage() {
+    window.print();
+}
 
 // DISABLE TEXT INPUT FROM INPUTS
 var cardNumber = "#card-number";
