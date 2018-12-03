@@ -567,7 +567,7 @@ var accommodation = {
       value: "$99 until Dec 2018",
       reviews: 8,
       reviewDescription: ["Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway", "Wan Chai and Causeway Bay | 1.8 km from downtown | Near the subway"],
-      images: ["hostel-2.jpeg", "hostel-2.jpg", "hostel-1.jpeg"],
+      images: ["hostel-2.jpg", "hostel-2.jpg", "hostel-1.jpg"],
       people: 1,
       mealsImage: ["img/breakfast.jpeg", "img/lunch.jpeg"],
       reviews:["Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie.", "Kia ora.. Spit the dummy, this crook cuzzie is as pearler as a heaps good housie."]
