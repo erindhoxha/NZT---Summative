@@ -1353,6 +1353,11 @@ h1 {
   height: 40px;
   float: left; }
 
+.input-body .name-input, .input-body .email-input, .input-body .address-input, .input-body .phone-input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 12px; }
+
 .right-side-input {
   width: 10%;
   float: left; }
@@ -1576,5 +1581,39 @@ h1, h2, h3, h4, h5, h6, .header-title, p, i, span:before, span, span:after, body
 
 .ui-datepicker-current-day .ui-state-active {
   background-color: #074676 !important; }
+
+#google_translate_element {
+  position: absolute;
+  z-index: 2;
+  top: 60px;
+  right: 0; }
+
+.receipt-container {
+  height: 100vh; }
+
+.img-logo-receipt {
+  width: 250px; }
+
+.receipt-legend p {
+  color: black;
+  padding-left: 10px; }
+
+.receipt-legend-right {
+  color: black; }
+
+table, th, td {
+  border: 1px solid #ebebeb;
+  border-collapse: collapse; }
+
+th, td {
+  padding: 5px;
+  text-align: left; }
+
+.receipt-container {
+  display: none; }
+
+.description-table-header, .amount-table-header, .total, .total-amount, .bg-table {
+  background-color: #4689BC;
+  color: white; }
 
 /*# sourceMappingURL=main.css.map */

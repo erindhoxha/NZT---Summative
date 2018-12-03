@@ -63,8 +63,84 @@
 </div>
 
 
+
+<div class="container receipt-container">
+
+  
+    <div class="row pt-5">
+      <div class="col-lg-6 receipt-legend text-left">
+        <img class="img-responsive img-logo-receipt" src="img/newzealand.png">
+        <p>Tourism New Zealand</p>
+        <p>Address 37/37</p>
+        <p>Auckland, NZ 1050</p>
+        <br>
+        <p>sales@tourismnz.com</p>
+        <p>www.tourismnewzealand.com</p>
+      </div>
+      <div class="col-lg-6 text-left receipt-legend-right pt-4">
+        <h6>Payment Receipt - Bill to:</h6>
+        <table style="width:100%">
+            <tr>
+              <th class='bg-table'>Name:</th>
+              <td class="yourName">Bill Gates</td>
+            </tr>
+            <tr>
+              <th class='bg-table' rowspan="1">Telephone:</th>
+              <td class="yourPhone">55577854</td>
+            </tr>
+            <tr>
+              <th class='bg-table' rowspan="1">Email:</th>
+              <td class="yourEmail">youremail@gmail.com</td>
+            </tr>
+            <tr>
+              <th class='bg-table' rowspan="1">Address:</th>
+              <td class="yourPhone">yourAddress</td>
+            </tr>
+          </table>
+      </div>
+    </div>
+
+
+    <div class="row mt-5">
+      <div class="col-lg-12">
+          <table style="width:100%; color:black">
+              <tr>
+                <th class="description-table-header">Description:</th>
+                <th class="amount-table-header">Amount:</th>
+              </tr>
+              <tr>
+                  <td class="bookedStuff" style="padding-bottom:300px;">Your booked here</th>
+                  <td class="amount" style="padding-bottom:300px;">$price</th>
+              </tr>
+              <tr>
+                  <th class="total">Total:</th>
+                  <th class="total-amount">Total amount</th>
+              </tr>
+   
+            </table>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 text-dark pt-5 text-center">
+        <h6>Thank you for booking with Tourism New Zealand. You will receive an email shortly.</h6>
+        <h6>For more information, please visit www.tourismnewzealand.com </h6>
+        <h6 class="lead text-info" ><small>Travel. Live. Adventure.</small></h6>
+      </div>
+    </div>
+  </div>
+
+
 <div class="hide-everything">
 
+
+
+
+
+  <div id="google_translate_element"></div><script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+    </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
   <div class="overlay">
     <!-- CHAT -->
@@ -510,7 +586,28 @@
         </div>
         <div class="modal-body">
           <form class="payment-form">
-          <div class="row">
+          <div class="row input-body">
+
+          <div class="col-lg-12 text-left">
+              <label for="name-input">Name</label><br>
+              <input type="text" name="name" class="name-input" id="name-input" placeholder="Name" required>
+          </div>
+
+          <div class="col-lg-12 text-left">
+              <label for="name-input">Email</label><br>
+              <input type="email" name="email" class="email-input" id="email-input" placeholder="Email" required>
+          </div>
+
+          <div class="col-lg-12 text-left">
+              <label for="phone-input">Phone Number</label><br>
+              <input type="number" name="phone" class="phone-input" id="phone-input" placeholder="Phone" required>
+          </div>
+
+          <div class="col-lg-12 text-left">
+              <label for="address-input">Email</label><br>
+              <input type="address" name="address" class="address-input" id="address-input" placeholder="Address" required>
+          </div>
+
           <div class="alert alert-danger-new alert-coupon">
               <strong>Oops!</strong> The coupon didn't work. Please, try again.
           </div>
@@ -549,7 +646,7 @@
                 <label for="card-coupon-code">Total Price: <span class="total-price">$344</span></label><br>
               </div>
 
-                  <button type="submit" class="btn btn-block btn-default btn-pay">Pay</button>
+                  <button type="button" class="btn btn-block btn-default btn-pay">Pay</button>
           </div>
         </form>
         </div>

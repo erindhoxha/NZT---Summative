@@ -1,7 +1,3 @@
-var info = document.getElementById('summative-template').innerHTML;
-var template = Handlebars.compile(info);
-var dataTemplate = template(accommodation);
-var templateWrite = document.getElementById('card-container').innerHTML += dataTemplate;
 
 $(function () {
     setTimeout(function () {
@@ -9,6 +5,11 @@ $(function () {
         $('.hide-everything').show();
     }, 00);
 });
+
+var info = document.getElementById('summative-template').innerHTML;
+var template = Handlebars.compile(info);
+var dataTemplate = template(accommodation);
+var templateWrite = document.getElementById('card-container').innerHTML += dataTemplate;
 
 var transpOrAcc = "";
 var numberOfDays = "";

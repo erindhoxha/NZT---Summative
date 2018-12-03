@@ -71,6 +71,16 @@ buttonPay.on('click', function() {
       alertify.alert('Payment Successful!', 'Success! Your receipt will be sent into your email shortly.');
       $(".ajs-close").css('float', 'right');
   }
+
+  $(".hide-everything").hide();
+  $(".receipt-container").show();
+  $(".fade").hide();
+  var oneDay = parseInt($(".total-price").text().slice(1));
+  var oneDaySub = oneDay / numberOfDays;
+  $(".amount").text(numberOfDays + " days x $" +  oneDaySub + " = " + $(".total-price").text());
+  $(".total-amount").text($(".total-price").text());
+  $(".bookedStuff").text($(".modal-title").text());
+  $(".modal-open").css('overflow', 'unset');
 });
 
 
