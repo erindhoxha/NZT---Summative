@@ -74,8 +74,13 @@ buttonPay.on('click', function() {
       $(".receipt-container").show();
       $(".fade").hide();
       var oneDay = parseInt($(".total-price").text().slice(1));
-      var oneDaySub = oneDay / numberOfDays;
-      $(".amount").text(numberOfDays + " days x $" +  oneDaySub + " = " + $(".total-price").text());
+      if (numberOfDays != "") {
+        var oneDaySub = oneDay / numberOfDays;
+         $(".amount").text(numberOfDays + " days x $" +  oneDaySub + " = " + $(".total-price").text());
+      } else {
+        var oneDaySub = oneDay / answer2;
+        $(".amount").text(answer2 + " days x $" +  oneDaySub + " = " + $(".total-price").text());
+      }
       $(".total-amount").text($(".total-price").text());
       $(".bookedStuff").text($(".modal-title").text());
       $(".modal-open").css('overflow', 'unset');
