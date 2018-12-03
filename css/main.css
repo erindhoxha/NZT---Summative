@@ -1619,6 +1619,9 @@ th, td {
   padding: 5px;
   text-align: left; }
 
+.receipt-container {
+  display: none; }
+
 .description-table-header, .amount-table-header, .total, .total-amount, .bg-table {
   background-color: #4689BC;
   color: white; }
