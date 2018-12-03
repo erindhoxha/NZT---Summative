@@ -1309,6 +1309,11 @@ h1 {
   cursor: pointer;
 }
 @media (min-width:220px) {
+  #container-transport {
+    #content {
+      top: 65%;
+    }
+  }
   .card-col {
     text-align: center;
   }
@@ -1412,7 +1417,14 @@ h1 {
     margin-bottom:30px;
   }
 }
+@media (min-width:375px) {
 
+#container-transport {
+  #content {
+    top: 50%;
+  }
+}
+}
 @media (min-width:481px) {
   .chat_icon {
     width: 70px;
@@ -1825,7 +1837,7 @@ h1, h2, h3, h4, h5, h6, .header-title, p, i, span:before, span, span:after, body
   position:absolute;
   z-index:2;
   top:60px;
-  right:0;
+  right:10px;
 }
 
 .receipt-container {
