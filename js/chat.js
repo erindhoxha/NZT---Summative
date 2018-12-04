@@ -95,7 +95,7 @@ function secondAnswer() {
       $(".button-send").addClass('sentSecondMessageTransport');
       // ADD TRANSPORT STUFF HERE
       $(".first_card_2").css('display', 'flex');
-      $(".thirdAnswer").text("Sweet, so you need Transportation... Could you let me know, for how many people?")
+      $(".thirdAnswer").text("Sweet, so you need Transportation. Could you let me know, for how many people?")
       $(".card-body").scrollTop(1000);
     } else if (("accommodation").indexOf(inputValue) > -1 || ("accomodation").indexOf(inputValue) > -1 || ("acomodation").indexOf(inputValue) > -1) {
 
@@ -110,7 +110,7 @@ function secondAnswer() {
 
       $(".button-send").addClass('sentSecondMessageAccommodation');
       $(".first_card_2").css('display', 'flex');
-      $(".thirdAnswer").text("Sweet, so you need Accommodation... Could you let me know, for how many people?")
+      $(".thirdAnswer").text("Sweet, so you need Accommodation. Could you let me know, for how many people?")
       $(".card-body").scrollTop(1000);
       // Add accommodation stuff here
     } else {

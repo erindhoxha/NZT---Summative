@@ -24,8 +24,6 @@
   <script src="js/core.js"></script>
   <link rel="stylesheet" href="css/normalize.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="js/transportGenerate.js"></script>
-
 
 
 <!-- JavaScript -->
@@ -298,14 +296,15 @@
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="transportCalculator.html">Transport Calculator</a>
+            <a class="nav-link" href="#">Transport Calculator</a>
           </li>
         </ul>
       </div>
     </nav>
 
   <div class="wrapper">
-    <div class="wrapper-wrapper">          
+    <div class="wrapper-wrapper">
+          
     <div id="container-transport">
       <div id="content">
         <div class="text-container animated fadeInDown">
@@ -339,11 +338,14 @@
   </div>
     </div>
   </div>
+
         <div class="container-fluid">
           <div class="row container mx-auto container-result" id="card-container">
             <!-- HANDLEBARS WILL BE RENDERED HERE -->
           </div>
         </div>
+
+        
   <div class="container container-travel text-dark text-center mt-5">
       <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#checkoutModal">
           Launch demo modal
@@ -464,9 +466,6 @@
   </div>
 
 
-
-
-
   <div class="container-guests">
       <div class="container container-book">
         <div class="row">
@@ -500,63 +499,6 @@
         </div>
       </div>
     </div>
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-    Launch demo modal
-  </button>
-  
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-
-        <div class="modal-body text-center">
-            <h2 class="travel-title text-center">Transport Calculator</h2>
-            <p class="undertitle text-center">Calculate your fuel costs</p>
-            <div class="row">
-              <div class="col-lg-12 mx-auto">
-                <label for="fuel-select">Vehicle Type:</label><br>
-                <select class="fuel-select-dropdown">
-                  <option>
-                    Motorbike
-                  </option>
-                  <option>
-                    Small Car
-                  </option>
-                  <option>
-                    Large Car
-                  </option>
-                  <option>
-                    Motor Van
-                  </option>
-                </select>
-                <br>
-                <label for="fuel-select">Fuel type:</label><br>
-                <select class="fuel-select-dropdown">
-                  <option>
-                    Petrol
-                  </option>
-                  <option>
-                    Diesel
-                  </option>
-                </select>
-                <br>
-                <label for="fuel-input">KM's</label><br>
-                <input name="fuel-input" id="fuel-input" type="number" placeholder="KM"><br>
-                <button type="button" class="btn btn-default btn-generate">Generate</button><br>
-                <h6 class="fuel-liter">asdasdasd</h6>
-                <h6 class="liter-price">asdasdasdasd</h6>
-              </div>
-            </div>
-        </div>
-      </div>
-    </div>
-  </div>
-      <!-- MODAL FOR TRANSPORT CALCULATION -->
-  <div class="container-fluid container-calculator text-dark text-center">
-
-      </div>
-      <!-- TRANSPORT CALCULATION -->
 
     <div class="container-guests bg-white mt-2">
       <div class="container container-book">
@@ -791,6 +733,7 @@
                       </div>
                     </div>
                   </div>
+
         </div>
       </div>
     </div>

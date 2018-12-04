@@ -1879,3 +1879,28 @@ th, td {
   display:inline-block;
   padding-top:10px;
 }
+
+.container-calculator {
+  height:60vh;
+  padding-top:50px;
+  width: 500px;
+  border: 1px solid #ebebeb;
+  margin-top: 50px;
+}
+#fuel-input {
+  height:40px;
+  width:220px;
+}
+.btn-generate {
+  background-color:$light;
+  color:white;
+  width:220px;
+  margin-top:20px;
+}
+.fuel-select-dropdown {
+  width:100%;  
+}
+
+.fuel-liter, .liter-price {
+  margin-top:20px;
+}
