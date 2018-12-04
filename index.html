@@ -503,10 +503,12 @@
 
   
   <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="fuelModal" tabindex="-1" role="dialog" aria-labelledby="fuelModal" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content fuel-content">
-
+          <button type="button" class="close text-right" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
         <div class="modal-body text-center">
             <h2 class="travel-title text-center">Transport Calculator</h2>
             <p class="undertitle text-center">Calculate your fuel costs</p>
@@ -944,7 +946,7 @@
           </div>
 
           <div class="fuel-generate">
-          <br><a href="#" class="generate generate-button" data-toggle="modal" data-target="#exampleModal">Calculate Diesel Costs</a>
+          <br><a href="#" class="generate generate-button" data-toggle="modal" data-target="#fuelModal">Calculate Diesel Costs</a>
           </div>
       </div>
         <div class="modal-footer">
@@ -1030,6 +1032,7 @@
   <script src="js/nav-select.js"></script>
   <script src="js/transportGenerate.js"></script>
 </div>
+
   <!-- ALWAYS READ MAIN.JS AT THE END -->
 </body>
 

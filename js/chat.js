@@ -107,6 +107,7 @@ function secondAnswer() {
       answerData = accommodation;
       transpOrAcc = accommodation;
       $(".fuel").hide();
+      $(".fuel-generate").hide();
 
       $(".button-send").addClass('sentSecondMessageAccommodation');
       $(".first_card_2").css('display', 'flex');

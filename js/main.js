@@ -1,8 +1,7 @@
-
-        var info = document.getElementById('summative-template').innerHTML;
-        var template = Handlebars.compile(info);
-        var dataTemplate = template(transport);
-        var templateWrite = document.getElementById('card-container').innerHTML += dataTemplate;
+var info = document.getElementById('summative-template').innerHTML;
+var template = Handlebars.compile(info);
+var dataTemplate = template(transport);
+var templateWrite = document.getElementById('card-container').innerHTML += dataTemplate;
         
 $(function () {
     setTimeout(function () {
@@ -61,6 +60,8 @@ $('.btn-search').on('click', function () {
         var dataTemplate = template(accommodation);
         var templateWrite = document.getElementById('card-container').innerHTML += dataTemplate;
         $(".fuel").hide();
+        $(".fuel-generate").hide();
+        $(".meals").show();
         var answerData = accommodation;
         
     } else if (transportOrAccommodation == "Transport") {
@@ -70,6 +71,8 @@ $('.btn-search').on('click', function () {
         var dataTemplate = template(transport);
         var templateWrite = document.getElementById('card-container').innerHTML += dataTemplate;
         $(".meals").hide();
+        $(".fuel").show();
+        $(".fuel-generate").show();
         var answerData = transport;
     }
 

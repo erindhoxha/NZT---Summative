@@ -14,8 +14,10 @@ $(".btn-generate").on('click', function() {
 
   if (selectOptionFuel == "Petrol") {
     fuelPriceTotal = petrol;
+    fuelName = "petrol";
   } else {
     fuelPriceTotal = diesel;
+    fuelName = "diesel";
   }
   if ($("#fuel-input").val().length > 12) {
     $(".liter-price").text("Whoops, that's too many KM's.");
@@ -36,7 +38,7 @@ $(".btn-generate").on('click', function() {
   if (selectOption == "Small Car") {
     var val = Math.round(inputValue * 0.085 * 100) / 100;
     $('.fuel-liter').text("You will use "); 
-    $(".fuel-total").text(val + "L");
+    $(".fuel-total").text(val + "L of " + fuelName);
     $(".liter-price").text("Will approximately cost: ");
     var total = val * fuelPriceTotal;
     total = Math.round(total);
@@ -45,7 +47,7 @@ $(".btn-generate").on('click', function() {
   if (selectOption == "Large Car") {
     var val = Math.round(inputValue * 0.097 * 100) / 100;
     $('.fuel-liter').text("You will use "); 
-    $(".fuel-total").text(val + "L");
+    $(".fuel-total").text(val + "L of " + fuelName);
     $(".liter-price").text("Will approximately cost: ");
     var total = val * fuelPriceTotal;
     total = Math.round(total);
@@ -54,7 +56,7 @@ $(".btn-generate").on('click', function() {
   if (selectOption == "Motor Van") {
     var val = Math.round(inputValue * 0.17 * 100) / 100;
     $('.fuel-liter').text("You will use "); 
-    $(".fuel-total").text(val + "L");
+    $(".fuel-total").text(val + "L of " + fuelName);
     $(".liter-price").text("Will approximately cost: ");
     var total = val * fuelPriceTotal;
     total = Math.round(total);
