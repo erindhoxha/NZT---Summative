@@ -11,8 +11,10 @@ $(".btn-generate").on('click', function() {
   if (selectOption == "Motorbike") {
     var val = Math.round(inputValue * 0.037 * 100) / 100;
     console.log(val);
-    var literPrice = val * 
-    $('.fuel-liter').text("You will use " + val + "L which will approximately cost you: " + literPrice); 
+    $('.fuel-liter').text("You will use "); 
+    $(".fuel-total").text(val + "L");
+    $(".liter-price").text("Will approximately cost: ");
+    $(".fuel-total-price").text(val);
   }
   if (selectOption == "Small Car") {
     var val = Math.round(inputValue * 0.085 * 100) / 100;

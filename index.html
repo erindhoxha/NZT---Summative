@@ -500,15 +500,12 @@
         </div>
       </div>
     </div>
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-    Launch demo modal
-  </button>
+
   
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
-      <div class="modal-content">
+      <div class="modal-content fuel-content">
 
         <div class="modal-body text-center">
             <h2 class="travel-title text-center">Transport Calculator</h2>
@@ -544,18 +541,17 @@
                 <label for="fuel-input">KM's</label><br>
                 <input name="fuel-input" id="fuel-input" type="number" placeholder="KM"><br>
                 <button type="button" class="btn btn-default btn-generate">Generate</button><br>
-                <h6 class="fuel-liter">asdasdasd</h6>
-                <h6 class="liter-price">asdasdasdasd</h6>
+                <h6 class="fuel-liter"></h6>
+                <span class="fuel-total"></span>
+                <h6 class="liter-price"></h6>
+                <span class="fuel-total-price"></span>
               </div>
             </div>
         </div>
       </div>
     </div>
   </div>
-      <!-- MODAL FOR TRANSPORT CALCULATION -->
-  <div class="container-fluid container-calculator text-dark text-center">
 
-      </div>
       <!-- TRANSPORT CALCULATION -->
 
     <div class="container-guests bg-white mt-2">
@@ -868,6 +864,7 @@
             <span class="fa fa-star"></span>
             {{/each}}
             <a href="#" class="btn-review-modal" data-toggle="modal" data-target="#reviewsModal"><span class="reviews-length"></span> Reviews</a>
+            <!-- Button trigger modal -->
           </div>
           <div class="btn-div">
           <button class="btn btn-book m-0 mt-4 btn-block" data-toggle="modal" data-target="#theModal">Book now</button>
@@ -886,7 +883,7 @@
           <!-- <h5 class="modal-title" id="exampleModalLabel"></h5> -->
 
         <!-- </div> -->
-        <div class="modal-body">
+        <div class="modal-body text-center">
           <!-- <img class="modal-img" src=""> -->
 
           <div id="carousel-modal" class="carousel slide" data-ride="carousel">
@@ -946,6 +943,9 @@
               <p class="fuel-price"></p>
           </div>
 
+          <div class="fuel-generate">
+          <br><a href="#" class="generate generate-button" data-toggle="modal" data-target="#exampleModal">Calculate Diesel Costs</a>
+          </div>
       </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-continue btn-block"  data-toggle="modal" data-target="#checkoutModal">Continue</button>

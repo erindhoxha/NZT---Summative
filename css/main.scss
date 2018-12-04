@@ -1904,3 +1904,22 @@ th, td {
 .fuel-liter, .liter-price {
   margin-top:20px;
 }
+.fuel-content {
+  padding:30px;
+}
+.generate-button {
+  background-color:$verylight;
+  padding:10px;
+  color:white;
+}
+.generate-button:hover {
+  color:white;
+  text-decoration: none;
+}
+.fuel-generate {
+  clear: both;
+  margin-bottom: 30px;
+}
+.fuel-total, .fuel-total-price {
+  font-size: 30px;
+}
