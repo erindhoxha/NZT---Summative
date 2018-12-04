@@ -1649,7 +1649,8 @@ th, td {
 
 #fuel-input {
   height: 40px;
-  width: 220px; }
+  width: 220px;
+  text-indent: 10px; }
 
 .btn-generate {
   background-color: #2873AC;
