@@ -117,3 +117,9 @@ function scrollWindow() {
         prevScrollpos = currentScrollPos;
     }
 }
+
+function scrolled(e) {
+    if (myDiv.offsetHeight + myDiv.scrollTop >= myDiv.scrollHeight) {
+      scrolledToBottom(e);
+    }
+  }
