@@ -1,12 +1,10 @@
-var info = document.getElementById('summative-template').innerHTML;
-var template = Handlebars.compile(info);
-var dataTemplate = template(accommodation);
-var templateWrite = document.getElementById('card-container').innerHTML += dataTemplate;
+
+
 $(function () {
     setTimeout(function () {
         $('.nzt-container').fadeOut(500);
         $('.hide-everything').show();
-    }, 00);
+    }, 2200);
 });
 
 var transpOrAcc = "";

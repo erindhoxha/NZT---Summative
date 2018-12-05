@@ -68,10 +68,30 @@ var buttonPay = $(".btn-pay-end");
 
 buttonPay.on('click', function() {
   if ($(".phone-input").val() != "" && $(".address-input").val() != "" && $(".email-input").val() != "" && $(".name-input").val() != "" && $(".card-number-input").val() != "" && $("#card-expiration-date").val() != "" && $("#card-expiration-date-to").val() != "" && $("#card-cvc").val() != "") {
-      alertify.alert('Payment Successful!', 'Success! Your receipt will be sent into your email shortly.');
+
+    alertify.alert('Payment Successful!', 'Success! Your receipt will be sent into your email shortly.');
+    $(".ajs-button.ajs-ok").on('click', function(){
+        $(function () {
+            setTimeout(function () {
+                $('.nzt-container').fadeIn(200);
+                $('.hide-everything').fadeOut(500);
+            },0);
+        });
+    
+    
+        $(function () {
+          setTimeout(function () {
+              $('.nzt-container').fadeOut(500);
+              $("body").css('cursor', 'default');
+          },1200);
+          $(".hide-everything").hide();
+          $(".receipt-container").show(500);
+      });
+    });
+
+
       $(".ajs-close").css('float', 'right');
-      $(".hide-everything").hide();
-      $(".receipt-container").show();
+
       $(".fade").hide();
       var oneDay = parseInt($(".total-price").text().slice(1));
       if (numberOfDays != "") {
