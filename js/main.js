@@ -4,7 +4,7 @@ $(function () {
     setTimeout(function () {
         $('.nzt-container').fadeOut(500);
         $('.hide-everything').show();
-    }, 2200);
+    }, 00);
 });
 
 var transpOrAcc = "";
@@ -235,6 +235,10 @@ $(".close-btn").on('click', function () {
 
 
 var types = "";
+var newDate = new Date();
+var alwaysNewDate = newDate.getFullYear();
+
+$(".date-year").text(alwaysNewDate);
 
 
 

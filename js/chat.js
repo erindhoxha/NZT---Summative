@@ -462,7 +462,24 @@ function goToPageWithResults() {
     })
 }
 
+var xIsClicked = false;
+
+$(".close-btn").on('click', function() {
+  xIsClicked = true;
+})
 
 
 
-
+$(window).scroll(function() {
+  if ($(this).scrollTop() >= $('#footer').offset().top - 1500) {
+   $(".chat_icon").hide(300);
+   $(".chat-popup").hide(300);
+  }else {
+    if (!xIsClicked) {
+      $(".chat-popup").show(300);
+    } else {
+      $(".chat-popup").hide();
+    }
+    $(".chat_icon").fadeIn(300);
+  }
+});

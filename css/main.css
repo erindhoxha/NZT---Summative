@@ -1268,7 +1268,7 @@ h1 {
     padding: 20px !important; }
 
   .img-booked {
-    height: 400px !important;
+    height: 200px;
     object-fit: cover; }
 
   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
