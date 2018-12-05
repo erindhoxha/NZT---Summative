@@ -98,7 +98,9 @@ $blue: #0a84e1;
   cursor: pointer;
   z-index: 2;
 }
-
+.recommended-container {
+  padding-bottom:7rem !important;
+}
 .chat {
   display: none;
   z-index: 2;
