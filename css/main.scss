@@ -1344,6 +1344,9 @@ h1 {
 }
 
 @media (min-width:250px) {
+  .card-container-div {
+    padding-top:70px;
+  }
   .card-col {
     img {
       width:100%;
@@ -1429,7 +1432,7 @@ h1 {
 
 #container-transport {
   #content {
-    top: 50%;
+    top: 65%;
   }
 }
 }
@@ -1452,6 +1455,14 @@ h1 {
 }
 
 @media (min-width:768px) {
+  #container-transport {
+    #content {
+      top: 50%;
+    }
+    .card-container-div {
+      padding-top:0px;
+    }
+  }
 
   .card-col-testimonial-1, .card-col-testimonial-2, .card-col-testimonial-3 {
     padding:20px !important;
@@ -1597,14 +1608,16 @@ h1 {
   float:left;
 }
 .input-body {
+  input {
+    width:80% !important;
+  }
   .name-input, .email-input, .address-input, .phone-input {
-    width:100%;
     height:40px;
     margin-bottom: 12px;
   }
 }
 #prefix-input {
-  width:16%;
+  width:16% !important;
   margin-right:2%;
   float:left;
   height:40px;

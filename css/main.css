@@ -1148,6 +1148,9 @@ h1 {
   .nav-bar ul {
     background-color: black; } }
 @media (min-width: 250px) {
+  .card-container-div {
+    padding-top: 70px; }
+
   .card-col {
     width: 100%; }
     .card-col img {
@@ -1228,7 +1231,7 @@ h1 {
     margin-bottom: 30px; } }
 @media (min-width: 375px) {
   #container-transport #content {
-    top: 50%; } }
+    top: 65%; } }
 @media (min-width: 481px) {
   .chat_icon {
     width: 70px; }
@@ -1246,6 +1249,11 @@ h1 {
 
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
 @media (min-width: 768px) {
+  #container-transport #content {
+    top: 50%; }
+  #container-transport .card-container-div {
+    padding-top: 0px; }
+
   .card-col-testimonial-1, .card-col-testimonial-2, .card-col-testimonial-3 {
     padding: 20px !important; }
 
@@ -1370,13 +1378,14 @@ h1 {
   height: 40px;
   float: left; }
 
+.input-body input {
+  width: 80% !important; }
 .input-body .name-input, .input-body .email-input, .input-body .address-input, .input-body .phone-input {
-  width: 100%;
   height: 40px;
   margin-bottom: 12px; }
 
 #prefix-input {
-  width: 16%;
+  width: 16% !important;
   margin-right: 2%;
   float: left;
   height: 40px; }
