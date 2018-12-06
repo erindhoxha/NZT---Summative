@@ -1,5 +1,20 @@
 
 
+
+
+$(".footer-links li a").on('click', function() {
+    $(".footer-links")
+    var whereToGo =  $(this).attr('href');
+    console.log(whereToGo);
+    $('html,body').animate({
+        scrollTop: $(whereToGo).offset().top
+    },
+        'slow');
+})
+
+
+
+
 $(function () {
     setTimeout(function () {
         $('.nzt-container').fadeOut(500);
