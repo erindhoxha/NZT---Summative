@@ -1347,6 +1347,9 @@ h1 {
 }
 
 @media (min-width:250px) {
+  .select,.datepicker-input, .datepicker-input2,.btn-accomodation {
+    width: 100%;
+  }
   .card-container-div {
     padding-top:70px;
   }
@@ -1440,6 +1443,9 @@ h1 {
 }
 }
 @media (min-width:481px) {
+  .select,.datepicker-input, .datepicker-input2,.btn-accomodation {
+    width: 90%;
+  }
   .card-chat {
     height:500px;
   }
@@ -1461,6 +1467,9 @@ h1 {
 }
 
 @media (min-width:768px) {
+  .select,.datepicker-input, .datepicker-input2,.btn-accomodation {
+    width: 220px;
+  }
   #container-transport {
     #content {
       top: 50%;
