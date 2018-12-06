@@ -1378,6 +1378,9 @@ h1 {
   height: 40px;
   float: left; }
 
+.input-body .card-expiration-input {
+  width: 28% !important;
+  height: 40px; }
 .input-body input {
   width: 80% !important; }
 .input-body .name-input, .input-body .email-input, .input-body .address-input, .input-body .phone-input {
@@ -1397,10 +1400,6 @@ h1 {
 .right-side-input {
   width: 10%;
   float: left; }
-
-.card-expiration-input {
-  width: 28%;
-  height: 40px; }
 
 .card-exp-div {
   margin-top: 20px; }

@@ -1608,6 +1608,10 @@ h1 {
   float:left;
 }
 .input-body {
+  .card-expiration-input {
+    width:28% !important;
+    height:40px;
+  }
   input {
     width:80% !important;
   }
@@ -1630,10 +1634,7 @@ h1 {
   width:10%;
   float:left;
 }
-.card-expiration-input {
-  width:28%;
-  height:40px;
-}
+
 .card-exp-div {
   margin-top:20px;
 }
