@@ -14,7 +14,6 @@ $(".footer-links li a").on('click', function() {
 
 
 
-
 $(function () {
     setTimeout(function () {
         $('.nzt-container').fadeOut(500);
