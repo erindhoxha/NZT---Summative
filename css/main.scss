@@ -1317,6 +1317,9 @@ h1 {
   cursor: pointer;
 }
 @media (min-width:220px) {
+  .card-chat {
+    height:450px;
+  }
   #container-transport {
     #content {
       top: 65%;
@@ -1437,6 +1440,9 @@ h1 {
 }
 }
 @media (min-width:481px) {
+  .card-chat {
+    height:500px;
+  }
   .chat_icon {
     width: 70px;
   }
@@ -1610,13 +1616,11 @@ h1 {
 .input-body {
   .card-expiration-input {
     width:28% !important;
-    height:40px;
   }
   input {
     width:80% !important;
   }
   .name-input, .email-input, .address-input, .phone-input {
-    height:40px;
     margin-bottom: 12px;
   }
 }
@@ -1677,7 +1681,7 @@ h1 {
   input {
     border:1px solid #ebebeb;
     border-radius:5px;
-    text-indent:10px;
+    padding: 11px;
   }
   padding:20px;
 }

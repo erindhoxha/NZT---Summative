@@ -1128,6 +1128,9 @@ h1 {
   cursor: pointer; }
 
 @media (min-width: 220px) {
+  .card-chat {
+    height: 450px; }
+
   #container-transport #content {
     top: 65%; }
 
@@ -1233,6 +1236,9 @@ h1 {
   #container-transport #content {
     top: 65%; } }
 @media (min-width: 481px) {
+  .card-chat {
+    height: 500px; }
+
   .chat_icon {
     width: 70px; }
 
@@ -1379,12 +1385,10 @@ h1 {
   float: left; }
 
 .input-body .card-expiration-input {
-  width: 28% !important;
-  height: 40px; }
+  width: 28% !important; }
 .input-body input {
   width: 80% !important; }
 .input-body .name-input, .input-body .email-input, .input-body .address-input, .input-body .phone-input {
-  height: 40px;
   margin-bottom: 12px; }
 
 #prefix-input {
@@ -1444,7 +1448,7 @@ h1 {
   .payment-form input {
     border: 1px solid #ebebeb;
     border-radius: 5px;
-    text-indent: 10px; }
+    padding: 11px; }
 
 .modal {
   overflow: auto !important; }
