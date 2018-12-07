@@ -1125,6 +1125,9 @@ h1 {
   cursor: pointer; }
 
 @media (min-width: 220px) {
+  .card-chat {
+    height: 450px; }
+
   #container-transport #content {
     top: 65%; }
 
@@ -1145,6 +1148,12 @@ h1 {
   .nav-bar ul {
     background-color: black; } }
 @media (min-width: 250px) {
+  .select, .datepicker-input, .datepicker-input2, .btn-accomodation {
+    width: 100%; }
+
+  .card-container-div {
+    padding-top: 70px; }
+
   .card-col {
     width: 100%; }
     .card-col img {
@@ -1225,8 +1234,14 @@ h1 {
     margin-bottom: 30px; } }
 @media (min-width: 375px) {
   #container-transport #content {
-    top: 50%; } }
+    top: 65%; } }
 @media (min-width: 481px) {
+  .select, .datepicker-input, .datepicker-input2, .btn-accomodation {
+    width: 90%; }
+
+  .card-chat {
+    height: 500px; }
+
   .chat_icon {
     width: 70px; }
 
@@ -1243,6 +1258,14 @@ h1 {
 
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
 @media (min-width: 768px) {
+  .select, .datepicker-input, .datepicker-input2, .btn-accomodation {
+    width: 220px; }
+
+  #container-transport #content {
+    top: 50%; }
+  #container-transport .card-container-div {
+    padding-top: 0px; }
+
   .card-col-testimonial-1, .card-col-testimonial-2, .card-col-testimonial-3 {
     padding: 20px !important; }
 
@@ -1367,13 +1390,15 @@ h1 {
   height: 40px;
   float: left; }
 
+.input-body .card-expiration-input {
+  width: 28% !important; }
+.input-body input {
+  width: 80% !important; }
 .input-body .name-input, .input-body .email-input, .input-body .address-input, .input-body .phone-input {
-  width: 100%;
-  height: 40px;
   margin-bottom: 12px; }
 
 #prefix-input {
-  width: 16%;
+  width: 16% !important;
   margin-right: 2%;
   float: left;
   height: 40px; }
@@ -1385,10 +1410,6 @@ h1 {
 .right-side-input {
   width: 10%;
   float: left; }
-
-.card-expiration-input {
-  width: 28%;
-  height: 40px; }
 
 .card-exp-div {
   margin-top: 20px; }
@@ -1433,7 +1454,7 @@ h1 {
   .payment-form input {
     border: 1px solid #ebebeb;
     border-radius: 5px;
-    text-indent: 10px; }
+    padding: 11px; }
 
 .modal {
   overflow: auto !important; }

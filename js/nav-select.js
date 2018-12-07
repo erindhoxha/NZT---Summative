@@ -104,20 +104,6 @@ $(document).on('resize, ready', function () {
 });
 
 
-function scrollWindow() {
-    var prevScrollpos = window.pageYOffset;
-    window.onscroll = function () {
-        var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
-            document.getElementById("navbar").style.top = "0px";
-            document.getElementById("navbar").style.transition = "0.3s ease";
-        } else {
-            document.getElementById("navbar").style.top = "-57px";
-        }
-        prevScrollpos = currentScrollPos;
-    }
-}
-
 function scrolled(e) {
     if (myDiv.offsetHeight + myDiv.scrollTop >= myDiv.scrollHeight) {
       scrolledToBottom(e);
