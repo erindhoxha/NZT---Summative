@@ -7,10 +7,7 @@
 /* ==========================================================================
    CHAT CSS
    ========================================================================== */
-@import url("https://fonts.googleapis.com/css?family=Rubik");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700");
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
-@import url(https://fonts.googleapis.com/css?family=Teko:700);
 .input-container select {
   margin: 10px !important; }
 
