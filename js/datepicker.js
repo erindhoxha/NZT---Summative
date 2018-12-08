@@ -29,10 +29,3 @@ $( function() {
     }
   } );
 
-$("#datepicker").on('click', function() {
-  if ($("#ui-datepicker-div").css('display') == 'block') {
-    $("#ui-datepicker-div").hide();
-  } else {
-    $("#ui-datepicker-div").show();
-  }
-})
