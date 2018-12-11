@@ -1,7 +1,4 @@
-var info = document.getElementById('summative-template').innerHTML;
-var template = Handlebars.compile(info);
-var dataTemplate = template(accommodation);
-var templateWrite = document.getElementById('card-container').innerHTML += dataTemplate;
+
 
 
  $(document).ready(function() {
@@ -70,12 +67,17 @@ $('.btn-search').on('click', function () {
         $(".line").hide(500);
     } else {
         // $('body').css('overflow', 'auto');
-        $(".alert").hide(500);
         $(".line").show(500);
-        $('html,body').animate({
+        if ($("#accom-or-transport").val() == "What do you need?") {
+            $(".alert").show();
+        } else {
+            $(".alert").hide();
+            $('html,body').animate({
                 scrollTop: $(".container-result").offset().top
             },
-            'slow');
+                'slow');
+        }
+
     }
     
     if (transportOrAccommodation == "Accommodation") {
