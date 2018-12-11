@@ -1,23 +1,30 @@
 var gulp = require('gulp');
 var uglify = require('gulp-uglify');
+var concat = require('gulp-concat');
+var cssMin = require('gulp-css');
 
-gulp.task('uglify', function(){
-    gulp.src(['js/main.js','js/chat.js', 'js/nav-select.js', 'js/datepicker.js' ])
-        .pipe(uglify({
-            mangle: false
-        }))
-        .pipe(gulp.dest('js/minifiedJS'));
+gulp.task('css', function() {
+    gulp.src([
+        './css/main.css',
+        './css/normalize.css'
+    ])
+    .pipe(concat('app.css'))
+    .pipe(cssMin())
+    .pipe(gulp.dest('./css'));
 });
 
-gulp.task('watch', function() {
-    var watcher = gulp.watch('js/*.js');
-    watcher.on('change', function(event) {
-        console.log('File: ' + event.path + ' was changed!');
-    })
+gulp.task('scripts', function() {
+    gulp.src([
+       './js/main.js',
+       './js/data.js'
+    ])
+    .pipe(concat('libs.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('./js'))
+
 });
 
-gulp.task('default', function() {
-    console.log('Gulp is running correctly!');
-});
+
+gulp.task('default', ['css', 'scripts']);
 
 
