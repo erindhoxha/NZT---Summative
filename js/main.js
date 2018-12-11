@@ -1,30 +1,25 @@
-var info = document.getElementById('summative-template').innerHTML;
-var template = Handlebars.compile(info);
-var dataTemplate = template(accommodation);
-var templateWrite = document.getElementById('card-container').innerHTML += dataTemplate;
-
 
  $(document).ready(function() {
      document.ontouchmove = function(e){
           e.preventDefault();
-          }
+          };
  });
 
  input.onfocus = function () {
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
-}
+};
 
 
 $(".footer-links li a").on('click', function() {
-    $(".footer-links")
+    $(".footer-links");
     var whereToGo =  $(this).attr('href');
     console.log(whereToGo);
     $('html,body').animate({
         scrollTop: $(whereToGo).offset().top
     },
         'slow');
-})
+});
 
 
 
@@ -45,8 +40,8 @@ $('.btn-search').on('click', function () {
     peopleValue = parseInt(peopleValue);
     var oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
 
-    var firstDate = $("#datepicker").datepicker("getDate")
-    var secondDate = $("#datepicker2").datepicker("getDate")
+    var firstDate = $("#datepicker").datepicker("getDate");
+    var secondDate = $("#datepicker2").datepicker("getDate");
     if (firstDate == undefined || secondDate == undefined) {
         $(".alert").show();
     } else {
@@ -83,7 +78,7 @@ $('.btn-search').on('click', function () {
         var info = document.getElementById('summative-template').innerHTML;
         var template = Handlebars.compile(info);
         var dataTemplate = template(accommodation);
-        var templateWrite = document.getElementById('card-container').innerHTML += dataTemplate;
+        templateWrite = document.getElementById('card-container').innerHTML += dataTemplate;
         $(".fuel").hide();
         $(".fuel-generate").hide();
         $(".meals").show();
@@ -94,7 +89,7 @@ $('.btn-search').on('click', function () {
         var info = document.getElementById('summative-template').innerHTML;
         var template = Handlebars.compile(info);
         var dataTemplate = template(transport);
-        var templateWrite = document.getElementById('card-container').innerHTML += dataTemplate;
+        templateWrite = document.getElementById('card-container').innerHTML += dataTemplate;
         $(".meals").hide();
         $(".fuel").show();
         $(".fuel-generate").show();
@@ -219,11 +214,11 @@ $('.btn-search').on('click', function () {
         totalPriceSubtracted = Math.floor(totalPriceSubtracted);            
     }
         if ($("#card-coupon-code").val() == "YOOBEE20") {
-            $(".success-coupon").show(300);
+        $(".success-coupon").show(300);
         if (clicked == true) {
-            $(".total-price").text('$' + totalPriceAfter + "-20% = $" + totalPriceSubtracted);  
+            $(".total-price").text('$' + totalPriceAfter + "-20% = $" + totalPriceSubtracted);
         } else {
-            $(".total-price").text('$' + totalPrice + "-20% = $" + totalPriceSubtracted);              
+            $(".total-price").text('$' + totalPrice + "-20% = $" + totalPriceSubtracted);
         }
         $(".alert-coupon").hide(300);
         $(".success-coupon").show(300);
