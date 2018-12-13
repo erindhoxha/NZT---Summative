@@ -95,7 +95,7 @@ function secondAnswer() {
       $(".button-send").addClass('sentSecondMessageTransport');
       // ADD TRANSPORT STUFF HERE
       $(".first_card_2").css('display', 'flex');
-      $(".thirdAnswer").text("Sweet, so you need Transportation. Could you let me know, for how many people?")
+      $(".thirdAnswer").text("Sweet as! So you need Transportation. Could you let me know, for how many people?")
       $(".card-body").scrollTop(1000);
     } else if (("accommodation").indexOf(inputValue) > -1 || ("accomodation").indexOf(inputValue) > -1 || ("acomodation").indexOf(inputValue) > -1) {
 
@@ -273,7 +273,7 @@ function fourthAnswer() {
 
     function howManyDays() {
       $(".first_card_4").css('display', 'flex');
-      $(".fifthAnswer").text("Sweet, you've chosen: " + answer2 + " days. By the answer you've given us, we'll send you through the results.");
+      $(".fifthAnswer").text("You've chosen: " + answer2 + " days. By the answer you've given us, we'll send you through the results.");
       $(".card-body").scrollTop(1000);
       $("body").css('cursor', 'wait');
       $(function () {
